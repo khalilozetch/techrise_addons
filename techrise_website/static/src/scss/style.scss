@@ -1073,12 +1073,18 @@ body {
 }
 
 // ============================================================
-// CUSTOM HEADER / NAVBAR (non-homepage pages)
+// CUSTOM HEADER / NAVBAR (all pages including homepage)
 // ============================================================
+header.tr-navbar,
 .tr-navbar {
     background: $tr-navy !important;
     transition: $tr-transition;
     padding: 10px 0 !important;
+
+    // Ensure navbar itself has correct background
+    nav, .navbar, #top_menu_container {
+        background: transparent !important;
+    }
 
     .navbar-brand img {
         height: 55px !important;
@@ -1086,16 +1092,103 @@ body {
         max-height: none !important;
     }
 
-    .nav-link {
-        color: rgba($tr-white, 0.85) !important;
+    // All menu links - white with gold hover
+    .nav-link,
+    #top_menu .nav-link,
+    #top_menu > .nav-item > a,
+    .navbar-nav .nav-link,
+    .navbar-nav > li > a {
+        color: $tr-white !important;
         font-weight: 600;
         font-size: 0.95rem;
         padding: 8px 18px !important;
         border-radius: 8px;
         transition: $tr-transition;
 
-        &:hover, &.active {
+        &:hover, &:focus, &.active {
             color: $tr-gold !important;
+        }
+    }
+
+    // Sign in / user menu link
+    .o_login_btn,
+    a[href="/web/login"],
+    a[href="/my/home"],
+    .navbar-nav .dropdown-toggle {
+        color: $tr-white !important;
+
+        &:hover {
+            color: $tr-gold !important;
+        }
+    }
+
+    // Mobile hamburger toggler
+    .navbar-toggler {
+        display: none;
+        border: 2px solid rgba($tr-white, 0.5) !important;
+        padding: 6px 10px !important;
+        background: transparent !important;
+
+        .navbar-toggler-icon,
+        .oi-apps {
+            color: $tr-white !important;
+            filter: invert(1);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 2px rgba($tr-gold, 0.5) !important;
+        }
+
+        @media (max-width: 991px) {
+            display: flex !important;
+            align-items: center;
+        }
+    }
+
+    // Mobile menu dropdown
+    @media (max-width: 991px) {
+        #top_menu_collapse,
+        .navbar-collapse,
+        .show,
+        .offcanvas,
+        .offcanvas-collapse {
+            background: $tr-navy !important;
+            padding: 15px !important;
+            border-radius: 0 0 12px 12px;
+
+            .nav-link,
+            #top_menu .nav-link,
+            #top_menu > .nav-item > a,
+            .navbar-nav .nav-link,
+            .navbar-nav > li > a {
+                color: $tr-white !important;
+                padding: 12px 18px !important;
+                border-bottom: 1px solid rgba($tr-white, 0.1);
+
+                &:hover, &.active {
+                    color: $tr-gold !important;
+                }
+            }
+        }
+    }
+}
+
+// Force mobile menu background on all breakpoints
+@media (max-width: 991px) {
+    header .navbar-collapse,
+    header #top_menu_collapse,
+    header .offcanvas,
+    header .offcanvas-body,
+    header .collapse.show,
+    header .collapsing {
+        background: $tr-navy !important;
+
+        a, .nav-link, .nav-item > a {
+            color: $tr-white !important;
+
+            &:hover, &.active {
+                color: $tr-gold !important;
+            }
         }
     }
 }
