@@ -1145,12 +1145,19 @@ header.tr-navbar,
     // Mobile hamburger toggler
     .navbar-toggler {
         border: 2px solid $tr-white !important;
-        padding: 6px 10px !important;
-        background: transparent !important;
+        padding: 8px 12px !important;
+        background: rgba($tr-white, 0.1) !important;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
             filter: none !important;
+            width: 24px;
+            height: 24px;
         }
 
         .oi, .oi-apps, i {
