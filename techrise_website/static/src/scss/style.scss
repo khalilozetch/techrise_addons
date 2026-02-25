@@ -1086,10 +1086,30 @@ header.tr-navbar,
         background: transparent !important;
     }
 
-    .navbar-brand img {
-        height: 55px !important;
-        width: auto !important;
-        max-height: none !important;
+    .navbar-brand,
+    a.navbar-brand {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        img, span, .logo {
+            display: block !important;
+            visibility: visible !important;
+            height: 55px !important;
+            width: auto !important;
+            max-height: none !important;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .navbar-brand,
+        a.navbar-brand {
+            display: flex !important;
+
+            img, span, .logo {
+                height: 40px !important;
+            }
+        }
     }
 
     // All menu links - white with gold hover
@@ -1124,24 +1144,39 @@ header.tr-navbar,
 
     // Mobile hamburger toggler
     .navbar-toggler {
-        display: none;
-        border: 2px solid rgba($tr-white, 0.5) !important;
+        border: 2px solid $tr-white !important;
         padding: 6px 10px !important;
         background: transparent !important;
 
-        .navbar-toggler-icon,
-        .oi-apps {
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+            filter: none !important;
+        }
+
+        .oi, .oi-apps, i {
             color: $tr-white !important;
-            filter: invert(1);
         }
 
         &:focus {
             box-shadow: 0 0 0 2px rgba($tr-gold, 0.5) !important;
         }
+    }
 
-        @media (max-width: 991px) {
-            display: flex !important;
-            align-items: center;
+    // Sign in button
+    .btn-sign-in,
+    a[href="/web/login"],
+    a[href*="/web/login"],
+    .o_login_btn,
+    .nav-item > a.btn {
+        color: $tr-navy !important;
+        background: $tr-gold !important;
+        border: none !important;
+        border-radius: 50px !important;
+        padding: 8px 20px !important;
+        font-weight: 700 !important;
+
+        &:hover {
+            background: $tr-gold-light !important;
         }
     }
 
