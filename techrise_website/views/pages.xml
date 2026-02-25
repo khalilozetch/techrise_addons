@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- ABOUT US PAGE                                                 -->
+    <!-- ============================================================ -->
+    <template id="about_page" name="About Us - Techrise">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header tr-header-about">
+                    <div class="container">
+                        <h1>About Techrise</h1>
+                        <p>Your trusted partner for organized digital transformation</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <span class="active">About Us</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Story -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title tr-animate">
+                                    Our <span class="tr-text-gold">Story</span>
+                                </h2>
+                                <div class="tr-gold-line" style="margin-left: 0;"/>
+                                <p class="tr-animate tr-animate-delay-1" style="color: #64748B; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    Techrise is a specialized entity providing comprehensive technical and
+                                    administrative solutions. As an accredited partner of the Odoo platform,
+                                    we support companies and organizations in rebuilding their operational
+                                    processes according to a modern digital methodology based on organization,
+                                    accuracy, and sustainability.
+                                </p>
+                                <p class="tr-animate tr-animate-delay-2" style="color: #64748B; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    We focus on transforming operational complexity into intelligent,
+                                    interconnected systems that enable different departments to work within
+                                    a unified framework, ensuring data clarity, ease of monitoring, and
+                                    improved institutional performance efficiency.
+                                </p>
+                                <p class="tr-animate tr-animate-delay-3" style="color: #64748B; line-height: 1.8;">
+                                    Headquartered in Abu Dhabi, UAE, we serve clients across the Middle East
+                                    and beyond, delivering solutions that respect local regulations while
+                                    meeting international standards.
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="tr-animate tr-animate-delay-2">
+                                    <img src="/techrise_website/static/src/img/bg/about-team-4.jpg"
+                                         alt="Techrise Team" class="img-fluid rounded-4 shadow-lg"
+                                         style="width: 100%; object-fit: cover;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Philosophy -->
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title tr-animate">
+                                    Our <span class="tr-text-gold">Philosophy</span>
+                                </h2>
+                                <div class="tr-gold-line" style="margin-left: 0;"/>
+                                <p class="tr-animate tr-animate-delay-1" style="color: #64748B; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    Our philosophy is based on the belief that true technological solutions
+                                    are those built to serve the business, not complicate it. Therefore, we
+                                    strive to simplify procedures, reduce manual intervention, and enhance
+                                    integration between systems and different departments.
+                                </p>
+                                <p class="tr-animate tr-animate-delay-2" style="color: #64748B; line-height: 1.8;">
+                                    We aim to be the trusted technology partner that organizations rely on
+                                    to build an organized work environment, scalable systems, and a clear
+                                    digital vision that supports growth with confidence and continuity.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 order-lg-1">
+                                <div class="tr-animate">
+                                    <div class="tr-stats-inner" style="flex-direction: column; gap: 30px;">
+                                        <div class="row w-100">
+                                            <div class="col-6">
+                                                <div class="tr-stat-item">
+                                                    <div class="tr-stat-number">
+                                                        <span class="tr-counter" data-target="100">0</span>
+                                                        <span class="tr-stat-suffix">+</span>
+                                                    </div>
+                                                    <div class="tr-stat-label">Projects</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="tr-stat-item">
+                                                    <div class="tr-stat-number">
+                                                        <span class="tr-counter" data-target="50">0</span>
+                                                        <span class="tr-stat-suffix">+</span>
+                                                    </div>
+                                                    <div class="tr-stat-label">Clients</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100">
+                                            <div class="col-6">
+                                                <div class="tr-stat-item">
+                                                    <div class="tr-stat-number">
+                                                        <span class="tr-counter" data-target="15">0</span>
+                                                        <span class="tr-stat-suffix">+</span>
+                                                    </div>
+                                                    <div class="tr-stat-label">Countries</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="tr-stat-item">
+                                                    <div class="tr-stat-number">
+                                                        <span class="tr-counter" data-target="30">0</span>
+                                                        <span class="tr-stat-suffix">+</span>
+                                                    </div>
+                                                    <div class="tr-stat-label">Experts</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Values -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">Our Core Values</h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                The principles that drive everything we do at Techrise.
+                            </p>
+                        </div>
+                        <div class="tr-values-grid">
+                            <div class="tr-value-card tr-animate">
+                                <div class="tr-value-icon">
+                                    <i class="fa fa-diamond"/>
+                                </div>
+                                <h5>Excellence</h5>
+                                <p>We strive for the highest quality in every solution, every interaction, and every deliverable.</p>
+                            </div>
+                            <div class="tr-value-card tr-animate tr-animate-delay-1">
+                                <div class="tr-value-icon">
+                                    <i class="fa fa-lightbulb-o"/>
+                                </div>
+                                <h5>Innovation</h5>
+                                <p>We embrace new technologies and creative approaches to solve complex business challenges.</p>
+                            </div>
+                            <div class="tr-value-card tr-animate tr-animate-delay-2">
+                                <div class="tr-value-icon">
+                                    <i class="fa fa-handshake-o"/>
+                                </div>
+                                <h5>Partnership</h5>
+                                <p>We build lasting relationships based on trust, transparency, and shared success with our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Want to Join Our Journey?</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Whether you're a client looking for the best Odoo partner or a talented
+                            professional seeking exciting challenges, we'd love to hear from you.
+                        </p>
+                        <a href="/contactus" class="tr-btn tr-btn-primary tr-animate tr-animate-delay-2">
+                            Get in Touch <i class="fa fa-arrow-right"/>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================================================ -->
+    <!-- SERVICES PAGE                                                 -->
+    <!-- ============================================================ -->
+    <template id="services_page" name="Services - Techrise">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header tr-header-services">
+                    <div class="container">
+                        <h1>Our Services</h1>
+                        <p>Comprehensive digital solutions from implementation to ongoing support</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <span class="active">Services</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Detail -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+
+                        <!-- ERP -->
+                        <div class="tr-service-detail" id="erp">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <img src="/techrise_website/static/src/img/services-erp.svg"
+                                     alt="ERP Systems" style="width: 80%; max-width: 280px;"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>ERP System Design &amp; Development (Odoo)</h3>
+                                <p>
+                                    We design and develop comprehensive ERP systems based on the Odoo platform,
+                                    tailored to the specific nature of each business and its operational needs.
+                                    We start with a thorough analysis of internal processes, then customize
+                                    the system to cover various departments.
+                                </p>
+                                <ul>
+                                    <li>Accounting, Sales, Inventory, HR, and Procurement</li>
+                                    <li>Customer Service, Call Centers, and POS systems</li>
+                                    <li>Multi-branch centralized monitoring</li>
+                                    <li>Social media and marketing integration</li>
+                                    <li>Data unification and real-time performance tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Website -->
+                        <div class="tr-service-detail" id="website">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <img src="/techrise_website/static/src/img/services-web.svg"
+                                     alt="Website Development" style="width: 80%; max-width: 280px;"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Website Design &amp; Development</h3>
+                                <p>
+                                    We provide professional website design and development services,
+                                    focusing on the integration of a strong visual identity with
+                                    user-friendly functionality. We ensure websites are responsive
+                                    across all devices with fast loading and great UX.
+                                </p>
+                                <ul>
+                                    <li>Corporate identity-driven website design</li>
+                                    <li>Responsive across all devices and screens</li>
+                                    <li>Fast loading and high performance</li>
+                                    <li>Best UX/UI practices</li>
+                                    <li>Integration with Odoo or other systems</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Mobile -->
+                        <div class="tr-service-detail" id="mobile">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <img src="/techrise_website/static/src/img/services-mobile.svg"
+                                     alt="Mobile App Development" style="width: 80%; max-width: 280px;"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Mobile App Development</h3>
+                                <p>
+                                    We design and develop mobile applications for Android and iOS,
+                                    with a strong focus on high performance, security, and seamless
+                                    integration with Odoo or any other platforms used within the organization.
+                                </p>
+                                <ul>
+                                    <li>Android and iOS native development</li>
+                                    <li>Seamless Odoo system integration</li>
+                                    <li>Thorough testing before launch</li>
+                                    <li>Ongoing technical support post-deployment</li>
+                                    <li>Scalable architecture for business growth</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Integration -->
+                        <div class="tr-service-detail" id="integration">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-plug"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>System Integration</h3>
+                                <p>
+                                    We implement integration processes between the Odoo system and other
+                                    software used within the company, as well as connectivity with official
+                                    authorities and platforms, contributing to data unification, reduced
+                                    manual work, and faster operational procedures.
+                                </p>
+                                <ul>
+                                    <li>Odoo integration with third-party software</li>
+                                    <li>Government portal connectivity (VAT, customs)</li>
+                                    <li>Payment gateway integration</li>
+                                    <li>WhatsApp and communication tools</li>
+                                    <li>E-commerce platform connection</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Accounting & Tax -->
+                        <div class="tr-service-detail" id="accounting">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-calculator"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Accounting &amp; Tax Services</h3>
+                                <p>
+                                    We provide comprehensive services for organizing and managing accounts,
+                                    VAT filing, Corporate Tax returns, and establishing qualified accounting
+                                    teams with clear policies and procedures.
+                                </p>
+                                <ul>
+                                    <li>VAT return preparation and filing</li>
+                                    <li>Corporate Tax annual return filing</li>
+                                    <li>Accounting organization and restructuring</li>
+                                    <li>Establishment of qualified accounting teams</li>
+                                    <li>Financial policies, workflows, and internal controls</li>
+                                    <li>Odoo accounting system configuration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Branding -->
+                        <div class="tr-service-detail" id="branding">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-bullhorn"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Branding &amp; Marketing</h3>
+                                <p>
+                                    We provide comprehensive branding and marketing services focused on
+                                    building a strong and clear brand identity capable of effectively
+                                    communicating with its audience and establishing a meaningful market presence.
+                                </p>
+                                <ul>
+                                    <li>Brand essence and core message definition</li>
+                                    <li>Visual identity development</li>
+                                    <li>Marketing content creation</li>
+                                    <li>Smart campaigns integrated with operational systems</li>
+                                    <li>Performance measurement and analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Support -->
+                        <div class="tr-service-detail" id="support">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-life-ring"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Technical Support &amp; Annual Maintenance</h3>
+                                <p>
+                                    We offer annual technical support and maintenance contracts to ensure
+                                    system stability and optimal performance throughout the year. These
+                                    services include regular monitoring, updates, and prompt resolution
+                                    of any technical issues.
+                                </p>
+                                <ul>
+                                    <li>Regular system monitoring</li>
+                                    <li>Implementation of necessary updates</li>
+                                    <li>Prompt technical issue resolution</li>
+                                    <li>Performance optimization</li>
+                                    <li>Uninterrupted business operations guarantee</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Need a Custom Solution?</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Every business is unique. Let's discuss how we can tailor
+                            our services to meet your specific requirements.
+                        </p>
+                        <a href="/contactus" class="tr-btn tr-btn-primary tr-animate tr-animate-delay-2">
+                            Request a Proposal <i class="fa fa-arrow-right"/>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================================================ -->
+    <!-- SERVER & HOSTING PAGE                                         -->
+    <!-- ============================================================ -->
+    <template id="server_page" name="Server &amp; Hosting - Techrise">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header tr-header-server">
+                    <div class="container">
+                        <h1>Server &amp; Hosting</h1>
+                        <p>Reliable infrastructure for your Odoo and business applications</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <span class="active">Server &amp; Hosting</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Server Overview -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <img src="/techrise_website/static/src/img/bg/server-room.jpg"
+                                     alt="Server and Hosting" class="img-fluid rounded-4 shadow-lg"
+                                     style="width: 100%; object-fit: cover;"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="tr-section-title tr-animate">
+                                    Enterprise-Grade <span class="tr-text-gold">Hosting</span>
+                                </h2>
+                                <div class="tr-gold-line" style="margin-left: 0;"/>
+                                <p class="tr-animate tr-animate-delay-1" style="color: #64748B; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    We provide reliable, high-performance server hosting solutions
+                                    specifically optimized for Odoo ERP and business applications.
+                                    Our infrastructure ensures your systems run smoothly with
+                                    maximum uptime and security.
+                                </p>
+                                <p class="tr-animate tr-animate-delay-2" style="color: #64748B; line-height: 1.8;">
+                                    Whether you need cloud hosting, dedicated servers, or hybrid
+                                    solutions, we configure and manage the entire infrastructure
+                                    so you can focus on your business.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hosting Features -->
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">Hosting Features</h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                Everything you need for reliable, secure, and fast hosting.
+                            </p>
+                        </div>
+                        <div class="tr-services-grid">
+                            <div class="tr-service-card tr-animate">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-bolt"/>
+                                </div>
+                                <h4>High Performance</h4>
+                                <p>
+                                    SSD-powered servers with optimized configurations
+                                    for Odoo, ensuring fast response times and smooth operations.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-shield"/>
+                                </div>
+                                <h4>Security &amp; Protection</h4>
+                                <p>
+                                    SSL certificates, firewall protection, regular security
+                                    audits, and encrypted backups to keep your data safe.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-clock-o"/>
+                                </div>
+                                <h4>99.9% Uptime</h4>
+                                <p>
+                                    Guaranteed high availability with redundant systems,
+                                    load balancing, and 24/7 monitoring.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-database"/>
+                                </div>
+                                <h4>Automated Backups</h4>
+                                <p>
+                                    Daily automated backups with secure offsite storage
+                                    and quick disaster recovery options.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-expand"/>
+                                </div>
+                                <h4>Scalable Resources</h4>
+                                <p>
+                                    Easily scale CPU, RAM, and storage as your business
+                                    grows without downtime or migration hassle.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-headphones"/>
+                                </div>
+                                <h4>Managed Support</h4>
+                                <p>
+                                    Expert server administration, OS updates, performance
+                                    tuning, and troubleshooting included.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hosting Plans -->
+                <section class="tr-section tr-section-white" id="hosting-plans">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">
+                                Hosting <span class="tr-text-gold">Solutions</span>
+                            </h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                Choose the hosting solution that best fits your needs.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate" style="height: 100%;">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-cloud"/>
+                                    </div>
+                                    <h5>Cloud Hosting</h5>
+                                    <p>
+                                        Flexible cloud-based hosting with auto-scaling capabilities.
+                                        Perfect for growing businesses that need elastic resources.
+                                    </p>
+                                    <ul class="text-start mt-3" style="font-size: 0.85rem; color: #64748B;">
+                                        <li>Auto-scaling resources</li>
+                                        <li>Pay-as-you-grow model</li>
+                                        <li>Global CDN included</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate tr-animate-delay-1" style="height: 100%;">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-server"/>
+                                    </div>
+                                    <h5>Dedicated Server</h5>
+                                    <p>
+                                        Full dedicated server resources for enterprise-level
+                                        performance and maximum control.
+                                    </p>
+                                    <ul class="text-start mt-3" style="font-size: 0.85rem; color: #64748B;">
+                                        <li>Dedicated CPU &amp; RAM</li>
+                                        <li>Full root access</li>
+                                        <li>Custom configurations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate tr-animate-delay-2" style="height: 100%;">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-sitemap"/>
+                                    </div>
+                                    <h5>Managed Odoo Hosting</h5>
+                                    <p>
+                                        Fully managed Odoo-specific hosting with optimized
+                                        PostgreSQL, Nginx, and worker configurations.
+                                    </p>
+                                    <ul class="text-start mt-3" style="font-size: 0.85rem; color: #64748B;">
+                                        <li>Odoo-optimized stack</li>
+                                        <li>Automatic updates</li>
+                                        <li>Staging environment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Need Reliable Hosting?</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Let us handle your infrastructure so you can focus on your business.
+                            Get in touch for a custom hosting solution.
+                        </p>
+                        <a href="/contactus" class="tr-btn tr-btn-primary tr-animate tr-animate-delay-2">
+                            Get a Quote <i class="fa fa-arrow-right"/>
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================================================ -->
+    <!-- CONTACT PAGE                                                  -->
+    <!-- ============================================================ -->
+    <template id="contact_page" name="Contact Us - Techrise">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header tr-header-contact">
+                    <div class="container">
+                        <h1>Contact Us</h1>
+                        <p>Let's start a conversation about your digital transformation</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <span class="active">Contact</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Contact Form -->
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <div class="tr-contact-form tr-animate">
+                                    <h3 style="font-weight: 800; color: #0D1B3E; margin-bottom: 0.5rem;">
+                                        Send Us a Message
+                                    </h3>
+                                    <p style="color: #64748B; margin-bottom: 2rem;">
+                                        Fill out the form below and we'll get back to you within 24 hours.
+                                    </p>
+                                    <form action="/website/form/" method="post"
+                                          class="s_website_form"
+                                          data-model_name="mail.mail"
+                                          data-success-mode="redirect"
+                                          data-success-page="/contactus-thank-you"
+                                          enctype="multipart/form-data">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="tr-form-group">
+                                                    <label>Full Name *</label>
+                                                    <input type="text" name="name" required="required"
+                                                           placeholder="Your full name"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="tr-form-group">
+                                                    <label>Email Address *</label>
+                                                    <input type="email" name="email_from" required="required"
+                                                           placeholder="your@email.com"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="tr-form-group">
+                                                    <label>Phone Number</label>
+                                                    <input type="tel" name="phone"
+                                                           placeholder="+971 XX XXX XXXX"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="tr-form-group">
+                                                    <label>Company Name</label>
+                                                    <input type="text" name="company"
+                                                           placeholder="Your company"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>Service Interested In</label>
+                                            <select name="service">
+                                                <option value="">Select a service...</option>
+                                                <option value="erp">ERP System Design (Odoo)</option>
+                                                <option value="website">Website Design &amp; Development</option>
+                                                <option value="mobile">Mobile App Development</option>
+                                                <option value="integration">System Integration</option>
+                                                <option value="accounting">Accounting &amp; Tax Services</option>
+                                                <option value="branding">Branding &amp; Marketing</option>
+                                                <option value="hosting">Server &amp; Hosting</option>
+                                                <option value="support">Technical Support</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>Message *</label>
+                                            <textarea name="body" required="required"
+                                                      placeholder="Tell us about your project and requirements..."
+                                                      rows="5"/>
+                                        </div>
+                                        <button type="submit" class="tr-btn tr-btn-primary w-100"
+                                                style="justify-content: center;">
+                                            Send Message <i class="fa fa-paper-plane"/>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <div class="col-lg-5">
+                                <div class="tr-contact-info-card tr-animate tr-animate-delay-1">
+                                    <h3>Let's Connect</h3>
+                                    <p>
+                                        We're here to help you navigate your digital transformation
+                                        journey. Reach out to us through any of these channels.
+                                    </p>
+
+                                    <div class="tr-contact-detail">
+                                        <div class="tr-contact-detail-icon">
+                                            <i class="fa fa-map-marker"/>
+                                        </div>
+                                        <div>
+                                            <h6>Office Address</h6>
+                                            <span>Abu Dhabi, Al Bateen Commercial Tower</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tr-contact-detail">
+                                        <div class="tr-contact-detail-icon">
+                                            <i class="fa fa-envelope"/>
+                                        </div>
+                                        <div>
+                                            <h6>Email</h6>
+                                            <a href="mailto:info@techriseae.com">info@techriseae.com</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tr-contact-detail">
+                                        <div class="tr-contact-detail-icon">
+                                            <i class="fa fa-whatsapp"/>
+                                        </div>
+                                        <div>
+                                            <h6>WhatsApp</h6>
+                                            <a href="https://wa.me/971585755064">Chat with us</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tr-contact-detail">
+                                        <div class="tr-contact-detail-icon">
+                                            <i class="fa fa-clock-o"/>
+                                        </div>
+                                        <div>
+                                            <h6>Working Hours</h6>
+                                            <span>Sunday - Thursday: 9:00 AM - 6:00 PM</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="tr-social-links">
+                                        <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                                        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"/></a>
+                                        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"/></a>
+                                        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Map Section -->
+                <section class="tr-section tr-section-light" style="padding-top: 0;">
+                    <div class="container">
+                        <div class="tr-animate" style="border-radius: 20px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.12);">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3631.5!2d54.35!3d24.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAl+Bateen%2C+Abu+Dhabi!5e0!3m2!1sen!2sae!4v1700000000000"
+                                    width="100%" height="400" style="border:0;" allowfullscreen=""
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    title="Techrise Office Location"/>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,1554 @@
+// ============================================================
+// Techrise Website - Professional Odoo Partner Styles
+// Brand: Blue #1A5DAB | Gold #F5B731 | Navy #0D1B3E
+// ============================================================
+
+// --- Variables ---
+$tr-blue: #1A5DAB;
+$tr-blue-dark: #14478A;
+$tr-blue-light: #2E7BD6;
+$tr-gold: #F5B731;
+$tr-gold-light: #FFD06A;
+$tr-navy: #0D1B3E;
+$tr-navy-light: #152952;
+$tr-dark: #0A1225;
+$tr-white: #FFFFFF;
+$tr-lavender: #EEEDF5;
+$tr-lavender-light: #F5F4FA;
+$tr-gray-50: #F8FAFC;
+$tr-gray-100: #F1F5F9;
+$tr-gray-200: #E2E8F0;
+$tr-gray-300: #CBD5E1;
+$tr-gray-500: #64748B;
+$tr-gray-600: #475569;
+$tr-gray-700: #334155;
+$tr-gray-800: #1E293B;
+$tr-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+$tr-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+$tr-shadow-blue: 0 8px 30px rgba(26, 93, 171, 0.25);
+$tr-radius: 12px;
+$tr-radius-lg: 20px;
+$tr-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// --- Global Overrides ---
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+// --- Section Base ---
+.tr-section {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        padding: 50px 0;
+    }
+}
+
+.tr-section-dark {
+    background: linear-gradient(135deg, rgba($tr-navy, 0.92) 0%, rgba($tr-dark, 0.88) 100%),
+                url('/techrise_website/static/src/img/bg/circuit-board.jpg') center/cover no-repeat;
+    color: $tr-white;
+}
+
+.tr-section-light {
+    background: $tr-lavender;
+}
+
+.tr-section-white {
+    background: $tr-white;
+}
+
+.tr-section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $tr-navy;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+}
+
+.tr-section-title-light {
+    color: $tr-white;
+}
+
+.tr-section-subtitle {
+    font-size: 1.125rem;
+    color: $tr-gray-500;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+.tr-section-subtitle-light {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tr-gold-line {
+    width: 60px;
+    height: 4px;
+    background: $tr-gold;
+    border-radius: 2px;
+    margin: 1rem auto 1.5rem;
+}
+
+// ============================================================
+// HEADER OVERLAY ON HERO - make navbar float over hero
+// ============================================================
+#wrapwrap.homepage > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent !important;
+    padding-top: 10px;
+
+    .navbar {
+        background: transparent !important;
+        box-shadow: none !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+    // Make logo bigger
+    .navbar-brand img {
+        height: 70px !important;
+        width: auto !important;
+        max-height: none !important;
+    }
+
+    // Push nav links down to align with bigger logo
+    #top_menu {
+        margin-top: 12px;
+    }
+
+    .nav-link {
+        color: rgba($tr-white, 0.85) !important;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 10px 20px !important;
+
+        &:hover, &.active {
+            color: $tr-gold !important;
+        }
+    }
+
+    &.o_header_is_scrolled {
+        position: fixed;
+        background: rgba($tr-navy, 0.95) !important;
+        backdrop-filter: blur(20px);
+        padding-top: 0;
+
+        .navbar {
+            background: transparent !important;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+        }
+
+        .navbar-brand img {
+            height: 50px !important;
+        }
+
+        #top_menu {
+            margin-top: 6px;
+        }
+    }
+}
+
+// ============================================================
+// HERO SECTION - Video Background
+// ============================================================
+.tr-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: $tr-navy; // fallback while video loads
+}
+
+// Fullscreen Vimeo video background - covers entire section
+.tr-hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+
+    iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 56.25vw; // 16:9 aspect ratio
+        min-height: 100vh;
+        min-width: 177.78vh; // 16:9 inverse
+        transform: translate(-50%, -50%);
+        border: 0;
+    }
+}
+
+// Dark overlay for text readability
+.tr-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($tr-dark, 0.55);
+    z-index: 2;
+}
+
+// Centered content over video
+.tr-hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.tr-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.tr-text-blue-light {
+    color: $tr-blue-light;
+}
+
+.tr-hero h1 {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: $tr-white;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    animation: fadeInUp 0.8s ease-out 0.15s both;
+
+    @media (max-width: 992px) {
+        font-size: 2.75rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 2rem;
+    }
+}
+
+.tr-hero-description {
+    font-size: 1.25rem;
+    color: rgba($tr-white, 0.8);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    animation: fadeInUp 0.8s ease-out 0.3s both;
+
+    @media (max-width: 576px) {
+        font-size: 1.05rem;
+    }
+}
+
+.tr-hero-btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeInUp 0.8s ease-out 0.45s both;
+}
+
+// ============================================================
+// BUTTONS
+// ============================================================
+.tr-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none !important;
+    transition: $tr-transition;
+    border: 2px solid transparent;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+
+    i { font-size: 0.9em; transition: transform 0.3s; }
+
+    &:hover i { transform: translateX(3px); }
+}
+
+.tr-btn-primary {
+    background: $tr-gold;
+    color: $tr-navy !important;
+    border-color: $tr-gold;
+
+    &:hover {
+        background: $tr-gold-light;
+        border-color: $tr-gold-light;
+        box-shadow: 0 8px 25px rgba($tr-gold, 0.4);
+        transform: translateY(-2px);
+    }
+}
+
+.tr-btn-outline {
+    background: transparent;
+    color: $tr-white !important;
+    border-color: rgba($tr-white, 0.3);
+
+    &:hover {
+        background: rgba($tr-white, 0.1);
+        border-color: $tr-white;
+        transform: translateY(-2px);
+    }
+}
+
+.tr-btn-blue {
+    background: $tr-blue;
+    color: $tr-white !important;
+    border-color: $tr-blue;
+
+    &:hover {
+        background: $tr-blue-dark;
+        border-color: $tr-blue-dark;
+        box-shadow: $tr-shadow-blue;
+        transform: translateY(-2px);
+    }
+}
+
+.tr-btn-dark {
+    background: $tr-navy;
+    color: $tr-white !important;
+    border-color: $tr-navy;
+
+    &:hover {
+        background: $tr-navy-light;
+        box-shadow: $tr-shadow-lg;
+        transform: translateY(-2px);
+    }
+}
+
+// ============================================================
+// STATS COUNTER BAR
+// ============================================================
+.tr-stats {
+    background: $tr-white;
+    padding: 0;
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+}
+
+.tr-stats-inner {
+    background: $tr-white;
+    border-radius: $tr-radius-lg;
+    box-shadow: $tr-shadow-lg;
+    padding: 50px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+    }
+}
+
+.tr-stat-item {
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+
+    &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 1px;
+        background: $tr-gray-200;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .tr-stat-number {
+        font-size: 3rem;
+        font-weight: 900;
+        color: $tr-blue;
+        line-height: 1;
+        margin-bottom: 0.25rem;
+
+        .tr-stat-suffix {
+            color: $tr-gold;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 2.25rem;
+        }
+    }
+
+    .tr-stat-label {
+        font-size: 0.95rem;
+        color: $tr-gray-500;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+}
+
+// ============================================================
+// SERVICES SECTION
+// ============================================================
+.tr-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-service-card {
+    background: $tr-white;
+    border-radius: $tr-radius;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: $tr-shadow;
+    border: 1px solid $tr-gray-100;
+    transition: $tr-transition;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $tr-blue, $tr-gold);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: left;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $tr-shadow-lg;
+
+        &::before {
+            transform: scaleX(1);
+        }
+
+        .tr-service-icon {
+            background: $tr-blue;
+            color: $tr-white;
+            transform: scale(1.08);
+        }
+    }
+}
+
+.tr-service-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: rgba($tr-blue, 0.08);
+    color: $tr-blue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+    transition: $tr-transition;
+}
+
+.tr-service-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $tr-navy;
+    margin-bottom: 0.75rem;
+}
+
+.tr-service-card p {
+    font-size: 0.95rem;
+    color: $tr-gray-500;
+    line-height: 1.65;
+}
+
+// ============================================================
+// ABOUT / WHY CHOOSE US
+// ============================================================
+.tr-about-img-wrapper {
+    position: relative;
+    border-radius: $tr-radius-lg;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        right: -15px;
+        width: 60%;
+        height: 60%;
+        border: 4px solid $tr-gold;
+        border-radius: $tr-radius-lg;
+        z-index: -1;
+    }
+}
+
+.tr-about-img {
+    width: 100%;
+    border-radius: $tr-radius-lg;
+    object-fit: cover;
+}
+
+.tr-feature-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 1.5rem;
+
+    .tr-feature-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 12px;
+        background: rgba($tr-blue, 0.08);
+        color: $tr-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: $tr-transition;
+    }
+
+    &:hover .tr-feature-icon {
+        background: $tr-blue;
+        color: $tr-white;
+    }
+
+    h5 {
+        font-weight: 700;
+        color: $tr-navy;
+        margin-bottom: 0.25rem;
+        font-size: 1.05rem;
+    }
+
+    p {
+        color: $tr-gray-500;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+// WHY CHOOSE US - Card Grid
+.tr-why-card {
+    background: $tr-white;
+    border-radius: $tr-radius;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: $tr-shadow;
+    border: 1px solid $tr-gray-100;
+    transition: $tr-transition;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $tr-blue, $tr-gold);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: center;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: $tr-shadow-lg;
+
+        &::after {
+            transform: scaleX(1);
+        }
+
+        .tr-why-icon {
+            background: linear-gradient(135deg, $tr-blue, $tr-blue-light);
+            color: $tr-white;
+            transform: scale(1.1);
+        }
+    }
+
+    .tr-why-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: rgba($tr-blue, 0.08);
+        color: $tr-blue;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+        transition: $tr-transition;
+    }
+
+    h5 {
+        font-weight: 800;
+        color: $tr-navy;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+    p {
+        color: $tr-gray-500;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+// ============================================================
+// INDUSTRIES SECTION
+// ============================================================
+.tr-industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-industry-card {
+    background: rgba($tr-white, 0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba($tr-white, 0.1);
+    border-radius: $tr-radius;
+    padding: 35px 25px;
+    text-align: center;
+    transition: $tr-transition;
+    cursor: default;
+
+    &:hover {
+        background: rgba($tr-white, 0.12);
+        transform: translateY(-6px);
+        border-color: $tr-gold;
+
+        .tr-industry-icon {
+            background: $tr-gold;
+            color: $tr-navy;
+        }
+    }
+
+    .tr-industry-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 16px;
+        background: rgba($tr-white, 0.1);
+        color: $tr-gold;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        transition: $tr-transition;
+    }
+
+    h5 {
+        color: $tr-white;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        font-size: 1.05rem;
+    }
+
+    p {
+        color: rgba($tr-white, 0.6);
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+// ============================================================
+// PROCESS / METHODOLOGY
+// ============================================================
+.tr-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    position: relative;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-process-card {
+    text-align: center;
+    position: relative;
+
+    .tr-process-number {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, $tr-blue, $tr-blue-light);
+        color: $tr-white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1.25rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    h5 {
+        font-weight: 700;
+        color: $tr-navy;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: $tr-gray-500;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: calc(50% + 35px);
+        width: calc(100% - 70px);
+        height: 2px;
+        background: linear-gradient(90deg, $tr-blue, $tr-gold);
+        z-index: 1;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+// ============================================================
+// TESTIMONIALS
+// ============================================================
+.tr-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-testimonial-card {
+    background: $tr-white;
+    border-radius: $tr-radius;
+    padding: 35px 30px;
+    box-shadow: $tr-shadow;
+    border: 1px solid $tr-gray-100;
+    transition: $tr-transition;
+    position: relative;
+
+    &::before {
+        content: '\201C';
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 4rem;
+        color: rgba($tr-blue, 0.08);
+        font-family: Georgia, serif;
+        line-height: 1;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $tr-shadow-lg;
+    }
+
+    .tr-testimonial-stars {
+        color: $tr-gold;
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .tr-testimonial-text {
+        color: $tr-gray-600;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+
+    .tr-testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .tr-testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, $tr-blue, $tr-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $tr-white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        h6 {
+            font-weight: 700;
+            color: $tr-navy;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        span {
+            font-size: 0.8rem;
+            color: $tr-gray-500;
+        }
+    }
+}
+
+// ============================================================
+// PARTNER BADGE / CTA SECTION
+// ============================================================
+.tr-cta-section {
+    background: $tr-lavender;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -30%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba($tr-blue, 0.06) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: $tr-navy;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    p {
+        color: $tr-gray-600;
+        font-size: 1.15rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        line-height: 1.7;
+    }
+}
+
+.tr-odoo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba($tr-blue, 0.08);
+    border: 1px solid rgba($tr-blue, 0.15);
+    border-radius: 60px;
+    padding: 12px 28px;
+    margin-bottom: 2rem;
+
+    img {
+        height: 36px;
+    }
+
+    i {
+        color: $tr-blue !important;
+    }
+
+    span {
+        color: $tr-navy;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+// ============================================================
+// CLIENTS LOGO SECTION
+// ============================================================
+.tr-clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.tr-client-logo {
+    height: 45px;
+    opacity: 0.4;
+    filter: grayscale(100%);
+    transition: $tr-transition;
+
+    &:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+}
+
+// ============================================================
+// CONTACT FORM
+// ============================================================
+.tr-contact-form {
+    background: $tr-white;
+    border-radius: $tr-radius-lg;
+    padding: 50px 40px;
+    box-shadow: $tr-shadow-lg;
+
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+    }
+}
+
+.tr-form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        font-weight: 600;
+        color: $tr-navy;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 14px 18px;
+        border: 2px solid $tr-gray-200;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        transition: $tr-transition;
+        background: $tr-gray-50;
+        color: $tr-navy;
+
+        &:focus {
+            border-color: $tr-blue;
+            background: $tr-white;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba($tr-blue, 0.1);
+        }
+
+        &::placeholder {
+            color: $tr-gray-300;
+        }
+    }
+
+    textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+}
+
+.tr-contact-info-card {
+    background: $tr-navy;
+    border-radius: $tr-radius-lg;
+    padding: 50px 40px;
+    color: $tr-white;
+    height: 100%;
+
+    @media (max-width: 768px) {
+        padding: 30px 20px;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: rgba($tr-white, 0.65);
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+}
+
+.tr-contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 1.5rem;
+
+    .tr-contact-detail-icon {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        border-radius: 12px;
+        background: rgba($tr-white, 0.1);
+        color: $tr-gold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+
+    h6 {
+        color: $tr-white;
+        font-weight: 700;
+        margin: 0 0 2px;
+        font-size: 0.9rem;
+    }
+
+    span, a {
+        color: rgba($tr-white, 0.65);
+        font-size: 0.9rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $tr-gold;
+    }
+}
+
+.tr-social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 2rem;
+
+    a {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: rgba($tr-white, 0.1);
+        color: $tr-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none !important;
+        transition: $tr-transition;
+
+        &:hover {
+            background: $tr-gold;
+            color: $tr-navy;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+// ============================================================
+// CUSTOM HEADER / NAVBAR (non-homepage pages)
+// ============================================================
+.tr-navbar {
+    background: $tr-navy !important;
+    transition: $tr-transition;
+    padding: 10px 0 !important;
+
+    .navbar-brand img {
+        height: 55px !important;
+        width: auto !important;
+        max-height: none !important;
+    }
+
+    .nav-link {
+        color: rgba($tr-white, 0.85) !important;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 8px 18px !important;
+        border-radius: 8px;
+        transition: $tr-transition;
+
+        &:hover, &.active {
+            color: $tr-gold !important;
+        }
+    }
+}
+
+.tr-nav-cta {
+    background: $tr-gold !important;
+    color: $tr-navy !important;
+    border-radius: 50px !important;
+    padding: 10px 24px !important;
+    font-weight: 700 !important;
+
+    &:hover {
+        background: $tr-gold-light !important;
+        transform: translateY(-1px);
+    }
+}
+
+// ============================================================
+// CUSTOM FOOTER
+// ============================================================
+.tr-footer {
+    background: $tr-dark;
+    padding-top: 80px;
+    color: rgba($tr-white, 0.7);
+
+    h5 {
+        color: $tr-white;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-bottom: 12px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 3px;
+            background: $tr-gold;
+            border-radius: 2px;
+        }
+    }
+
+    a {
+        color: rgba($tr-white, 0.6);
+        text-decoration: none;
+        transition: $tr-transition;
+        font-size: 0.9rem;
+
+        &:hover {
+            color: $tr-gold;
+            padding-left: 5px;
+        }
+    }
+
+    .tr-footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .tr-footer-contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 14px;
+        font-size: 0.9rem;
+
+        i {
+            color: $tr-gold;
+            margin-top: 3px;
+            min-width: 16px;
+        }
+    }
+
+    .tr-footer-bottom {
+        border-top: 1px solid rgba($tr-white, 0.1);
+        margin-top: 50px;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 0.85rem;
+
+        a {
+            color: $tr-gold;
+            font-weight: 600;
+        }
+    }
+}
+
+.tr-footer-logo {
+    max-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.tr-footer-about {
+    color: rgba($tr-white, 0.55);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+// ============================================================
+// ANIMATIONS - Content visible by default, animations enhance
+// ============================================================
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// Default: content is VISIBLE
+.tr-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// Only hide and animate when JS has loaded (adds this class)
+.tr-js-ready .tr-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+
+    &.animated {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tr-js-ready .tr-animate-delay-1 { transition-delay: 0.1s; }
+.tr-js-ready .tr-animate-delay-2 { transition-delay: 0.2s; }
+.tr-js-ready .tr-animate-delay-3 { transition-delay: 0.3s; }
+.tr-js-ready .tr-animate-delay-4 { transition-delay: 0.4s; }
+
+// ============================================================
+// PAGE HEADER (for inner pages)
+// ============================================================
+.tr-page-header {
+    background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
+                url('/techrise_website/static/src/img/bg/page-header.jpg') center/cover no-repeat;
+    padding: 140px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -30%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba($tr-gold, 0.08) 0%, transparent 70%);
+    }
+
+    // Page-specific header backgrounds
+    &.tr-header-services {
+        background: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
+                    url('/techrise_website/static/src/img/bg/services-header.jpg') center/cover no-repeat;
+    }
+
+    &.tr-header-server {
+        background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
+                    url('/techrise_website/static/src/img/bg/server-room.jpg') center/cover no-repeat;
+    }
+
+    &.tr-header-contact {
+        background: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
+                    url('/techrise_website/static/src/img/bg/contact-office.jpg') center/cover no-repeat;
+    }
+
+    &.tr-header-about {
+        background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
+                    url('/techrise_website/static/src/img/bg/about-meeting.jpg') center/cover no-repeat;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        color: $tr-white;
+        margin-bottom: 0.75rem;
+    }
+
+    p {
+        color: rgba($tr-white, 0.7);
+        font-size: 1.15rem;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .tr-breadcrumb {
+        margin-top: 1.5rem;
+
+        a, span {
+            color: rgba($tr-white, 0.5);
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        a:hover { color: $tr-gold; }
+        .active { color: $tr-gold; }
+    }
+}
+
+// ============================================================
+// ABOUT PAGE
+// ============================================================
+.tr-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-value-card {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: $tr-radius;
+    background: $tr-white;
+    box-shadow: $tr-shadow;
+    border: 1px solid $tr-gray-100;
+    transition: $tr-transition;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: $tr-shadow-lg;
+    }
+
+    .tr-value-icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba($tr-blue, 0.1), rgba($tr-gold, 0.1));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        color: $tr-blue;
+        margin-bottom: 1.25rem;
+    }
+
+    h5 {
+        font-weight: 700;
+        color: $tr-navy;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: $tr-gray-500;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+// ============================================================
+// SERVICES PAGE (detail)
+// ============================================================
+.tr-service-detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $tr-gray-100;
+
+    &:nth-child(even) {
+        direction: rtl;
+        > * { direction: ltr; }
+    }
+
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        &:nth-child(even) {
+            direction: ltr;
+        }
+    }
+}
+
+.tr-service-detail-icon {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, rgba($tr-blue, 0.05), rgba($tr-gold, 0.05));
+    border-radius: $tr-radius-lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: $tr-blue;
+}
+
+.tr-service-detail-content {
+    h3 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: $tr-navy;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $tr-gray-500;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding: 6px 0;
+            color: $tr-gray-600;
+            font-size: 0.95rem;
+
+            &::before {
+                content: '\f00c';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                color: $tr-gold;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+// ============================================================
+// HIDE PHONE NUMBER, SEARCH & CTA FROM HEADER
+// ============================================================
+
+// Hide phone number / text element (s_text_block with tel: link)
+header .s_text_block,
+header a[href^="tel:"],
+header .navbar-phone,
+header .o_nav-link_secondary {
+    display: none !important;
+}
+
+// Hide search modal button and search modal
+header a[data-bs-target="#o_search_modal"],
+#o_search_modal,
+header .oe_search_box,
+header .oe_search_button,
+header .o_searchbar_form,
+header .s_searchbar_input {
+    display: none !important;
+}
+
+// Hide Contact Us CTA button (btn_cta / oe_structure_solo)
+header .btn_cta,
+header .oe_structure_solo,
+header .o_header_call_to_action {
+    display: none !important;
+}
+
+// Hide "Powered by Odoo" branding
+.o_brand_promotion,
+footer a[href*="odoo.com"],
+.o_footer_copyright a[href*="odoo.com"],
+a.badge[href*="odoo.com"] {
+    display: none !important;
+}
+
+// ============================================================
+// SERVICE CARD SVG IMAGES
+// ============================================================
+.tr-service-icon-img {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1.25rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+// ============================================================
+// PARTNER ITEMS
+// ============================================================
+.tr-partner-item {
+    padding: 20px 15px;
+    border-radius: $tr-radius;
+    background: $tr-white;
+    box-shadow: $tr-shadow;
+    border: 1px solid $tr-gray-100;
+    transition: $tr-transition;
+    height: 100%;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $tr-shadow-lg;
+        border-color: $tr-gold;
+    }
+
+    i {
+        margin-bottom: 0.75rem;
+    }
+
+    h6 {
+        font-weight: 700;
+        color: $tr-navy;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    small {
+        color: $tr-gray-500;
+        font-size: 0.8rem;
+    }
+}
+
+// ============================================================
+// UTILITIES
+// ============================================================
+.tr-text-blue { color: $tr-blue; }
+.tr-text-gold { color: $tr-gold; }
+.tr-text-navy { color: $tr-navy; }
+.tr-bg-blue { background: $tr-blue; }
+.tr-bg-gold { background: $tr-gold; }
+.tr-bg-navy { background: $tr-navy; }
+
+// Odoo header on homepage is handled by the overlay rules at the top

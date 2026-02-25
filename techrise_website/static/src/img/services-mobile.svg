@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="m1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A5DAB"/>
+      <stop offset="100%" style="stop-color:#2E7BD6"/>
+    </linearGradient>
+    <linearGradient id="m2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5B731"/>
+      <stop offset="100%" style="stop-color:#FFD06A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="150" r="130" fill="url(#m1)" opacity="0.04"/>
+  <!-- Main phone -->
+  <rect x="140" y="20" width="120" height="240" rx="16" fill="#0D1B3E"/>
+  <rect x="150" y="40" width="100" height="195" rx="6" fill="#1a2744"/>
+  <circle cx="200" cy="30" r="4" fill="#2E7BD6" opacity="0.4"/>
+  <circle cx="200" cy="250" r="10" fill="#152952"/>
+  <!-- App content -->
+  <rect x="160" y="50" width="80" height="30" rx="6" fill="url(#m1)" opacity="0.2"/>
+  <rect x="160" y="90" width="80" height="20" rx="4" fill="url(#m2)" opacity="0.15"/>
+  <rect x="160" y="120" width="80" height="8" rx="3" fill="white" opacity="0.15"/>
+  <rect x="160" y="134" width="60" height="8" rx="3" fill="white" opacity="0.1"/>
+  <rect x="160" y="155" width="35" height="35" rx="6" fill="url(#m1)" opacity="0.15"/>
+  <rect x="205" y="155" width="35" height="35" rx="6" fill="url(#m2)" opacity="0.12"/>
+  <rect x="160" y="200" width="80" height="25" rx="12" fill="url(#m2)" opacity="0.4"/>
+  <!-- Floating UI elements -->
+  <rect x="280" y="60" width="90" height="60" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="305" cy="80" r="10" fill="url(#m1)" opacity="0.2"/>
+  <rect x="320" y="76" width="40" height="4" rx="2" fill="#CBD5E1"/>
+  <rect x="320" y="84" width="30" height="4" rx="2" fill="#E2E8F0"/>
+  <rect x="290" y="100" width="70" height="12" rx="6" fill="url(#m2)" opacity="0.3"/>
+  <!-- Code bracket -->
+  <text x="50" y="120" font-family="monospace" font-size="40" fill="url(#m1)" opacity="0.15">&lt;/&gt;</text>
+  <!-- Android + iOS -->
+  <rect x="310" y="180" width="70" height="24" rx="12" fill="#0D1B3E" opacity="0.1"/>
+  <text x="345" y="196" font-family="Arial,sans-serif" font-size="9" fill="#0D1B3E" text-anchor="middle" opacity="0.5">Android</text>
+  <rect x="310" y="212" width="70" height="24" rx="12" fill="#0D1B3E" opacity="0.1"/>
+  <text x="345" y="228" font-family="Arial,sans-serif" font-size="9" fill="#0D1B3E" text-anchor="middle" opacity="0.5">iOS</text>
+  <!-- Notification -->
+  <rect x="30" y="60" width="80" height="50" rx="10" fill="white" opacity="0.9" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="52" cy="78" r="8" fill="url(#m2)" opacity="0.3"/>
+  <rect x="66" y="74" width="35" height="4" rx="2" fill="#CBD5E1"/>
+  <rect x="66" y="82" width="25" height="4" rx="2" fill="#E2E8F0"/>
+  <circle cx="100" cy="64" r="6" fill="#EF4444" opacity="0.7"/>
+  <text x="100" y="67" font-family="Arial,sans-serif" font-size="7" fill="white" text-anchor="middle">1</text>
+</svg>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- HOMEPAGE TEMPLATE                                             -->
+    <!-- ============================================================ -->
+    <template id="techrise_homepage" inherit_id="website.homepage" name="Techrise Homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap">
+
+                <!-- ======== HERO SECTION WITH VIDEO BACKGROUND ======== -->
+                <section class="tr-hero">
+                    <div class="tr-hero-video-bg">
+                        <iframe src="https://player.vimeo.com/video/1138384954?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1&amp;background=1"
+                                frameborder="0"
+                                allow="autoplay; fullscreen"
+                                allowfullscreen="allowfullscreen"
+                                title="Techrise Hero Video"/>
+                    </div>
+                    <div class="tr-hero-overlay"/>
+                    <div class="container">
+                        <div class="tr-hero-content text-center">
+                            <h1>
+                                Your Partner in Organized
+                                <span class="tr-text-gold">Digital Transformation</span>
+                            </h1>
+                            <p class="tr-hero-description">
+                                We support companies and organizations in rebuilding their operational
+                                processes through modern digital methodology based on organization,
+                                accuracy, and sustainability
+                            </p>
+                            <div class="tr-hero-btns">
+                                <a href="/contact" class="tr-btn tr-btn-primary">
+                                    Get a Free Consultation
+                                </a>
+                                <a href="/services" class="tr-btn tr-btn-outline">
+                                    Explore Our Services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== STATS COUNTER ======== -->
+                <section class="tr-stats">
+                    <div class="container">
+                        <div class="tr-stats-inner">
+                            <div class="tr-stat-item">
+                                <div class="tr-stat-number">
+                                    <span class="tr-counter" data-target="100">0</span>
+                                    <span class="tr-stat-suffix">+</span>
+                                </div>
+                                <div class="tr-stat-label">Projects Delivered</div>
+                            </div>
+                            <div class="tr-stat-item">
+                                <div class="tr-stat-number">
+                                    <span class="tr-counter" data-target="50">0</span>
+                                    <span class="tr-stat-suffix">+</span>
+                                </div>
+                                <div class="tr-stat-label">Happy Clients</div>
+                            </div>
+                            <div class="tr-stat-item">
+                                <div class="tr-stat-number">
+                                    <span class="tr-counter" data-target="15">0</span>
+                                    <span class="tr-stat-suffix">+</span>
+                                </div>
+                                <div class="tr-stat-label">Countries Served</div>
+                            </div>
+                            <div class="tr-stat-item">
+                                <div class="tr-stat-number">
+                                    <span class="tr-counter" data-target="30">0</span>
+                                    <span class="tr-stat-suffix">+</span>
+                                </div>
+                                <div class="tr-stat-label">Expert Consultants</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== ABOUT SECTION (White) ======== -->
+                <section class="tr-section tr-section-white" id="about-home">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <img src="/techrise_website/static/src/img/bg/about-team-4.jpg"
+                                     alt="Techrise Digital Transformation" class="img-fluid rounded-4 shadow-lg"
+                                     style="width: 100%; object-fit: cover;"/>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 class="tr-section-title tr-animate">
+                                    About <span class="tr-text-gold">Techrise</span>
+                                </h2>
+                                <div class="tr-gold-line" style="margin-left: 0;"/>
+                                <p class="tr-animate tr-animate-delay-1" style="color: #64748B; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    Techrise is a specialized entity providing comprehensive technical and
+                                    administrative solutions. As an accredited Odoo partner, we support companies
+                                    in rebuilding their operational processes through modern digital methodology
+                                    based on organization, accuracy, and sustainability.
+                                </p>
+                                <p class="tr-animate tr-animate-delay-2" style="color: #64748B; line-height: 1.8;">
+                                    We focus on transforming operational complexity into intelligent,
+                                    interconnected systems that enable departments to work within a unified
+                                    framework, ensuring data clarity and improved performance efficiency.
+                                </p>
+                                <a href="/about" class="tr-btn tr-btn-blue mt-3 tr-animate tr-animate-delay-3">
+                                    Learn More <i class="fa fa-arrow-right"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== SERVICES SECTION ======== -->
+                <section class="tr-section tr-section-light" id="services">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">Our Services</h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                Comprehensive digital solutions tailored to your business needs.
+                                From ERP systems to mobile apps, we've got you covered.
+                            </p>
+                        </div>
+                        <div class="tr-services-grid">
+                            <div class="tr-service-card tr-animate">
+                                <div class="tr-service-icon-img">
+                                    <img src="/techrise_website/static/src/img/services-erp.svg" alt="ERP Systems"/>
+                                </div>
+                                <h4>ERP System Design (Odoo)</h4>
+                                <p>
+                                    Comprehensive ERP systems tailored to your business -
+                                    Accounting, Sales, Inventory, HR, and Procurement in one unified platform.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                <div class="tr-service-icon-img">
+                                    <img src="/techrise_website/static/src/img/services-web.svg" alt="Website Development"/>
+                                </div>
+                                <h4>Website Design &amp; Development</h4>
+                                <p>
+                                    Professional websites with strong visual identity,
+                                    responsive across all devices with fast loading and great UX.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                <div class="tr-service-icon-img">
+                                    <img src="/techrise_website/static/src/img/services-mobile.svg" alt="Mobile Apps"/>
+                                </div>
+                                <h4>Mobile App Development</h4>
+                                <p>
+                                    Android and iOS apps with high performance, security,
+                                    and seamless integration with Odoo or any other platforms.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-plug"/>
+                                </div>
+                                <h4>System Integration</h4>
+                                <p>
+                                    Integration between Odoo and other software, government authorities,
+                                    and official platforms for unified data and faster operations.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-calculator"/>
+                                </div>
+                                <h4>Accounting &amp; Tax Services</h4>
+                                <p>
+                                    VAT filing, Corporate Tax returns, accounting organization,
+                                    and establishment of qualified accounting teams.
+                                </p>
+                            </div>
+                            <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                <div class="tr-service-icon">
+                                    <i class="fa fa-bullhorn"/>
+                                </div>
+                                <h4>Branding &amp; Marketing</h4>
+                                <p>
+                                    Complete brand identity, marketing strategies, smart campaigns
+                                    integrated with operational systems for measurable results.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <a href="/services" class="tr-btn tr-btn-dark tr-animate">
+                                View All Services <i class="fa fa-arrow-right"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== WHY CHOOSE US (White) ======== -->
+                <section class="tr-section tr-section-white" id="why-us">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">
+                                Why Choose <span class="tr-text-gold">Techrise</span>?
+                            </h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                A deep understanding of organizational operations, scientific digital principles,
+                                and scalable solutions built for growth.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-search"/>
+                                    </div>
+                                    <h5>Deep Business Analysis</h5>
+                                    <p>We analyze your work environment accurately to provide solutions that reflect operational reality.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate tr-animate-delay-1">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-shield"/>
+                                    </div>
+                                    <h5>Proven Solutions</h5>
+                                    <p>Tested software and technical solutions trusted by leading companies with reliable high-quality results.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate tr-animate-delay-2">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-users"/>
+                                    </div>
+                                    <h5>Expert Team</h5>
+                                    <p>Specialists in information systems, technical intelligence, and software development with precision and usability.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <div class="tr-why-card tr-animate tr-animate-delay-3">
+                                    <div class="tr-why-icon">
+                                        <i class="fa fa-expand"/>
+                                    </div>
+                                    <h5>Scalable Solutions</h5>
+                                    <p>Solutions adaptable to technological changes and growth requirements for sustainable digital transformation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== OUR PROCESS ======== -->
+                <section class="tr-section tr-section-light" id="process">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">How We Work</h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                Our proven methodology ensures successful project delivery every time.
+                            </p>
+                        </div>
+                        <div class="tr-process-grid">
+                            <div class="tr-process-card tr-animate">
+                                <div class="tr-process-number">1</div>
+                                <h5>Analysis</h5>
+                                <p>Comprehensive analysis of the current work environment and precise evaluation of operational workflows.</p>
+                            </div>
+                            <div class="tr-process-card tr-animate tr-animate-delay-1">
+                                <div class="tr-process-number">2</div>
+                                <h5>Design &amp; Plan</h5>
+                                <p>Design integrated technical solutions balancing operational requirements with strategic objectives.</p>
+                            </div>
+                            <div class="tr-process-card tr-animate tr-animate-delay-2">
+                                <div class="tr-process-number">3</div>
+                                <h5>Implement</h5>
+                                <p>System implementation according to clear standards with data migration and rigorous testing.</p>
+                            </div>
+                            <div class="tr-process-card tr-animate tr-animate-delay-3">
+                                <div class="tr-process-number">4</div>
+                                <h5>Support &amp; Grow</h5>
+                                <p>Ongoing support and development ensuring system stability and ability to adapt to business growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== INDUSTRIES (Dark Section) ======== -->
+                <section class="tr-section tr-section-dark" id="industries">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-section-title-light tr-animate">
+                                Industries We Serve
+                            </h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-section-subtitle-light tr-animate tr-animate-delay-1">
+                                Flexible and scalable ERP solutions that support a variety of sectors.
+                            </p>
+                        </div>
+                        <div class="tr-industries-grid">
+                            <div class="tr-industry-card tr-animate">
+                                <div class="tr-industry-icon"><i class="fa fa-heartbeat"/></div>
+                                <h5>Medical Centers</h5>
+                                <p>Patient management, billing, pharmacy, and compliance</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-1">
+                                <div class="tr-industry-icon"><i class="fa fa-building"/></div>
+                                <h5>Real Estate</h5>
+                                <p>Property management, contracts, CRM, and accounting</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-2">
+                                <div class="tr-industry-icon"><i class="fa fa-wrench"/></div>
+                                <h5>Construction</h5>
+                                <p>Project cost tracking, procurement, and resource planning</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-3">
+                                <div class="tr-industry-icon"><i class="fa fa-medkit"/></div>
+                                <h5>Pharmacies</h5>
+                                <p>Inventory, prescriptions, POS, and supplier management</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate">
+                                <div class="tr-industry-icon"><i class="fa fa-futbol-o"/></div>
+                                <h5>Sports Clubs</h5>
+                                <p>Membership, scheduling, billing, and facility management</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-1">
+                                <div class="tr-industry-icon"><i class="fa fa-handshake-o"/></div>
+                                <h5>Cooperative Associations</h5>
+                                <p>Member management, operations, and financial tracking</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-2">
+                                <div class="tr-industry-icon"><i class="fa fa-shopping-cart"/></div>
+                                <h5>Retail &amp; POS</h5>
+                                <p>Point of sale, multi-branch, inventory, and omnichannel</p>
+                            </div>
+                            <div class="tr-industry-card tr-animate tr-animate-delay-3">
+                                <div class="tr-industry-icon"><i class="fa fa-plane"/></div>
+                                <h5>Travel &amp; Tourism</h5>
+                                <p>Booking, CRM, invoicing, and partner management</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ======== CTA SECTION ======== -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <div class="tr-odoo-badge tr-animate">
+                            <i class="fa fa-handshake-o" style="font-size: 1.5rem;"/>
+                            <span>Official Odoo Partner</span>
+                        </div>
+                        <h2 class="tr-animate tr-animate-delay-1">
+                            Ready to Transform Your Business?
+                        </h2>
+                        <p class="tr-animate tr-animate-delay-2">
+                            We accompany our clients throughout all stages of digital transformation -
+                            from consultation and planning, through implementation, to ongoing support.
+                        </p>
+                        <div class="tr-animate tr-animate-delay-3">
+                            <a href="/contactus" class="tr-btn tr-btn-primary" style="margin-right: 12px;">
+                                Get Started <i class="fa fa-arrow-right"/>
+                            </a>
+                            <a href="/services" class="tr-btn tr-btn-dark">
+                                View Services <i class="fa fa-th-large"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

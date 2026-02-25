@@ -1,0 +1,38 @@
+{
+    'name': 'Techrise Website',
+    'version': '18.0.1.0.0',
+    'category': 'Website',
+    'summary': 'Professional Website for Techrise - Your Partner in Organized Digital Transformation',
+    'description': """
+        Professional website module for Techrise company.
+        Features:
+        - Modern homepage with hero video, stats, services, industries, partners
+        - About Us, Services, Server & Hosting, and Contact pages
+        - Custom header and footer with real company info
+        - SVG illustrations for service sections
+        - Animated counters, card hover effects, smooth scrolling
+        - Phone number and search hidden from navigation
+        - Fully responsive design
+        - Techrise brand colors (Blue + Gold)
+    """,
+    'author': 'Techrise',
+    'website': 'https://techriseae.com',
+    'depends': ['website'],
+    'data': [
+        'views/layout.xml',
+        'views/homepage.xml',
+        'views/pages.xml',
+        'data/website_data.xml',
+    ],
+    'assets': {
+        'web.assets_frontend': [
+            'techrise_website/static/src/scss/style.scss',
+            'techrise_website/static/src/js/main.js',
+        ],
+    },
+    'images': ['static/description/icon.jpg'],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}

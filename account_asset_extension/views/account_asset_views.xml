@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- ================================================================= -->
+        <!-- FORM VIEW EXTENSION -->
+        <!-- ================================================================= -->
+        <record id="view_account_asset_form_inherit" model="ir.ui.view">
+            <field name="name">account.asset.form.inherit.extension</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+            <field name="arch" type="xml">
+                <!-- Add asset_type field after the name -->
+                <xpath expr="//div[@class='oe_title']" position="after">
+                    <group>
+                        <label for="asset_type" string="Assets" invisible="asset_type != 'assets'" />
+                        <label for="asset_type" string="Deferred Expenses" invisible="asset_type != 'deferred_expenses'" />
+                        <label for="asset_type" string="Deferred Revenue" invisible="asset_type != 'deferred_revenue'" />
+                        <label for="asset_type" string="Prepayments" invisible="asset_type != 'prepayments'" />
+                        <field name="asset_type" nolabel="1" readonly="1" />
+                    </group>
+                </xpath>
+
+                <!-- Dynamic label for name field -->
+                <xpath expr="//label[@name='name_label']" position="attributes">
+                    <attribute name="invisible">state == 'model' or asset_type in ('deferred_expenses', 'deferred_revenue', 'prepayments')</attribute>
+                </xpath>
+                <xpath expr="//label[@name='name_label']" position="after">
+                    <label for="name" string="Deferred Expense Name" invisible="state == 'model' or asset_type != 'deferred_expenses'" />
+                    <label for="name" string="Deferred Revenue Name" invisible="state == 'model' or asset_type != 'deferred_revenue'" />
+                    <label for="name" string="Prepayment Name" invisible="state == 'model' or asset_type != 'prepayments'" />
+                </xpath>
+
+                <!-- Hide account_depreciation_id in model section (first occurrence) -->
+                <xpath expr="//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                    <attribute name="required">0</attribute>
+                </xpath>
+                <!-- Hide account_depreciation_id in main_page section -->
+                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                    <attribute name="required">0</attribute>
+                </xpath>
+                <!-- Hide original Asset Values group and add dynamic ones -->
+                <xpath expr="//group[@name='asset_values']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//group[@name='asset_values']" position="after">
+                    <!-- Asset Values group for assets -->
+                    <group string="Asset Values" invisible="state == 'model' or asset_type in ('deferred_expenses', 'deferred_revenue', 'prepayments')" name="asset_values_assets">
+                        <field name="original_value" widget="monetary" options="{'currency_field': 'currency_id'}" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="gross_increase_value" widget="monetary" invisible="state == 'model' or gross_increase_value == 0" options="{'currency_field': 'currency_id'}" />
+                        <field name="acquisition_date" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="model_id"
+                               string="Asset Model"
+                               domain="[('state', '=', 'model')]"
+                               options="{'no_quick_create': True}"
+                               context="{'default_state': 'model', 'default_account_asset_id': account_asset_id, 'default_account_depreciation_id': account_depreciation_id, 'default_account_depreciation_expense_id': account_depreciation_expense_id}"
+                               readonly="state != 'draft'" />
+                        <field name="asset_group_id" string="Asset Group" />
+                    </group>
+                    <!-- Deferred Expense Values group -->
+                    <group string="Deferred Expense Values" invisible="state == 'model' or asset_type != 'deferred_expenses'" name="asset_values_deferred_expense">
+                        <field name="original_value" widget="monetary" options="{'currency_field': 'currency_id'}" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="gross_increase_value" widget="monetary" invisible="state == 'model' or gross_increase_value == 0" options="{'currency_field': 'currency_id'}" />
+                        <field name="acquisition_date" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="model_id"
+                               string="Deferred Expense Model"
+                               domain="[('state', '=', 'model'),('asset_type', '=', 'deferred_expenses')]"
+                               options="{'no_quick_create': True}"
+                               context="{'default_state': 'model', 'default_account_asset_id': account_asset_id, 'default_account_depreciation_id': account_depreciation_id, 'default_account_depreciation_expense_id': account_depreciation_expense_id}"
+                               readonly="state != 'draft'" />
+                        <field name="asset_group_id" string="Deferred Expense Group" />
+                    </group>
+                    <!-- Deferred Revenue Values group -->
+                    <group string="Deferred Revenue Values" invisible="state == 'model' or asset_type != 'deferred_revenue'" name="asset_values_deferred_revenue">
+                        <field name="original_value" widget="monetary" options="{'currency_field': 'currency_id'}" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="gross_increase_value" widget="monetary" invisible="state == 'model' or gross_increase_value == 0" options="{'currency_field': 'currency_id'}" />
+                        <field name="acquisition_date" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="model_id"
+                               string="Deferred Revenue Model"
+                               domain="[('state', '=', 'model')]"
+                               options="{'no_quick_create': True}"
+                               context="{'default_state': 'model', 'default_account_asset_id': account_asset_id, 'default_account_depreciation_id': account_depreciation_id, 'default_account_depreciation_expense_id': account_depreciation_expense_id}"
+                               readonly="state != 'draft'" />
+                        <field name="asset_group_id" string="Deferred Revenue Group" />
+                    </group>
+                    <!-- Prepayments Values group -->
+                    <group string="Prepayment Values" invisible="state == 'model' or asset_type != 'prepayments'" name="asset_values_prepayments">
+                        <field name="original_value" widget="monetary" options="{'currency_field': 'currency_id'}" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="gross_increase_value" widget="monetary" invisible="state == 'model' or gross_increase_value == 0" options="{'currency_field': 'currency_id'}" />
+                        <field name="acquisition_date" invisible="state == 'model'" readonly="state != 'draft'" />
+                        <field name="model_id"
+                               string="Prepayment Model"
+                               domain="[('state', '=', 'model'),('asset_type', '=', 'prepayments')]"
+                               options="{'no_quick_create': True}"
+                               context="{'default_state': 'model', 'default_account_asset_id': account_asset_id, 'default_account_depreciation_id': account_depreciation_id, 'default_account_depreciation_expense_id': account_depreciation_expense_id}"
+                               readonly="state != 'draft'" />
+                        <field name="asset_group_id" string="Prepayment Group" />
+                    </group>
+                </xpath>
+
+                <!-- Model section: account_asset_id - conditional labels by asset_type -->
+                <xpath expr="//field[@name='account_asset_id'][@groups='base.group_no_one']" position="before">
+                    <label for="account_asset_id" string="Fixed Asset Account" invisible="asset_type in ('deferred_expenses', 'deferred_revenue', 'prepayments')" />
+                    <label for="account_asset_id" string="Deferred Expense Account" invisible="asset_type != 'deferred_expenses'" />
+                    <label for="account_asset_id" string="Deferred Revenue Account" invisible="asset_type != 'deferred_revenue'" />
+                    <label for="account_asset_id" string="Prepayment Account" invisible="asset_type != 'prepayments'" />
+                </xpath>
+                <xpath expr="//field[@name='account_asset_id'][@groups='base.group_no_one']" position="attributes">
+                    <attribute name="nolabel">1</attribute>
+                    <attribute name="groups"></attribute>
+                    <attribute name="invisible">0</attribute>
+                    <attribute name="string">Fixed Asset Account</attribute>
+                    <attribute name="domain">[('company_ids', 'parent_of', company_id), ('account_type', 'in', ('asset_fixed', 'asset_non_current', 'asset_current', 'asset_prepayments'))]</attribute>
+                </xpath>
+
+                <!-- Main Page: account_asset_id - conditional labels by asset_type -->
+
+                <xpath expr="//page[@name='main_page']//field[@name='account_asset_id']" position="before">
+                    <label for="account_asset_id" string="Fixed Asset Account" invisible="asset_type in ('deferred_expenses', 'deferred_revenue', 'prepayments')" />
+                    <label for="account_asset_id" string="Deferred Expense Account" invisible="asset_type != 'deferred_expenses'" />
+                    <label for="account_asset_id" string="Deferred Revenue Account" invisible="asset_type != 'deferred_revenue'" />
+                    <label for="account_asset_id" string="Prepayment Account" invisible="asset_type != 'prepayments'" />
+                </xpath>
+                <xpath expr="//page[@name='main_page']//field[@name='account_asset_id']" position="attributes">
+                    <attribute name="nolabel">1</attribute>
+                </xpath>
+                <!-- Main Page: account_depreciation_id -->
+                <!--                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_id']" position="before">-->
+                <!--                    <label for="account_depreciation_id" string="Depreciation Account" invisible="asset_type in ('deferred_expenses', 'deferred_revenue', 'prepayments')" />-->
+                <!--                    <label for="account_depreciation_id" string="Deferred Expense Account" invisible="asset_type != 'deferred_expenses'" />-->
+                <!--                    <label for="account_depreciation_id" string="Deferred Revenue Account" invisible="asset_type != 'deferred_revenue'" />-->
+                <!--                    <label for="account_depreciation_id" string="Prepayment Account" invisible="asset_type != 'prepayments'" />-->
+                <!--                </xpath>-->
+                <!--                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_id']" position="attributes">-->
+                <!--                    <attribute name="nolabel">1</attribute>-->
+                <!--                </xpath>-->
+
+                <!-- Main Page: account_depreciation_expense_id -->
+                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_expense_id']" position="before">
+                    <label for="account_depreciation_expense_id" string="Expense Account" invisible="asset_type in ('deferred_revenue', 'prepayments')" />
+                    <label for="account_depreciation_expense_id" string="Revenue Account" invisible="asset_type != 'deferred_revenue'" />
+                    <label for="account_depreciation_expense_id" string="Expense (Prepayments)" invisible="asset_type != 'prepayments'" />
+                </xpath>
+                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_expense_id']" position="attributes">
+                    <attribute name="nolabel">1</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='main_page']//field[@name='account_asset_id']" position="attributes">
+                    <attribute name="domain">[('account_type', 'in', ('asset_fixed', 'asset_non_current', 'asset_current', 'asset_prepayments'))]</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- ASSETS LIST VIEW (inherit base, hide depreciation account) -->
+        <!-- ================================================================= -->
+        <record id="view_account_asset_tree_inherit" model="ir.ui.view">
+            <field name="name">account.asset.list.inherit.extension</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="asset_type" optional="hide" />
+                </xpath>
+                <xpath expr="//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="column_invisible">True</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED EXPENSES LIST VIEW (primary) -->
+        <!-- ================================================================= -->
+        <record id="view_account_deferred_expense_tree" model="ir.ui.view">
+            <field name="name">account.asset.deferred.expense.list</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_tree" />
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="string">Deferred Expense</attribute>
+                </xpath>
+<!--                <xpath expr="//field[@name='name']" position="after">-->
+<!--                    <field name="asset_type" optional="show" />-->
+<!--                </xpath>-->
+                <xpath expr="//field[@name='account_asset_id']" position="attributes">
+                    <attribute name="string">Deferred Expense Account</attribute>
+                </xpath>
+                <xpath expr="//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="column_invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='account_depreciation_expense_id']" position="attributes">
+                    <attribute name="string">Expense Account</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED REVENUE LIST VIEW (primary) -->
+        <!-- ================================================================= -->
+        <record id="view_account_deferred_revenue_tree" model="ir.ui.view">
+            <field name="name">account.asset.deferred.revenue.list</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_tree" />
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="string">Deferred Revenue</attribute>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="asset_type" optional="show" />
+                </xpath>
+                <xpath expr="//field[@name='account_asset_id']" position="attributes">
+                    <attribute name="string">Deferred Revenue Account</attribute>
+                </xpath>
+                <xpath expr="//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="column_invisible">True</attribute>
+                </xpath>
+                <xpath expr="//field[@name='account_depreciation_expense_id']" position="attributes">
+                    <attribute name="string">Revenue Account</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- SEARCH VIEW EXTENSION -->
+        <!-- ================================================================= -->
+        <record id="view_account_asset_search_inherit" model="ir.ui.view">
+            <field name="name">account.asset.search.inherit.extension</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_search" />
+            <field name="arch" type="xml">
+                <!-- Add asset_type field -->
+                <xpath expr="//field[@name='acquisition_date']" position="after">
+                    <field name="asset_type" />
+                </xpath>
+
+                <!-- Add filters for asset types -->
+                <xpath expr="//filter[@name='closed']" position="after">
+                    <separator />
+                    <filter string="Assets" name="filter_assets" domain="[('asset_type', '=', 'assets')]" />
+                    <filter string="Deferred Expenses" name="filter_deferred_expenses" domain="[('asset_type', '=', 'deferred_expenses')]" />
+                    <filter string="Deferred Revenue" name="filter_deferred_revenue" domain="[('asset_type', '=', 'deferred_revenue')]" />
+                    <filter string="Prepayments" name="filter_prepayments" domain="[('asset_type', '=', 'prepayments')]" />
+                </xpath>
+
+                <!-- Add group by asset type -->
+                <xpath expr="//filter[@name='month']" position="before">
+                    <filter string="Asset Type" name="group_asset_type" domain="[]" context="{'group_by':'asset_type'}" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- OVERRIDE ORIGINAL ASSETS ACTION -->
+        <!-- ================================================================= -->
+        <record model="ir.actions.act_window" id="account_asset.action_account_asset_form">
+            <field name="name">Assets</field>
+            <field name="res_model">account.asset</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'list', 'view_id': ref('account_asset.view_account_asset_tree')}),
+                (0, 0, {'view_mode': 'kanban'}),
+                (0, 0, {'view_mode': 'activity'}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account_asset.view_account_asset_form')})]" />
+            <field name="domain">[('state', '!=', 'model'), ('parent_id', '=', False), ('asset_type', '=', 'assets')]</field>
+            <field name="context">{
+                'default_asset_type': 'assets',
+                }
+            </field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first asset
+                </p>
+                <p>
+                    Track and manage your company assets efficiently.
+                    <br />
+                    Depreciate assets over time and keep your accounting accurate.
+                </p>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED EXPENSES FORM VIEW (primary - changes tab names) -->
+        <!-- ================================================================= -->
+        <record model="ir.ui.view" id="view_account_asset_form_deferred_expense">
+            <field name="name">account.asset.form.deferred.expense</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='main_page']" position="attributes">
+                    <attribute name="string">Expense</attribute>
+                </xpath>
+                <xpath expr="//page[@name='related_items']" position="replace">
+                    <page string="Related Expenses" name="related_expense">
+                            <field
+                                name="original_move_line_ids"
+                                readonly="state == 'posted'"
+                                domain="[
+                                    ('parent_state', '=', 'posted'),
+                                    ('company_id', '=', company_id),
+
+                                    ('move_id.move_type', 'in', ('in_invoice', 'in_refund', 'in_receipt', 'entry')),
+                                    ('move_id.asset_id', '=', False),
+                                ]"
+                                class="original_move_line_ids_field"
+                                context="{'disable_preview': 1, 'list_view_ref': 'account_asset.view_move_line_tree_asset'}">
+                                <list create="0" no_open="1">
+                                    <field name="date"/>
+                                    <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+                                    <field name="account_id"/>
+                                    <field name="name"/>
+                                    <field name="debit" widget="monetary"/>
+                                    <field name="credit" widget="monetary"/>
+                                    <field name="company_currency_id" column_invisible="True"/>
+                                </list>
+                            </field>
+                        </page>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED EXPENSES ACTION -->
+        <!-- ================================================================= -->
+        <record model="ir.actions.act_window" id="action_account_deferred_expense">
+            <field name="name">Deferred Expenses</field>
+            <field name="res_model">account.asset</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'list', 'view_id': ref('view_account_deferred_expense_tree')}),
+                (0, 0, {'view_mode': 'kanban'}),
+                (0, 0, {'view_mode': 'activity'}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('view_account_asset_form_deferred_expense')})]" />
+            <field name="domain">[('state', '!=', 'model'), ('parent_id', '=', False), ('asset_type', '=', 'deferred_expenses')]</field>
+            <field name="context">{
+                'default_asset_type': 'deferred_expenses',
+                }
+            </field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first deferred expense
+                </p>
+                <p>
+                    Track and manage your deferred expenses efficiently.
+                    <br />
+                    Amortize expenses over time and keep your accounting accurate.
+                </p>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED REVENUE ACTION -->
+        <!-- ================================================================= -->
+        <record model="ir.actions.act_window" id="action_account_deferred_revenue">
+            <field name="name">Deferred Revenue</field>
+            <field name="res_model">account.asset</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+                (0, 0, {'view_mode': 'list', 'view_id': ref('view_account_deferred_revenue_tree')}),
+                (0, 0, {'view_mode': 'kanban'}),
+                (0, 0, {'view_mode': 'activity'}),
+                (0, 0, {'view_mode': 'form', 'view_id': ref('account_asset.view_account_asset_form')})]" />
+            <field name="domain">[('state', '!=', 'model'), ('parent_id', '=', False), ('asset_type', '=', 'deferred_revenue')]</field>
+            <field name="context">{
+                'default_asset_type': 'deferred_revenue',
+                }
+            </field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create your first deferred revenue
+                </p>
+                <p>
+                    Track and manage your deferred revenues efficiently.
+                    <br />
+                    Recognize revenue over time and keep your accounting accurate.
+                </p>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED EXPENSES MODEL LIST VIEW -->
+        <!-- ================================================================= -->
+        <record model="ir.ui.view" id="view_account_deferred_expense_model_tree">
+            <field name="name">account.asset.deferred.expense.model.list</field>
+            <field name="model">account.asset</field>
+            <field name="arch" type="xml">
+                <list string="Asset Deferred Expenses">
+                    <field name="name" string="Asset Deferred Expenses name" />
+                    <field name="account_asset_id" string="Deferred Expense Account" readonly="state == 'close'" />
+                    <field name="account_depreciation_id" column_invisible="True" />
+                    <field name="account_depreciation_expense_id" />
+                    <field name="method" readonly="state not in ['draft', 'model']" />
+                    <field name="method_number" string="Number of Depreciations" readonly="state not in ['draft', 'model']" />
+                    <field name="method_period" string="Period length" readonly="state not in ['draft', 'model']" />
+                    <field name="company_id" column_invisible="True" readonly="state != 'draft'" />
+                    <field name="state" column_invisible="True" />
+                </list>
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- DEFERRED EXPENSES MODEL FORM VIEW -->
+        <!-- ================================================================= -->
+        <record model="ir.ui.view" id="view_account_deferred_expense_model_form">
+            <field name="name">account.asset.deferred.expense.model.form</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <!-- Change "Asset Model name" to "Asset Deferred Expenses name" -->
+                <xpath expr="//page[@name='main_page']//field[@name='account_asset_id']" position="attributes">
+                    <attribute name="domain">[('account_type', 'in', ('asset_fixed', 'asset_non_current', 'asset_current', 'asset_prepayments'))]</attribute>
+                </xpath>
+                <xpath expr="//page[@name='main_page']//field[@name='account_depreciation_id']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//label[@name='model_name_label']" position="attributes">
+                    <attribute name="string">Asset Deferred Expenses name</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+        <!-- ================================================================= -->
+        <!-- MENU STRUCTURE -->
+        <!-- ================================================================= -->
+        <record model="ir.actions.act_window" id="action_account_asset_model_form_deferred_expenses">
+            <field name="name">Asset Deferred Expenses</field>
+            <field name="res_model">account.asset</field>
+            <field name="view_mode">list,kanban,form</field>
+            <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_account_deferred_expense_model_tree')}),
+            (0, 0, {'view_mode': 'kanban'}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('view_account_deferred_expense_model_form')})]" />
+            <field name="domain">[('state', '=', 'model'),('asset_type', '=', 'deferred_expenses')]</field>
+            <field name="context">
+                {
+                'default_state': 'model',
+                'default_asset_type': 'deferred_expenses'
+                }
+            </field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create new Asset Deferred Expenses
+                </p>
+            </field>
+        </record>
+        <record id="account_asset.action_account_asset_model_form" model="ir.actions.act_window">
+            <field name="domain">[('state', '=', 'model'),('asset_type', '=', 'assets')]</field>
+        </record>
+
+        <menuitem parent="account.account_management_menu" sequence="2" id="menu_action_account_asset_model_form_assets" action="action_account_asset_model_form_deferred_expenses"
+                  groups="account.group_account_readonly" />
+
+        <!-- Root Assets Menu -->
+        <menuitem
+                parent="account.menu_finance_entries"
+                id="root_assets_menu"
+                name="Assets"
+                sequence="60"
+                groups="account.group_account_readonly" />
+
+        <!-- Assets Sub-menu (relink original menu) -->
+        <menuitem
+                parent="root_assets_menu"
+                id="account_asset.menu_action_account_asset_form"
+                action="account_asset.action_account_asset_form"
+                sequence="1"
+                groups="account.group_account_readonly" />
+
+        <!-- Deferred Expenses Sub-menu -->
+        <menuitem
+                parent="root_assets_menu"
+                id="menu_action_account_deferred_expense"
+                action="action_account_deferred_expense"
+                sequence="2"
+                groups="account.group_account_readonly" />
+
+        <!-- Deferred Revenue Sub-menu -->
+<!--        <menuitem-->
+<!--                parent="root_assets_menu"-->
+<!--                id="menu_action_account_deferred_revenue"-->
+<!--                action="action_account_deferred_revenue"-->
+<!--                sequence="3"-->
+<!--                groups="account.group_account_readonly" />-->
+
+    </data>
+</odoo>

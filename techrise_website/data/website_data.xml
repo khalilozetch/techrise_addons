@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Website Menu Items -->
+        <record id="menu_home" model="website.menu">
+            <field name="name">Home</field>
+            <field name="url">/</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">10</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_about" model="website.menu">
+            <field name="name">About Us</field>
+            <field name="url">/about</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">20</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_services" model="website.menu">
+            <field name="name">Services</field>
+            <field name="url">/services</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">30</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_server" model="website.menu">
+            <field name="name">Server &amp; Hosting</field>
+            <field name="url">/server</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">40</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_contact" model="website.menu">
+            <field name="name">Contact Us</field>
+            <field name="url">/contactus</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">50</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+    </data>
+</odoo>
