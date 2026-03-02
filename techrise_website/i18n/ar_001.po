@@ -1,0 +1,1491 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * techrise_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 00:00+0000\n"
+"PO-Revision-Date: 2026-03-02 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar_001\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+
+#. module: techrise_website
+#: model:website.menu,name:techrise_website.menu_home
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model:website.menu,name:techrise_website.menu_about
+msgid "About Us"
+msgstr "من نحن"
+
+#. module: techrise_website
+#: model:website.menu,name:techrise_website.menu_services
+msgid "Services"
+msgstr "خدماتنا"
+
+#. module: techrise_website
+#: model:website.menu,name:techrise_website.menu_server
+msgid "Server &amp; Hosting"
+msgstr "الخوادم والاستضافة"
+
+#. module: techrise_website
+#: model:website.menu,name:techrise_website.menu_contact
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "About Techrise"
+msgstr "عن تك رايز"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Your trusted partner for organized digital transformation"
+msgstr "شريكك الموثوق في التحول الرقمي المنظم"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"<span> / </span>\n"
+"                            <span class=\"active\">About Us</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Our <span class=\"tr-text-gold\">Story</span>"
+msgstr "<span class=\"tr-text-gold\">قصتنا</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"Techrise is a specialized entity providing comprehensive technical and\n"
+"                                    administrative solutions. As an accredited partner of the Odoo platform,\n"
+"                                    we support companies and organizations in rebuilding their operational\n"
+"                                    processes according to a modern digital methodology based on organization,\n"
+"                                    accuracy, and sustainability."
+msgstr "تُعد شركتنا إحدى الجهات المتخصصة في تقديم الحلول التقنية والإدارية الشاملة، حيث نعمل كشريك معتمد لمنصة ODOO على مساعدة الشركات والمؤسسات في إعادة بناء عملياتها التشغيلية وفق منهجية رقمية حديثة تقوم على التنظيم، والدقة، والاستدامة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"We focus on transforming operational complexity into intelligent,\n"
+"                                    interconnected systems that enable different departments to work within\n"
+"                                    a unified framework, ensuring data clarity, ease of monitoring, and\n"
+"                                    improved institutional performance efficiency."
+msgstr "نركز على تحويل التعقيد التشغيلي إلى أنظمة ذكية مترابطة، تُمكّن الإدارات المختلفة من العمل ضمن إطار موحد يضمن وضوح البيانات، وسهولة المتابعة، ورفع كفاءة الأداء المؤسسي."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"Headquartered in Abu Dhabi, UAE, we serve clients across the Middle East\n"
+"                                    and beyond, delivering solutions that respect local regulations while\n"
+"                                    meeting international standards."
+msgstr "يقع مقرنا الرئيسي في أبوظبي، الإمارات العربية المتحدة، ونخدم عملاء في جميع أنحاء الشرق الأوسط وخارجه، ونقدم حلولاً تحترم اللوائح المحلية وتلبي المعايير الدولية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Techrise Team"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Our <span class=\"tr-text-gold\">Philosophy</span>"
+msgstr "<span class=\"tr-text-gold\">فلسفتنا</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"Our philosophy is based on the belief that true technological solutions\n"
+"                                    are those built to serve the business, not complicate it. Therefore, we\n"
+"                                    strive to simplify procedures, reduce manual intervention, and enhance\n"
+"                                    integration between systems and different departments."
+msgstr "تقوم فلسفتنا على أن الحلول التقنية الحقيقية هي تلك التي تُبنى لخدمة العمل، لا لتعقيده، لذلك نحرص على تبسيط الإجراءات، وتقليل التدخل اليدوي، وتعزيز التكامل بين الأنظمة والإدارات المختلفة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"We aim to be the trusted technology partner that organizations rely on\n"
+"                                    to build an organized work environment, scalable systems, and a clear\n"
+"                                    digital vision that supports growth with confidence and continuity."
+msgstr "نسعى لأن نكون الشريك التقني الذي تعتمد عليه المؤسسات في بناء بيئة عمل منظمة، وأنظمة قابلة للتطوير، ورؤية رقمية واضحة تدعم النمو بثقة واستمرارية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"<span class=\"tr-counter\" data-target=\"100\">0</span>\n"
+"                                                        <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Projects"
+msgstr "مشروع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"<span class=\"tr-counter\" data-target=\"50\">0</span>\n"
+"                                                        <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Clients"
+msgstr "عميل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"<span class=\"tr-counter\" data-target=\"15\">0</span>\n"
+"                                                        <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Countries"
+msgstr "دولة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"<span class=\"tr-counter\" data-target=\"30\">0</span>\n"
+"                                                        <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Experts"
+msgstr "خبير"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Our Core Values"
+msgstr "قيمنا الأساسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "The principles that drive everything we do at Techrise."
+msgstr "المبادئ التي تقود كل ما نقوم به في تك رايز."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Excellence"
+msgstr "التميّز"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "We strive for the highest quality in every solution, every interaction, and every deliverable."
+msgstr "نسعى لتحقيق أعلى مستويات الجودة في كل حل، وكل تفاعل، وكل مخرج."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Innovation"
+msgstr "الابتكار"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "We embrace new technologies and creative approaches to solve complex business challenges."
+msgstr "نتبنى التقنيات الجديدة والأساليب الإبداعية لحل تحديات الأعمال المعقدة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Partnership"
+msgstr "الشراكة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "We build lasting relationships based on trust, transparency, and shared success with our clients."
+msgstr "نبني علاقات دائمة مبنية على الثقة والشفافية والنجاح المشترك مع عملائنا."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Want to Join Our Journey?"
+msgstr "هل تريد الانضمام إلى رحلتنا؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid ""
+"Whether you're a client looking for the best Odoo partner or a talented\n"
+"                            professional seeking exciting challenges, we'd love to hear from you."
+msgstr "سواء كنت عميلاً تبحث عن أفضل شريك Odoo أو محترفاً موهوباً يبحث عن تحديات مثيرة، يسعدنا سماعك."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.about_page
+msgid "Get in Touch <i class=\"fa fa-arrow-right\"/>"
+msgstr "تواصل معنا <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Let's start a conversation about your digital transformation"
+msgstr "دعنا نبدأ محادثة حول التحول الرقمي لأعمالك"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid ""
+"<span> / </span>\n"
+"                            <span class=\"active\">Contact</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Send Us a Message"
+msgstr "أرسل لنا رسالة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "املأ النموذج أدناه وسنعاود الاتصال بك خلال 24 ساعة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Full Name *"
+msgstr "الاسم الكامل *"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Email Address *"
+msgstr "البريد الإلكتروني *"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Service Interested In"
+msgstr "الخدمة المطلوبة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid ""
+"<select name=\"service\">\n"
+"                                                <option value=\"\">Select a service...</option>\n"
+"                                                <option value=\"erp\">ERP System Design (Odoo)</option>\n"
+"                                                <option value=\"website\">Website Design &amp; Development</option>\n"
+"                                                <option value=\"mobile\">Mobile App Development</option>\n"
+"                                                <option value=\"integration\">System Integration</option>\n"
+"                                                <option value=\"accounting\">Accounting &amp; Tax Services</option>\n"
+"                                                <option value=\"branding\">Branding &amp; Marketing</option>\n"
+"                                                <option value=\"hosting\">Server &amp; Hosting</option>\n"
+"                                                <option value=\"support\">Technical Support</option>\n"
+"                                                <option value=\"other\">Other</option>\n"
+"                                            </select>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Message *"
+msgstr "الرسالة *"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Tell us about your project and requirements..."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Send Message <i class=\"fa fa-paper-plane\"/>"
+msgstr "إرسال الرسالة <i class=\"fa fa-paper-plane\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Let's Connect"
+msgstr "دعنا نتواصل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid ""
+"We're here to help you navigate your digital transformation\n"
+"                                        journey. Reach out to us through any of these channels."
+msgstr "نحن هنا لمساعدتك في رحلة التحول الرقمي. تواصل معنا من خلال أي من هذه القنوات."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Contact Us"
+msgstr "للتواصل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Office Address"
+msgstr "عنوان المكتب"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "<span>Abu Dhabi, Al Bateen Commercial Tower</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "WhatsApp"
+msgstr "واتساب"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Chat with us"
+msgstr "تحدث معنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "<span>Available 24/7</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+msgid "Techrise Office Location"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Server &amp; Hosting"
+msgstr "الخوادم والاستضافة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Reliable infrastructure for your Odoo and business applications"
+msgstr "بنية تحتية موثوقة لتطبيقات Odoo وأعمالك"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"<span> / </span>\n"
+"                            <span class=\"active\">Server &amp; Hosting</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Server and Hosting"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Enterprise-Grade <span class=\"tr-text-gold\">Hosting</span>"
+msgstr "استضافة بمستوى <span class=\"tr-text-gold\">المؤسسات</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"We provide reliable, high-performance server hosting solutions\n"
+"                                    specifically optimized for Odoo ERP and business applications.\n"
+"                                    Our infrastructure ensures your systems run smoothly with\n"
+"                                    maximum uptime and security."
+msgstr "نقدم حلول استضافة خوادم موثوقة وعالية الأداء مُحسّنة خصيصاً لأنظمة Odoo ERP وتطبيقات الأعمال. بنيتنا التحتية تضمن تشغيل أنظمتك بسلاسة مع أقصى وقت تشغيل وأمان."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Whether you need cloud hosting, dedicated servers, or hybrid\n"
+"                                    solutions, we configure and manage the entire infrastructure\n"
+"                                    so you can focus on your business."
+msgstr "سواء كنت تحتاج استضافة سحابية أو خوادم مخصصة أو حلول مختلطة، نقوم بتكوين وإدارة البنية التحتية الكاملة حتى تتمكن من التركيز على أعمالك."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Hosting Features"
+msgstr "مميزات الاستضافة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Everything you need for reliable, secure, and fast hosting."
+msgstr "كل ما تحتاجه لاستضافة موثوقة وآمنة وسريعة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "High Performance"
+msgstr "أداء عالي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"SSD-powered servers with optimized configurations\n"
+"                                    for Odoo, ensuring fast response times and smooth operations."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Security &amp; Protection"
+msgstr "الأمان والحماية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"SSL certificates, firewall protection, regular security\n"
+"                                    audits, and encrypted backups to keep your data safe."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "99.9% Uptime"
+msgstr "99.9% وقت التشغيل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Guaranteed high availability with redundant systems,\n"
+"                                    load balancing, and 24/7 monitoring."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Automated Backups"
+msgstr "نسخ احتياطية تلقائية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Daily automated backups with secure offsite storage\n"
+"                                    and quick disaster recovery options."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Scalable Resources"
+msgstr "موارد قابلة للتوسع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Easily scale CPU, RAM, and storage as your business\n"
+"                                    grows without downtime or migration hassle."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Managed Support"
+msgstr "دعم مُدار"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Expert server administration, OS updates, performance\n"
+"                                    tuning, and troubleshooting included."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Hosting <span class=\"tr-text-gold\">Solutions</span>"
+msgstr "حلول <span class=\"tr-text-gold\">الاستضافة</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Choose the hosting solution that best fits your needs."
+msgstr "اختر حل الاستضافة الأنسب لاحتياجاتك."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Cloud Hosting"
+msgstr "الاستضافة السحابية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Flexible cloud-based hosting with auto-scaling capabilities.\n"
+"                                        Perfect for growing businesses that need elastic resources."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Auto-scaling resources"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Pay-as-you-grow model"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Global CDN included"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Dedicated Server"
+msgstr "خادم مخصص"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Full dedicated server resources for enterprise-level\n"
+"                                        performance and maximum control."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Dedicated CPU &amp; RAM"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Full root access"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Custom configurations"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Managed Odoo Hosting"
+msgstr "استضافة Odoo المُدارة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Fully managed Odoo-specific hosting with optimized\n"
+"                                        PostgreSQL, Nginx, and worker configurations."
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Odoo-optimized stack"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Automatic updates"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Staging environment"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Need Reliable Hosting?"
+msgstr "هل تحتاج استضافة موثوقة؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid ""
+"Let us handle your infrastructure so you can focus on your business.\n"
+"                            Get in touch for a custom hosting solution."
+msgstr "دعنا نتولى بنيتك التحتية حتى تتمكن من التركيز على أعمالك. تواصل معنا للحصول على حل استضافة مخصص."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.server_page
+msgid "Get a Quote <i class=\"fa fa-arrow-right\"/>"
+msgstr "احصل على عرض أسعار <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Comprehensive digital solutions from implementation to ongoing support"
+msgstr "حلول رقمية شاملة من التنفيذ إلى الدعم المستمر"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"<span> / </span>\n"
+"                            <span class=\"active\">Services</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "ERP Systems"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "ERP System Design &amp; Development (Odoo)"
+msgstr "تصميم وتطوير أنظمة ERP باستخدام ODOO"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We design and develop comprehensive ERP systems based on the Odoo platform,\n"
+"                                    tailored to the specific nature of each business and its operational needs.\n"
+"                                    We start with a thorough analysis of internal processes, then customize\n"
+"                                    the system to cover various departments."
+msgstr "نقوم بتصميم وتطوير أنظمة ERP متكاملة بالاعتماد على منصة ODOO، بما يتوافق مع طبيعة كل نشاط تجاري واحتياجاته التشغيلية. نبدأ بدراسة شاملة للعمليات الداخلية، ثم نعمل على تخصيص النظام ليشمل الإدارات المختلفة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Accounting, Sales, Inventory, HR, and Procurement"
+msgstr "الحسابات، المبيعات، المخازن، الموارد البشرية، والمشتريات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Customer Service, Call Centers, and POS systems"
+msgstr "خدمة العملاء، الكول سنتر، ونقاط البيع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Multi-branch centralized monitoring"
+msgstr "ربط الفروع المتعددة ضمن نظام مركزي واحد"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Social media and marketing integration"
+msgstr "التكامل مع منصات التواصل الاجتماعي والتسويق الرقمي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Data unification and real-time performance tracking"
+msgstr "توحيد البيانات ومتابعة الأداء اللحظية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Website Development"
+msgstr "تطوير المواقع الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Website Design &amp; Development"
+msgstr "تصميم وتطوير المواقع الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We provide professional website design and development services,\n"
+"                                    focusing on the integration of a strong visual identity with\n"
+"                                    user-friendly functionality. We ensure websites are responsive\n"
+"                                    across all devices with fast loading and great UX."
+msgstr "نقدم خدمات تصميم وتطوير المواقع الإلكترونية باحترافية عالية، مع التركيز على الدمج بين الهوية البصرية القوية وسهولة الاستخدام. نحرص على تطوير مواقع متوافقة مع مختلف الأجهزة والشاشات."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Corporate identity-driven website design"
+msgstr "تصميم مواقع تعكس الصورة المؤسسية للعلامة التجارية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Responsive across all devices and screens"
+msgstr "متوافقة مع جميع الأجهزة والشاشات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Fast loading and high performance"
+msgstr "سرعة التصفح والأداء العالي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Best UX/UI practices"
+msgstr "أفضل ممارسات تجربة المستخدم"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Integration with Odoo or other systems"
+msgstr "إمكانية الربط بأنظمة ODOO أو الأنظمة الأخرى"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Mobile App Development"
+msgstr "تصميم وتطوير تطبيقات الهاتف المحمول"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We design and develop mobile applications for Android and iOS,\n"
+"                                    with a strong focus on high performance, security, and seamless\n"
+"                                    integration with Odoo or any other platforms used within the organization."
+msgstr "نقوم بتصميم وتطوير تطبيقات تعمل على أنظمة Android و iOS، مع التركيز على الأداء العالي، والأمان، وسهولة التكامل مع أنظمة ODOO أو أي أنظمة أخرى مستخدمة داخل الشركة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Android and iOS native development"
+msgstr "تطوير أصلي لأنظمة Android و iOS"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Seamless Odoo system integration"
+msgstr "تكامل سلس مع أنظمة Odoo"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Thorough testing before launch"
+msgstr "اختبار شامل قبل الإطلاق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Ongoing technical support post-deployment"
+msgstr "دعم فني مستمر بعد التشغيل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Scalable architecture for business growth"
+msgstr "بنية قابلة للتوسع مع نمو الأعمال"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "System Integration"
+msgstr "التكامل مع الأنظمة الأخرى والجهات الرسمية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We implement integration processes between the Odoo system and other\n"
+"                                    software used within the company, as well as connectivity with official\n"
+"                                    authorities and platforms, contributing to data unification, reduced\n"
+"                                    manual work, and faster operational procedures."
+msgstr "ننفذ عمليات التكامل بين نظام ODOO والبرامج الأخرى المستخدمة داخل الشركة، بالإضافة إلى الربط مع الجهات والمنصات الرسمية عند الحاجة، بما يسهم في توحيد البيانات، وتقليل العمل اليدوي، وتسريع الإجراءات التشغيلية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Odoo integration with third-party software"
+msgstr "تكامل Odoo مع البرامج الخارجية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Government portal connectivity (VAT, customs)"
+msgstr "الربط مع البوابات الحكومية (الضريبة، الجمارك)"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Payment gateway integration"
+msgstr "تكامل بوابات الدفع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "WhatsApp and communication tools"
+msgstr "واتساب وأدوات التواصل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "E-commerce platform connection"
+msgstr "ربط منصات التجارة الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Accounting &amp; Tax Services"
+msgstr "الخدمات المحاسبية والضريبية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We provide comprehensive services for organizing and managing accounts,\n"
+"                                    VAT filing, Corporate Tax returns, and establishing qualified accounting\n"
+"                                    teams with clear policies and procedures."
+msgstr "نقدم خدمات متكاملة لتنظيم وإدارة الحسابات بما يضمن وضوح البيانات المالية ودقتها، مع تقديم إقرارات ضريبة القيمة المضافة والإقرار السنوي لضريبة الشركات."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "VAT return preparation and filing"
+msgstr "إعداد وتقديم إقرارات ضريبة القيمة المضافة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Corporate Tax annual return filing"
+msgstr "تقديم الإقرار السنوي لضريبة الشركات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Accounting organization and restructuring"
+msgstr "تنظيم وإعادة هيكلة الحسابات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Establishment of qualified accounting teams"
+msgstr "تأسيس فرق عمل محاسبية مؤهلة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Financial policies, workflows, and internal controls"
+msgstr "السياسات والإجراءات المالية والرقابة الداخلية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Odoo accounting system configuration"
+msgstr "تهيئة الأنظمة المحاسبية على ODOO"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Branding &amp; Marketing"
+msgstr "البراندنج والتسويق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We provide comprehensive branding and marketing services focused on\n"
+"                                    building a strong and clear brand identity capable of effectively\n"
+"                                    communicating with its audience and establishing a meaningful market presence."
+msgstr "نقدم خدمات براندنج وتسويق متكاملة تركز على بناء علامة تجارية قوية وواضحة الهوية، قادرة على التواصل بفعالية مع جمهورها وتحقيق حضور مؤثر في السوق."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Brand essence and core message definition"
+msgstr "تحديد جوهر العلامة التجارية ورسائلها الأساسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Visual identity development"
+msgstr "تطوير الهوية البصرية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Marketing content creation"
+msgstr "إنشاء المحتوى التسويقي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Smart campaigns integrated with operational systems"
+msgstr "حملات ذكية متكاملة مع الأنظمة التشغيلية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Performance measurement and analytics"
+msgstr "قياس الأداء والتحليلات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Technical Support &amp; Annual Maintenance"
+msgstr "الدعم الفني والصيانة السنوية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"We offer annual technical support and maintenance contracts to ensure\n"
+"                                    system stability and optimal performance throughout the year. These\n"
+"                                    services include regular monitoring, updates, and prompt resolution\n"
+"                                    of any technical issues."
+msgstr "نقدم عقود دعم فني وصيانة سنوية لضمان استقرار الأنظمة وكفاءتها على مدار العام، وتشمل المتابعة الدورية، وتنفيذ التحديثات اللازمة، ومعالجة أي مشكلات تقنية بسرعة وفعالية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Regular system monitoring"
+msgstr "مراقبة دورية للأنظمة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Implementation of necessary updates"
+msgstr "تنفيذ التحديثات اللازمة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Prompt technical issue resolution"
+msgstr "معالجة سريعة للمشكلات التقنية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Performance optimization"
+msgstr "تحسين الأداء"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Uninterrupted business operations guarantee"
+msgstr "ضمان استمرارية العمل دون انقطاع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Need a Custom Solution?"
+msgstr "هل تحتاج حلاً مخصصاً؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid ""
+"Every business is unique. Let's discuss how we can tailor\n"
+"                            our services to meet your specific requirements."
+msgstr "كل عمل فريد من نوعه. دعنا نناقش كيف يمكننا تخصيص خدماتنا لتلبية متطلباتك."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.services_page
+msgid "Request a Proposal <i class=\"fa fa-arrow-right\"/>"
+msgstr "طلب عرض أسعار <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"Techrise - Your Partner in Organized Digital Transformation.\n"
+"                                A specialized entity providing comprehensive technical and\n"
+"                                administrative solutions as an accredited Odoo partner."
+msgstr "تك رايز - شريكك في التحول الرقمي المنظم. جهة متخصصة في تقديم الحلول التقنية والإدارية الشاملة كشريك معتمد لمنصة Odoo."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Quick Links"
+msgstr "روابط سريعة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Home"
+msgstr "الرئيسية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "About Us"
+msgstr "من نحن"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Services"
+msgstr "خدماتنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Server &amp; Hosting"
+msgstr "الخوادم والاستضافة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Contact"
+msgstr "تواصل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "ERP Systems (Odoo)"
+msgstr "أنظمة ERP (Odoo)"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Website Development"
+msgstr "تطوير المواقع الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Mobile Apps"
+msgstr "تطبيقات الهاتف المحمول"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "System Integration"
+msgstr "التكامل مع الأنظمة الأخرى والجهات الرسمية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Accounting &amp; Tax"
+msgstr "المحاسبة والضرائب"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Branding &amp; Marketing"
+msgstr "البراندنج والتسويق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"<i class=\"fa fa-map-marker\"/>\n"
+"                                <span>Abu Dhabi, Al Bateen Commercial Tower</span>"
+msgstr "<i class=\"fa fa-map-marker\"/> <span>أبوظبي، برج البطين التجاري</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"<i class=\"fa fa-phone\"/>\n"
+"                                <a href=\"tel:+971585955064\" style=\"color: inherit; text-decoration: none;\">+971 58 595 5064</a>"
+msgstr "<i class=\"fa fa-phone\"/> <a href=\"tel:+971585955064\" style=\"color: inherit; text-decoration: none;\">+971 58 595 5064</a>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"<i class=\"fa fa-phone\"/>\n"
+"                                <a href=\"tel:+971585755064\" style=\"color: inherit; text-decoration: none;\">+971 58 575 5064</a>"
+msgstr "<i class=\"fa fa-phone\"/> <a href=\"tel:+971585755064\" style=\"color: inherit; text-decoration: none;\">+971 58 575 5064</a>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"<i class=\"fa fa-envelope\"/>\n"
+"                                <span>info@techriseae.com</span>"
+msgstr "<i class=\"fa fa-envelope\"/> <span>info@techriseae.com</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"<i class=\"fa fa-clock-o\"/>\n"
+"                                <span>Available 24/7</span>"
+msgstr "<i class=\"fa fa-clock-o\"/> <span>متاحون على مدار الساعة</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid ""
+"Techrise - Your Partner in Organized Digital Transformation.\n"
+"                            All rights reserved. |\n"
+"                            Powered by"
+msgstr "تك رايز - شريكك في التحول الرقمي المنظم. جميع الحقوق محفوظة. | مدعوم بواسطة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_footer
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Techrise Hero Video"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Your Partner in Organized\n"
+"                                <span class=\"tr-text-gold\">Digital Transformation</span>"
+msgstr "شريكك في <span class=\"tr-text-gold\">التحول الرقمي المنظم</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"We support companies and organizations in rebuilding their operational\n"
+"                                processes through modern digital methodology based on organization,\n"
+"                                accuracy, and sustainability"
+msgstr "نساعد الشركات والمؤسسات في إعادة بناء عملياتها التشغيلية وفق منهجية رقمية حديثة تقوم على التنظيم، والدقة، والاستدامة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Get a Free Consultation"
+msgstr "احصل على استشارة مجانية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Explore Our Services"
+msgstr "استكشف خدماتنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"<span class=\"tr-counter\" data-target=\"100\">0</span>\n"
+"                                    <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Projects Delivered"
+msgstr "مشروع منجز"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Happy Clients"
+msgstr "عملاء سعداء"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"<span class=\"tr-counter\" data-target=\"15\">0</span>\n"
+"                                    <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Countries Served"
+msgstr "دولة تم خدمتها"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"<span class=\"tr-counter\" data-target=\"30\">0</span>\n"
+"                                    <span class=\"tr-stat-suffix\">+</span>"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Expert Consultants"
+msgstr "مستشار خبير"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Techrise Digital Transformation"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "About <span class=\"tr-text-gold\">Techrise</span>"
+msgstr "عن <span class=\"tr-text-gold\">تك رايز</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Techrise is a specialized entity providing comprehensive technical and\n"
+"                                    administrative solutions. As an accredited Odoo partner, we support companies\n"
+"                                    in rebuilding their operational processes through modern digital methodology\n"
+"                                    based on organization, accuracy, and sustainability."
+msgstr "تُعد شركتنا إحدى الجهات المتخصصة في تقديم الحلول التقنية والإدارية الشاملة، حيث نعمل كشريك معتمد لمنصة ODOO على مساعدة الشركات والمؤسسات في إعادة بناء عملياتها التشغيلية وفق منهجية رقمية حديثة تقوم على التنظيم، والدقة، والاستدامة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"We focus on transforming operational complexity into intelligent,\n"
+"                                    interconnected systems that enable departments to work within a unified\n"
+"                                    framework, ensuring data clarity and improved performance efficiency."
+msgstr "نركز على تحويل التعقيد التشغيلي إلى أنظمة ذكية مترابطة، تُمكّن الإدارات المختلفة من العمل ضمن إطار موحد يضمن وضوح البيانات، وسهولة المتابعة، ورفع كفاءة الأداء المؤسسي."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Learn More <i class=\"fa fa-arrow-right\"/>"
+msgstr "اعرف المزيد <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Comprehensive digital solutions tailored to your business needs.\n"
+"                                From ERP systems to mobile apps, we've got you covered."
+msgstr "حلول رقمية شاملة مصممة خصيصاً لاحتياجات أعمالك. من أنظمة ERP إلى تطبيقات الهاتف المحمول، نحن نغطي جميع احتياجاتك."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "ERP Systems"
+msgstr ""
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "ERP System Design (Odoo)"
+msgstr "تصميم وتطوير أنظمة ERP (Odoo)"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Comprehensive ERP systems tailored to your business -\n"
+"                                    Accounting, Sales, Inventory, HR, and Procurement in one unified platform."
+msgstr "أنظمة ERP متكاملة مصممة لأعمالك - الحسابات، المبيعات، المخازن، الموارد البشرية، والمشتريات في منصة موحدة واحدة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Website Development"
+msgstr "تطوير المواقع الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Website Design &amp; Development"
+msgstr "تصميم وتطوير المواقع الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Professional websites with strong visual identity,\n"
+"                                    responsive across all devices with fast loading and great UX."
+msgstr "مواقع احترافية بهوية بصرية قوية، متوافقة مع جميع الأجهزة مع سرعة تحميل عالية وتجربة مستخدم متميزة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Mobile Apps"
+msgstr "تطبيقات الهاتف المحمول"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Mobile App Development"
+msgstr "تصميم وتطوير تطبيقات الهاتف المحمول"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Android and iOS apps with high performance, security,\n"
+"                                    and seamless integration with Odoo or any other platforms."
+msgstr "تطبيقات Android و iOS بأداء عالٍ وأمان وتكامل سلس مع أنظمة ODOO أو أي أنظمة أخرى."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "System Integration"
+msgstr "التكامل مع الأنظمة الأخرى والجهات الرسمية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Integration between Odoo and other software, government authorities,\n"
+"                                    and official platforms for unified data and faster operations."
+msgstr "ننفذ عمليات التكامل بين نظام ODOO والبرامج الأخرى المستخدمة داخل الشركة، بالإضافة إلى الربط مع الجهات والمنصات الرسمية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Accounting &amp; Tax Services"
+msgstr "الخدمات المحاسبية والضريبية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"VAT filing, Corporate Tax returns, accounting organization,\n"
+"                                    and establishment of qualified accounting teams."
+msgstr "تقديم إقرارات ضريبة القيمة المضافة، الإقرار السنوي لضريبة الشركات، تنظيم الحسابات وتأسيس فرق العمل المحاسبية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Branding &amp; Marketing"
+msgstr "البراندنج والتسويق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"Complete brand identity, marketing strategies, smart campaigns\n"
+"                                    integrated with operational systems for measurable results."
+msgstr "هوية تجارية متكاملة، استراتيجيات تسويقية، حملات ذكية متكاملة مع الأنظمة التشغيلية لنتائج قابلة للقياس."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "View All Services <i class=\"fa fa-arrow-right\"/>"
+msgstr "عرض جميع الخدمات <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Why Choose <span class=\"tr-text-gold\">Techrise</span>?"
+msgstr "لماذا تختار <span class=\"tr-text-gold\">تك رايز</span>؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"A deep understanding of organizational operations, scientific digital principles,\n"
+"                                and scalable solutions built for growth."
+msgstr "نمتلك فهماً عميقاً للعمليات الداخلية والخارجية للمؤسسات، ما يمكننا من تحليل بيئة العمل بدقة وتقديم حلول تقنية فعّالة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Deep Business Analysis"
+msgstr "تحليل أعمال معمّق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "We analyze your work environment accurately to provide solutions that reflect operational reality."
+msgstr "نحلل بيئة العمل بدقة لتقديم حلول تقنية تعكس الواقع التشغيلي وتخدم أهداف المؤسسة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Proven Solutions"
+msgstr "حلول مجرّبة ومعتمدة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Tested software and technical solutions trusted by leading companies with reliable high-quality results."
+msgstr "نقدم برامج وحلولاً تقنية مجرّبة ومعتمدة لدى كبرى الشركات والمؤسسات، بما يضمن موثوقية الأداء وجودة النتائج."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Expert Team"
+msgstr "فريق متخصص"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Specialists in information systems, technical intelligence, and software development with precision and usability."
+msgstr "يضم فريقنا نخبة من الخبراء المتخصصين في نظم المعلومات، والذكاء التقني، وتصميم وتطوير البرمجيات."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Scalable Solutions"
+msgstr "حلول قابلة للتوسع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Solutions adaptable to technological changes and growth requirements for sustainable digital transformation."
+msgstr "نحرص دائماً على أن تكون حلولنا قابلة للتوسع والتطوير، ومواكبة للتغيرات التقنية ومتطلبات النمو."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "How We Work"
+msgstr "كيف نعمل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Our proven methodology ensures successful project delivery every time."
+msgstr "منهجيتنا المجربة تضمن تسليم المشاريع بنجاح في كل مرة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Analysis"
+msgstr "التحليل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Comprehensive analysis of the current work environment and precise evaluation of operational workflows."
+msgstr "تحليل شامل لبيئة العمل الحالية، وتقييم دقيق لسير العمليات."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Design &amp; Plan"
+msgstr "التصميم والتخطيط"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Design integrated technical solutions balancing operational requirements with strategic objectives."
+msgstr "تصميم حلول تقنية متكاملة تُنفذ وفق معايير واضحة توازن بين المتطلبات التشغيلية والأهداف الاستراتيجية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Implement"
+msgstr "التنفيذ"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "System implementation according to clear standards with data migration and rigorous testing."
+msgstr "تنفيذ النظام وفق معايير واضحة مع ترحيل البيانات واختبارات دقيقة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Support &amp; Grow"
+msgstr "الدعم والتطوير"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Ongoing support and development ensuring system stability and ability to adapt to business growth."
+msgstr "الدعم والتطوير المستمر، بما يضمن استقرار الأنظمة وقدرتها على مواكبة نمو الأعمال."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Industries We Serve"
+msgstr "القطاعات التي نخدمها"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Flexible and scalable ERP solutions that support a variety of sectors."
+msgstr "حلول ERP مرنة وقابلة للتوسع تدعم قطاعات متعددة."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Medical Centers"
+msgstr "المراكز الطبية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Patient management, billing, pharmacy, and compliance"
+msgstr "إدارة المرضى، الفوترة، الصيدلية، والامتثال"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Real Estate"
+msgstr "التطوير العقاري"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Property management, contracts, CRM, and accounting"
+msgstr "إدارة العقارات، العقود، إدارة علاقات العملاء، والمحاسبة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Construction"
+msgstr "المقاولات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Project cost tracking, procurement, and resource planning"
+msgstr "تتبع تكاليف المشاريع، المشتريات، وتخطيط الموارد"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Pharmacies"
+msgstr "الصيدليات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Inventory, prescriptions, POS, and supplier management"
+msgstr "المخزون، الوصفات الطبية، نقاط البيع، وإدارة الموردين"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Sports Clubs"
+msgstr "النوادي الرياضية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Membership, scheduling, billing, and facility management"
+msgstr "العضويات، الجدولة، الفوترة، وإدارة المرافق"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Cooperative Associations"
+msgstr "الجمعيات التعاونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Member management, operations, and financial tracking"
+msgstr "إدارة الأعضاء، العمليات، والتتبع المالي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Retail &amp; POS"
+msgstr "التجزئة ونقاط البيع"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Point of sale, multi-branch, inventory, and omnichannel"
+msgstr "نقاط البيع، الفروع المتعددة، المخزون، والقنوات المتعددة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Travel &amp; Tourism"
+msgstr "السفر والسياحة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Booking, CRM, invoicing, and partner management"
+msgstr "الحجوزات، إدارة علاقات العملاء، الفوترة، وإدارة الشركاء"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"<i class=\"fa fa-handshake-o\" style=\"font-size: 1.5rem;\"/>\n"
+"                            <span>Official Odoo Partner</span>"
+msgstr "<i class=\"fa fa-handshake-o\" style=\"font-size: 1.5rem;\"/> <span>شريك Odoo معتمد</span>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Ready to Transform Your Business?"
+msgstr "هل أنت مستعد لتحويل أعمالك؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid ""
+"We accompany our clients throughout all stages of digital transformation -\n"
+"                            from consultation and planning, through implementation, to ongoing support."
+msgstr "نلتزم بمرافقة عملائنا في جميع مراحل التحول الرقمي، بدءاً من الاستشارة والتخطيط، مروراً بالتنفيذ والتشغيل، وصولاً إلى الدعم والتطوير المستمر."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "Get Started <i class=\"fa fa-arrow-right\"/>"
+msgstr "ابدأ الآن <i class=\"fa fa-arrow-right\"/>"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.techrise_homepage
+msgid "View Services <i class=\"fa fa-th-large\"/>"
+msgstr "عرض الخدمات <i class=\"fa fa-th-large\"/>"

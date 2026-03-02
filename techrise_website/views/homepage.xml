@@ -54,7 +54,7 @@
                             </div>
                             <div class="tr-stat-item">
                                 <div class="tr-stat-number">
-                                    <span class="tr-counter" data-target="50">0</span>
+                                    <span class="tr-counter" data-target="100">0</span>
                                     <span class="tr-stat-suffix">+</span>
                                 </div>
                                 <div class="tr-stat-label">Happy Clients</div>

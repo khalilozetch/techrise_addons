@@ -12,12 +12,17 @@ publicWidget.registry.TechriseAnimations = publicWidget.Widget.extend({
         // Mark JS as ready so CSS animations activate
         document.body.classList.add('tr-js-ready');
 
+        // Force dark navbar immediately
+        self._forceNavbarDark();
+
         // Small delay to let page fully render
         setTimeout(function () {
             self._initCounters();
             self._initScrollAnimations();
             self._initNavbarScroll();
             self._initSmoothScroll();
+            // Re-apply after Odoo finishes rendering
+            self._forceNavbarDark();
         }, 100);
     },
 
@@ -88,6 +93,36 @@ publicWidget.registry.TechriseAnimations = publicWidget.Widget.extend({
                 el.classList.add('animated');
             });
         }
+    },
+
+    _forceNavbarDark: function () {
+        var navy = '#0D1B3E';
+        var isHomepage = document.getElementById('wrapwrap') &&
+                         document.getElementById('wrapwrap').classList.contains('homepage');
+
+        // On homepage: header is transparent (floats over hero video)
+        // On other pages: force navy background
+        if (isHomepage) {
+            return;
+        }
+
+        // Force header background
+        var header = document.querySelector('header.tr-navbar, header#top');
+        if (header) {
+            header.style.setProperty('background-color', navy, 'important');
+        }
+        // Force ALL nav.navbar elements inside header
+        var navbars = document.querySelectorAll('header nav.navbar, header .navbar');
+        navbars.forEach(function (nav) {
+            nav.style.setProperty('background-color', navy, 'important');
+            nav.style.setProperty('background-image', 'none', 'important');
+            nav.style.setProperty('border-color', 'transparent', 'important');
+        });
+        // Force nav links white
+        var links = document.querySelectorAll('header .nav-link, header .navbar-nav > li > a');
+        links.forEach(function (link) {
+            link.style.setProperty('color', '#FFFFFF', 'important');
+        });
     },
 
     _initNavbarScroll: function () {

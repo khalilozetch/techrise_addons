@@ -97,7 +97,7 @@
                                             <div class="col-6">
                                                 <div class="tr-stat-item">
                                                     <div class="tr-stat-number">
-                                                        <span class="tr-counter" data-target="50">0</span>
+                                                        <span class="tr-counter" data-target="100">0</span>
                                                         <span class="tr-stat-suffix">+</span>
                                                     </div>
                                                     <div class="tr-stat-label">Clients</div>
@@ -725,6 +725,17 @@
 
                                     <div class="tr-contact-detail">
                                         <div class="tr-contact-detail-icon">
+                                            <i class="fa fa-phone"/>
+                                        </div>
+                                        <div>
+                                            <h6>Contact Us</h6>
+                                            <a href="tel:+971585955064">+971 58 595 5064</a><br/>
+                                            <a href="tel:+971585755064">+971 58 575 5064</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="tr-contact-detail">
+                                        <div class="tr-contact-detail-icon">
                                             <i class="fa fa-envelope"/>
                                         </div>
                                         <div>
@@ -739,7 +750,7 @@
                                         </div>
                                         <div>
                                             <h6>WhatsApp</h6>
-                                            <a href="https://wa.me/971585755064">Chat with us</a>
+                                            <a href="https://wa.me/971585955064">Chat with us</a>
                                         </div>
                                     </div>
 
@@ -749,7 +760,7 @@
                                         </div>
                                         <div>
                                             <h6>Working Hours</h6>
-                                            <span>Sunday - Thursday: 9:00 AM - 6:00 PM</span>
+                                            <span>Available 24/7</span>
                                         </div>
                                     </div>
 

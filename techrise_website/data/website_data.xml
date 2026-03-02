@@ -44,4 +44,11 @@
         </record>
 
     </data>
+
+    <!-- Set website logo (runs on every update) -->
+    <data noupdate="0">
+        <record id="website.default_website" model="website">
+            <field name="logo" type="base64" file="techrise_website/static/src/img/logo.png"/>
+        </record>
+    </data>
 </odoo>

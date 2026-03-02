@@ -104,9 +104,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1030;
     background: transparent !important;
     padding-top: 10px;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 
     .navbar {
         background: transparent !important;
@@ -115,11 +118,31 @@ body {
         padding-bottom: 12px !important;
     }
 
-    // Make logo bigger
-    .navbar-brand img {
-        height: 70px !important;
-        width: auto !important;
-        max-height: none !important;
+    // Logo on homepage - bigger, white filter
+    .navbar-brand,
+    a.navbar-brand,
+    a.navbar-brand.logo {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        img, span, .logo,
+        span[data-oe-field="logo"],
+        span[data-oe-model="website"] {
+            display: inline-block !important;
+            visibility: visible !important;
+            height: 70px !important;
+            width: auto !important;
+            max-height: none !important;
+
+            img {
+                display: inline-block !important;
+                visibility: visible !important;
+                height: 100% !important;
+                width: auto !important;
+                filter: none !important;
+            }
+        }
     }
 
     // Push nav links down to align with bigger logo
@@ -138,6 +161,30 @@ body {
         }
     }
 
+    // Hamburger on homepage also gold
+    .navbar-toggler {
+        border-color: $tr-gold !important;
+        color: $tr-gold !important;
+    }
+
+    // Mobile hamburger icon on homepage
+    .navbar-toggler-icon,
+    .o_header_mobile_buttons_wrap .navbar-toggler-icon {
+        mask: none !important;
+        -webkit-mask: none !important;
+        background-color: transparent !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F5B731' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+    }
+
+    .o_header_mobile_buttons_wrap {
+        button, .nav-link, a {
+            color: $tr-gold !important;
+        }
+    }
+
     &.o_header_is_scrolled {
         position: fixed;
         background: rgba($tr-navy, 0.95) !important;
@@ -150,8 +197,14 @@ body {
             padding-bottom: 8px !important;
         }
 
-        .navbar-brand img {
+        .navbar-brand img,
+        .navbar-brand span[data-oe-field="logo"],
+        .navbar-brand span[data-oe-model="website"] {
             height: 50px !important;
+
+            img {
+                height: 100% !important;
+            }
         }
 
         #top_menu {
@@ -1080,34 +1133,65 @@ header.tr-navbar,
     background: $tr-navy !important;
     transition: $tr-transition;
     padding: 10px 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1030 !important;
 
-    // Ensure navbar itself has correct background
-    nav, .navbar, #top_menu_container {
-        background: transparent !important;
+    // Force navbar background to navy on ALL pages
+    // Odoo's o-apply-colors mixin sets white bg with high specificity
+    nav, .navbar, #top_menu_container,
+    > .navbar, > nav.navbar {
+        background: $tr-navy !important;
+        background-color: $tr-navy !important;
+        background-image: none !important;
+        border-color: transparent !important;
+        color: $tr-white !important;
     }
 
+    // Logo - force visible
     .navbar-brand,
-    a.navbar-brand {
+    a.navbar-brand,
+    a.navbar-brand.logo {
         display: flex !important;
         visibility: visible !important;
         opacity: 1 !important;
 
-        img, span, .logo {
-            display: block !important;
+        img, span, .logo,
+        span[data-oe-field="logo"],
+        span[data-oe-model="website"] {
+            display: inline-block !important;
             visibility: visible !important;
+            opacity: 1 !important;
             height: 55px !important;
             width: auto !important;
             max-height: none !important;
+
+            img {
+                display: inline-block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                height: 100% !important;
+                width: auto !important;
+                filter: none !important;
+            }
         }
     }
 
     @media (max-width: 991px) {
         .navbar-brand,
-        a.navbar-brand {
+        a.navbar-brand,
+        a.navbar-brand.logo {
             display: flex !important;
 
-            img, span, .logo {
+            img, span, .logo,
+            span[data-oe-field="logo"],
+            span[data-oe-model="website"] {
                 height: 40px !important;
+
+                img {
+                    height: 100% !important;
+                }
             }
         }
     }
@@ -1142,30 +1226,52 @@ header.tr-navbar,
         }
     }
 
-    // Mobile hamburger toggler
+    // Hamburger toggler icon - GOLD
+    // Odoo 18 uses mask+currentColor which inherits theme colors (dark on dark = invisible).
+    // Fix: remove mask entirely, use explicit gold SVG background-image.
+    .navbar-toggler-icon,
+    .o_header_mobile .navbar-toggler-icon,
+    .o_header_mobile_buttons_wrap .navbar-toggler-icon {
+        mask: none !important;
+        -webkit-mask: none !important;
+        background-color: transparent !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F5B731' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+        filter: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: inline-block !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    // Desktop toggler button
     .navbar-toggler {
-        border: 2px solid $tr-white !important;
+        border: 2px solid $tr-gold !important;
         padding: 8px 12px !important;
-        background: rgba($tr-white, 0.1) !important;
-        width: 44px;
-        height: 44px;
-        display: flex;
+        background: rgba($tr-gold, 0.1) !important;
+        color: $tr-gold !important;
+        display: flex !important;
         align-items: center;
         justify-content: center;
 
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23FFFFFF' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-            filter: none !important;
-            width: 24px;
-            height: 24px;
-        }
-
         .oi, .oi-apps, i {
-            color: $tr-white !important;
+            color: $tr-gold !important;
         }
 
         &:focus {
             box-shadow: 0 0 0 2px rgba($tr-gold, 0.5) !important;
+        }
+    }
+
+    // Mobile header hamburger button (Odoo 18 uses button.nav-link.btn, not .navbar-toggler)
+    .o_header_mobile_buttons_wrap {
+        button, .nav-link, a {
+            color: $tr-gold !important;
+            opacity: 1 !important;
+            visibility: visible !important;
         }
     }
 
@@ -1187,16 +1293,21 @@ header.tr-navbar,
         }
     }
 
-    // Mobile menu dropdown
+    // Mobile menu dropdown / offcanvas
     @media (max-width: 991px) {
         #top_menu_collapse,
+        #top_menu_collapse_mobile,
         .navbar-collapse,
         .show,
         .offcanvas,
-        .offcanvas-collapse {
+        .offcanvas-collapse,
+        .o_navbar_mobile {
             background: $tr-navy !important;
-            padding: 15px !important;
-            border-radius: 0 0 12px 12px;
+            color: $tr-white !important;
+
+            .offcanvas-header .btn-close {
+                filter: invert(1) !important;
+            }
 
             .nav-link,
             #top_menu .nav-link,
@@ -1219,11 +1330,17 @@ header.tr-navbar,
 @media (max-width: 991px) {
     header .navbar-collapse,
     header #top_menu_collapse,
+    header #top_menu_collapse_mobile,
     header .offcanvas,
     header .offcanvas-body,
+    header .o_navbar_mobile,
     header .collapse.show,
     header .collapsing {
         background: $tr-navy !important;
+
+        .offcanvas-header .btn-close {
+            filter: invert(1) !important;
+        }
 
         a, .nav-link, .nav-item > a {
             color: $tr-white !important;
@@ -1233,6 +1350,73 @@ header.tr-navbar,
             }
         }
     }
+}
+
+// ============================================================
+// GLOBAL OVERRIDE: Beat Odoo 18 high-specificity header selectors
+// Odoo uses #wrapwrap.o_header_overlay > header > .navbar which
+// resets colors via o-apply-colors making icon invisible on dark bg.
+// ============================================================
+#wrapwrap > header .navbar-toggler-icon,
+#wrapwrap.homepage > header .navbar-toggler-icon,
+#wrapwrap.o_header_overlay > header .navbar-toggler-icon,
+#wrapwrap > header .o_header_mobile .navbar-toggler-icon,
+#wrapwrap > header .o_header_mobile_buttons_wrap .navbar-toggler-icon {
+    mask: none !important;
+    -webkit-mask: none !important;
+    background-color: transparent !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F5B731' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    filter: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+// Force mobile hamburger button visible
+#wrapwrap > header .o_header_mobile_buttons_wrap button,
+#wrapwrap > header .o_header_mobile_buttons_wrap .nav-link {
+    color: $tr-gold !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+// ============================================================
+// GLOBAL: Force navy navbar on ALL pages (beat Odoo o-apply-colors)
+// ============================================================
+#wrapwrap > header.tr-navbar,
+#wrapwrap > header.tr-navbar > .navbar,
+#wrapwrap > header.tr-navbar > nav.navbar,
+#wrapwrap > header.tr-navbar > .navbar.d-none.d-lg-block,
+#wrapwrap > header.tr-navbar > .navbar.o_header_mobile {
+    background: $tr-navy !important;
+    background-color: $tr-navy !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    color: $tr-white !important;
+}
+
+// Nav links on all pages - white text
+#wrapwrap > header.tr-navbar .nav-link,
+#wrapwrap > header.tr-navbar .nav-item > a,
+#wrapwrap > header.tr-navbar .navbar-nav > li > a {
+    color: $tr-white !important;
+
+    &:hover, &:focus, &.active {
+        color: $tr-gold !important;
+    }
+}
+
+// Logo on all pages - force visible
+#wrapwrap > header.tr-navbar .navbar-brand,
+#wrapwrap > header.tr-navbar a.navbar-brand {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .tr-nav-cta {
@@ -1687,3 +1871,48 @@ a.badge[href*="odoo.com"] {
 .tr-bg-navy { background: $tr-navy; }
 
 // Odoo header on homepage is handled by the overlay rules at the top
+
+// ============================================================
+// RTL (Arabic) SUPPORT
+// ============================================================
+html[dir="rtl"],
+html[lang="ar"] {
+    .tr-gold-line {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .tr-footer-contact-item i {
+        margin-right: 0;
+        margin-left: 12px;
+    }
+
+    .tr-contact-detail {
+        .tr-contact-detail-icon {
+            margin-right: 0;
+            margin-left: 16px;
+        }
+    }
+
+    .tr-social-links a {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+    .tr-btn i {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .tr-service-detail {
+        direction: rtl;
+    }
+
+    .tr-breadcrumb {
+        direction: rtl;
+    }
+
+    .tr-footer-links {
+        padding-right: 0;
+    }
+}

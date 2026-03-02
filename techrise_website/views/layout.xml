@@ -10,12 +10,14 @@
         </xpath>
     </template>
 
+
+
     <!-- ============================================================ -->
     <!-- CUSTOM FOOTER - Replace default footer content                -->
     <!-- ============================================================ -->
     <template id="techrise_footer" inherit_id="website.footer_custom" name="Techrise Footer">
         <xpath expr="//div[@id='footer']" position="replace">
-            <div id="footer" class="tr-footer" t-ignore="true" t-if="not no_footer">
+            <div id="footer" class="tr-footer" t-if="not no_footer">
                 <div class="container">
                     <div class="row">
                         <!-- Company Info -->
@@ -69,12 +71,20 @@
                                 <span>Abu Dhabi, Al Bateen Commercial Tower</span>
                             </div>
                             <div class="tr-footer-contact-item">
+                                <i class="fa fa-phone"/>
+                                <a href="tel:+971585955064" style="color: inherit; text-decoration: none;">+971 58 595 5064</a>
+                            </div>
+                            <div class="tr-footer-contact-item">
+                                <i class="fa fa-phone"/>
+                                <a href="tel:+971585755064" style="color: inherit; text-decoration: none;">+971 58 575 5064</a>
+                            </div>
+                            <div class="tr-footer-contact-item">
                                 <i class="fa fa-envelope"/>
                                 <span>info@techriseae.com</span>
                             </div>
                             <div class="tr-footer-contact-item">
                                 <i class="fa fa-clock-o"/>
-                                <span>Sun - Thu: 9:00 AM - 6:00 PM</span>
+                                <span>Available 24/7</span>
                             </div>
                         </div>
                     </div>

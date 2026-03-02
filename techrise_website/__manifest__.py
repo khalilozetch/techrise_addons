@@ -31,6 +31,7 @@
         ],
     },
     'images': ['static/description/icon.jpg'],
+    'post_init_hook': '_post_init_hook',
     'installable': True,
     'application': True,
     'auto_install': False,
