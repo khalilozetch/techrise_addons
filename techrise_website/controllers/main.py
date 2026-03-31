@@ -1,5 +1,19 @@
 from odoo import http
 from odoo.http import request
+from werkzeug.utils import redirect
+
+
+SERVICE_LABELS = {
+    'erp': 'ERP System Design (Odoo)',
+    'website': 'Website Design & Development',
+    'mobile': 'Mobile App Development',
+    'integration': 'System Integration',
+    'accounting': 'Accounting & Tax Services',
+    'branding': 'Branding & Marketing',
+    'hosting': 'Server & Hosting',
+    'support': 'Technical Support',
+    'other': 'Other',
+}
 
 
 class TechriseWebsite(http.Controller):
@@ -19,3 +33,36 @@ class TechriseWebsite(http.Controller):
     @http.route(['/contact', '/contactus'], type='http', auth='public', website=True, sitemap=True)
     def contact_page(self, **kwargs):
         return request.render('techrise_website.contact_page')
+
+    @http.route('/contact/submit', type='http', auth='public', website=True, methods=['POST'], csrf=True)
+    def contact_submit(self, **kwargs):
+        name = kwargs.get('name', '').strip()
+        email = kwargs.get('email_from', '').strip()
+        phone = kwargs.get('phone', '').strip()
+        company = kwargs.get('company', '').strip()
+        service_key = kwargs.get('service', '').strip()
+        message = kwargs.get('body', '').strip()
+
+        service_label = SERVICE_LABELS.get(service_key, service_key)
+
+        lead_name = f"Website Contact: {name}"
+        if service_label:
+            lead_name = f"{service_label} - {name}"
+
+        description = message
+        if service_label:
+            description = f"Service Interested In: {service_label}\n\n{message}"
+
+        vals = {
+            'name': lead_name,
+            'contact_name': name,
+            'email_from': email,
+            'phone': phone,
+            'partner_name': company or False,
+            'description': description,
+            'type': 'lead',
+        }
+
+        request.env['crm.lead'].sudo().create(vals)
+
+        return request.render('techrise_website.contact_thankyou')

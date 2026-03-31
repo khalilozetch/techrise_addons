@@ -17,7 +17,7 @@
     """,
     'author': 'Techrise',
     'website': 'https://techriseae.com',
-    'depends': ['website'],
+    'depends': ['website', 'crm'],
     'data': [
         'views/layout.xml',
         'views/homepage.xml',

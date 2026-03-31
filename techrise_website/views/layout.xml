@@ -13,6 +13,17 @@
 
 
     <!-- ============================================================ -->
+    <!-- FLOATING WHATSAPP BUTTON ON ALL PAGES                         -->
+    <!-- ============================================================ -->
+    <template id="techrise_whatsapp_button" inherit_id="website.layout" name="Techrise WhatsApp Button">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20services%20and%20would%20like%20to%20know%20more." target="_blank" class="tr-whatsapp-float" aria-label="Chat on WhatsApp">
+                <i class="fa fa-whatsapp"/>
+            </a>
+        </xpath>
+    </template>
+
+    <!-- ============================================================ -->
     <!-- CUSTOM FOOTER - Replace default footer content                -->
     <!-- ============================================================ -->
     <template id="techrise_footer" inherit_id="website.footer_custom" name="Techrise Footer">
