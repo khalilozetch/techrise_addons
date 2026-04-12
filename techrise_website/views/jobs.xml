@@ -32,4 +32,57 @@
         </xpath>
     </template>
 
+    <!-- ============================================================ -->
+    <!-- JOBS PAGE - Replace Right Sidebar with Techrise Info          -->
+    <!-- ============================================================ -->
+    <template id="jobs_custom_sidebar" inherit_id="website_hr_recruitment.job_right_side_bar" name="Techrise Jobs Sidebar">
+        <xpath expr="//div[@id='jobs_grid_right']" position="replace">
+            <div class="col-lg-4" id="jobs_grid_right">
+                <section class="tr-jobs-sidebar">
+                    <div class="tr-sidebar-card">
+                        <img src="/techrise_website/static/src/img/logo.png"
+                             class="tr-sidebar-logo"
+                             alt="Techrise"/>
+                        <p class="tr-sidebar-intro">
+                            Techrise is your trusted partner for organized digital transformation.
+                            We help businesses grow through smart technology solutions.
+                        </p>
+                        <hr class="tr-sidebar-divider"/>
+                        <h5 class="tr-sidebar-title">Get in Touch</h5>
+                        <ul class="tr-sidebar-contact">
+                            <li>
+                                <i class="fa fa-comment"/>
+                                <a href="/contactus">Contact Us</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"/>
+                                <a href="mailto:info@techriseae.com">info@techriseae.com</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"/>
+                                <a href="tel:+971585955064" class="o_force_ltr">+971 58 595 5064</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"/>
+                                <a href="tel:+971585755064" class="o_force_ltr">+971 58 575 5064</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"/>
+                                <span>Abu Dhabi, UAE</span>
+                            </li>
+                        </ul>
+                        <hr class="tr-sidebar-divider"/>
+                        <h5 class="tr-sidebar-title">Follow Us</h5>
+                        <div class="tr-sidebar-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                            <a href="#" aria-label="Twitter"><i class="fa fa-twitter"/></a>
+                            <a href="#" aria-label="Facebook"><i class="fa fa-facebook"/></a>
+                            <a href="#" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
 </odoo>

@@ -2074,6 +2074,131 @@ html[lang="ar"] {
 }
 
 // ============================================================
+// JOBS PAGE - CUSTOM SIDEBAR
+// ============================================================
+.tr-jobs-sidebar {
+    padding-top: 20px;
+
+    .tr-sidebar-card {
+        background: $tr-white;
+        border-radius: $tr-radius;
+        padding: 32px 28px;
+        box-shadow: $tr-shadow;
+        border: 1px solid $tr-gray-100;
+        position: sticky;
+        top: 100px;
+
+        // Top accent bar
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, $tr-blue, $tr-gold);
+        }
+    }
+
+    .tr-sidebar-logo {
+        max-width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .tr-sidebar-intro {
+        color: $tr-gray-600;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    .tr-sidebar-divider {
+        border: none;
+        border-top: 1px solid $tr-gray-200;
+        margin: 24px 0;
+    }
+
+    .tr-sidebar-title {
+        color: $tr-navy;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .tr-sidebar-contact {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 0.95rem;
+
+            .fa {
+                color: $tr-gold;
+                width: 20px;
+                margin-right: 10px;
+                font-size: 0.95rem;
+            }
+
+            a {
+                color: $tr-gray-700;
+                text-decoration: none;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: $tr-blue;
+                }
+            }
+
+            span {
+                color: $tr-gray-700;
+            }
+        }
+    }
+
+    .tr-sidebar-social {
+        display: flex;
+        gap: 10px;
+
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: $tr-gray-100;
+            color: $tr-navy;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: $tr-transition;
+            text-decoration: none;
+
+            &:hover {
+                background: $tr-gold;
+                color: $tr-navy;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    // RTL support for Arabic
+    [dir="rtl"] & {
+        .tr-sidebar-contact li .fa {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+    }
+}
+
+// ============================================================
 // JOB DETAIL PAGE
 // ============================================================
 .js_hr_recruitment {
