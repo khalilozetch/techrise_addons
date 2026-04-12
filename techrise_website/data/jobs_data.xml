@@ -3,12 +3,24 @@
     <data noupdate="1">
 
         <!-- ============================================================ -->
+        <!-- Techrise Office Address (Abu Dhabi, UAE)                      -->
+        <!-- ============================================================ -->
+        <record id="techrise_office_uae" model="res.partner">
+            <field name="name">Techrise - Abu Dhabi Office</field>
+            <field name="city">Abu Dhabi</field>
+            <field name="country_id" ref="base.ae"/>
+            <field name="is_company">True</field>
+            <field name="type">contact</field>
+        </record>
+
+        <!-- ============================================================ -->
         <!-- Sales Representative Job Position                             -->
         <!-- ============================================================ -->
         <record id="job_sales_representative" model="hr.job">
             <field name="name">Sales Representative</field>
             <field name="department_id" ref="hr.dep_sales"/>
             <field name="contract_type_id" ref="hr.contract_type_full_time"/>
+            <field name="address_id" ref="techrise_office_uae"/>
             <field name="no_of_recruitment">1</field>
             <field name="is_published">True</field>
             <field name="description">
