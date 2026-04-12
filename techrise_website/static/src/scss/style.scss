@@ -1957,3 +1957,272 @@ html[lang="ar"] {
         font-size: 28px;
     }
 }
+
+// ============================================================
+// JOBS / CAREERS PAGE
+// ============================================================
+
+// Jobs page header variant
+.tr-header-jobs {
+    background: linear-gradient(135deg, rgba($tr-navy, 0.90) 0%, rgba($tr-blue-dark, 0.85) 100%),
+                url('/techrise_website/static/src/img/bg/page-header.jpg') center/cover no-repeat;
+}
+
+// Jobs listing wrapper
+.tr-jobs-wrap {
+
+    // Top filter/nav bar
+    .navbar.navbar-light {
+        background: $tr-white !important;
+        border-top: 3px solid $tr-gold !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+        padding: 12px 0;
+
+        .navbar-brand {
+            color: $tr-navy !important;
+            font-weight: 700 !important;
+            font-size: 1.2rem;
+        }
+    }
+
+    // Job cards container
+    .oe_website_jobs {
+        padding-top: 20px !important;
+        padding-bottom: 40px;
+    }
+
+    // Individual job cards
+    .card {
+        border: 1px solid $tr-gray-100 !important;
+        border-radius: $tr-radius !important;
+        box-shadow: $tr-shadow;
+        transition: $tr-transition;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, $tr-blue, $tr-gold);
+            transition: $tr-transition;
+        }
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: $tr-shadow-lg;
+
+            &::before {
+                height: 5px;
+            }
+        }
+
+        .card-body {
+            padding: 28px !important;
+
+            // Job title link
+            a.text-reset {
+                h3, h4 {
+                    color: $tr-navy !important;
+                    font-weight: 700 !important;
+                    font-size: 1.25rem;
+                    transition: color 0.2s ease;
+
+                    &:hover {
+                        color: $tr-blue !important;
+                    }
+                }
+            }
+
+            // Positions count
+            h5 {
+                color: $tr-gray-500;
+                font-weight: 400;
+                font-size: 0.9rem;
+            }
+
+            // Job info icons (city, department, type)
+            .o_job_infos {
+                margin-top: 16px;
+                padding-top: 16px;
+                border-top: 1px solid $tr-gray-100;
+                gap: 8px;
+
+                span {
+                    color: $tr-gray-600 !important;
+                    font-size: 0.9rem;
+                }
+
+                .fa {
+                    color: $tr-gold !important;
+                    margin-right: 6px;
+                    font-size: 0.85rem;
+                }
+            }
+
+            // Description text
+            .oe_empty.text-muted {
+                color: $tr-gray-500 !important;
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+// ============================================================
+// JOB DETAIL PAGE
+// ============================================================
+.js_hr_recruitment {
+
+    // Back nav bar
+    .navbar.navbar-light {
+        background: $tr-white !important;
+        border-top: 3px solid $tr-gold !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+
+        .navbar-brand {
+            color: $tr-navy !important;
+            font-weight: 700;
+
+            a {
+                color: $tr-blue !important;
+                text-decoration: none;
+                font-weight: 600;
+
+                &:hover {
+                    color: $tr-gold !important;
+                }
+
+                .fa {
+                    color: $tr-gold !important;
+                }
+            }
+        }
+    }
+
+    // Job detail content
+    .container {
+
+        // Job title
+        h1 {
+            color: $tr-navy !important;
+            font-weight: 800 !important;
+            font-size: 2.2rem;
+        }
+
+        // Location info
+        h5.fw-light {
+            color: $tr-gray-600 !important;
+
+            .fa {
+                color: $tr-gold !important;
+            }
+        }
+
+        // Apply button
+        .btn-primary {
+            background: $tr-gold !important;
+            border-color: $tr-gold !important;
+            color: $tr-navy !important;
+            font-weight: 700 !important;
+            padding: 14px 40px !important;
+            border-radius: 50px !important;
+            font-size: 1.05rem;
+            transition: $tr-transition;
+            box-shadow: 0 4px 16px rgba($tr-gold, 0.3);
+
+            &:hover {
+                background: $tr-gold-light !important;
+                border-color: $tr-gold-light !important;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 24px rgba($tr-gold, 0.4);
+            }
+        }
+    }
+
+    // Job description content styling
+    .tr-job-description {
+        padding: 20px 0;
+
+        section {
+            h3 {
+                color: $tr-navy;
+                font-weight: 800;
+            }
+
+            ul li {
+                padding: 4px 0;
+
+                &::marker {
+                    color: $tr-gold;
+                }
+            }
+
+            strong {
+                color: $tr-navy;
+            }
+        }
+    }
+
+    // Bottom apply bar
+    .o_job_bottom_bar {
+        background: $tr-lavender;
+        border-radius: $tr-radius;
+        padding: 40px !important;
+    }
+}
+
+// ============================================================
+// JOB APPLICATION FORM
+// ============================================================
+.o_website_hr_recruitment {
+
+    h3, h4 {
+        color: $tr-navy !important;
+        font-weight: 700;
+    }
+
+    // Form inputs
+    .s_website_form {
+
+        .form-control, .form-select {
+            background: $tr-gray-50 !important;
+            border: 2px solid $tr-gray-200 !important;
+            border-radius: 8px !important;
+            padding: 12px 16px !important;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: $tr-blue !important;
+                box-shadow: 0 0 0 3px rgba($tr-blue, 0.1) !important;
+            }
+        }
+
+        label {
+            color: $tr-navy;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        // Submit button
+        .btn-primary, .s_website_form_send {
+            background: $tr-gold !important;
+            border-color: $tr-gold !important;
+            color: $tr-navy !important;
+            font-weight: 700 !important;
+            padding: 14px 40px !important;
+            border-radius: 50px !important;
+            transition: $tr-transition;
+
+            &:hover {
+                background: $tr-gold-light !important;
+                transform: translateY(-2px);
+            }
+        }
+    }
+}

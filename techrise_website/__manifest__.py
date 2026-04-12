@@ -17,12 +17,14 @@
     """,
     'author': 'Techrise',
     'website': 'https://techriseae.com',
-    'depends': ['website', 'crm'],
+    'depends': ['website', 'crm', 'website_hr_recruitment'],
     'data': [
         'views/layout.xml',
         'views/homepage.xml',
         'views/pages.xml',
+        'views/jobs.xml',
         'data/website_data.xml',
+        'data/jobs_data.xml',
     ],
     'assets': {
         'web.assets_frontend': [

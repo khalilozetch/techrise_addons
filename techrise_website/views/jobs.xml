@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- JOBS PAGE - Hero Banner                                       -->
+    <!-- ============================================================ -->
+    <template id="jobs_hero_banner" inherit_id="website_hr_recruitment.index" name="Techrise Jobs Hero">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <section class="tr-page-header tr-header-jobs">
+                <div class="container">
+                    <h1>Join Our <span class="tr-text-gold">Team</span></h1>
+                    <p>Be part of a team that's transforming businesses through technology</p>
+                    <div class="tr-breadcrumb">
+                        <a href="/">Home</a>
+                        <span> / </span>
+                        <span class="active">Careers</span>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+
+        <!-- Add custom class to wrap div -->
+        <xpath expr="//div[@id='wrap']" position="attributes">
+            <attribute name="class" add="tr-jobs-wrap" separator=" "/>
+        </xpath>
+
+        <!-- Replace "Our Job Offers" brand text -->
+        <xpath expr="//span[hasclass('navbar-brand')]" position="replace">
+            <span class="navbar-brand h5 my-0 me-sm-auto" style="color: #0D1B3E; font-weight: 700;">
+                Open Positions
+            </span>
+        </xpath>
+    </template>
+
+</odoo>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- ============================================================ -->
+        <!-- Sales Representative Job Position                             -->
+        <!-- ============================================================ -->
+        <record id="job_sales_representative" model="hr.job">
+            <field name="name">Sales Representative</field>
+            <field name="department_id" ref="hr.dep_sales"/>
+            <field name="contract_type_id" ref="hr.contract_type_full_time"/>
+            <field name="no_of_recruitment">1</field>
+            <field name="is_published">True</field>
+            <field name="description">
+Sales Representative - Techrise (Abu Dhabi, UAE)
+Client meetings, deal closing, and relationship building.
+Competitive salary + project-based commission.
+            </field>
+            <field name="website_description" type="html">
+<div class="tr-job-description">
+
+    <!-- About Section -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            About Techrise
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <p style="color: #475569; line-height: 1.8; font-size: 16px;">
+            Techrise is a specialized technology company and an accredited Odoo partner based in Abu Dhabi, UAE.
+            We help businesses transform their operations through smart digital solutions — from ERP implementation
+            and web development to mobile applications and cloud hosting. We're growing fast and looking for driven
+            individuals to join our team.
+        </p>
+    </section>
+
+    <!-- Role Overview -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            Role Overview
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <p style="color: #475569; line-height: 1.8; font-size: 16px;">
+            We are looking for a motivated <strong>Sales Representative</strong> to join our team in Abu Dhabi.
+            You will be the face of Techrise — meeting potential clients, understanding their business needs,
+            presenting our solutions, and closing deals. This is a high-impact role with direct influence on
+            the company's growth.
+        </p>
+    </section>
+
+    <!-- Key Responsibilities -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            Key Responsibilities
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <ul style="color: #475569; line-height: 2.2; font-size: 16px; padding-left: 20px;">
+            <li>Identify and reach out to potential clients through various channels (calls, emails, networking, social media)</li>
+            <li>Conduct face-to-face meetings and presentations to showcase Techrise's solutions and services</li>
+            <li>Understand client business requirements and map them to our ERP, web, mobile, and hosting solutions</li>
+            <li>Prepare and present proposals, quotations, and negotiate contracts to close deals</li>
+            <li>Build and maintain strong, long-term relationships with clients to ensure repeat business</li>
+            <li>Collaborate with the technical team to ensure smooth project handover after deal closure</li>
+            <li>Track sales activities, pipeline, and revenue targets using the CRM system</li>
+        </ul>
+    </section>
+
+    <!-- Requirements -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            Requirements
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <ul style="color: #475569; line-height: 2.2; font-size: 16px; padding-left: 20px;">
+            <li>2+ years of experience in B2B sales, preferably in IT services, ERP solutions, or technology consulting</li>
+            <li>Excellent communication and presentation skills in English</li>
+            <li>Hindi/Urdu speaking candidates are strongly preferred</li>
+            <li>Proven track record of meeting or exceeding sales targets</li>
+            <li>Strong interpersonal skills with the ability to build rapport quickly</li>
+            <li>Self-motivated, target-driven, and comfortable with a commission-based structure</li>
+            <li>Familiarity with CRM tools and sales processes</li>
+            <li>Must be based in or willing to relocate to Abu Dhabi, UAE</li>
+        </ul>
+    </section>
+
+    <!-- Nice to Have -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            Nice to Have
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <ul style="color: #475569; line-height: 2.2; font-size: 16px; padding-left: 20px;">
+            <li>Knowledge of Odoo ERP or similar enterprise software</li>
+            <li>Experience selling to SMEs in the Middle East market</li>
+            <li>Arabic language skills (a plus, not required)</li>
+            <li>Existing network of business contacts in UAE</li>
+        </ul>
+    </section>
+
+    <!-- Compensation -->
+    <section class="mb-5">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            What We Offer
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <ul style="color: #475569; line-height: 2.2; font-size: 16px; padding-left: 20px;">
+            <li><strong>Competitive fixed salary</strong> based on experience</li>
+            <li><strong>Attractive commission</strong> on every closed project — your earnings grow with your success</li>
+            <li>Opportunity to work with cutting-edge technology and international clients</li>
+            <li>A dynamic, supportive, and fast-growing work environment</li>
+            <li>Career growth opportunities as the company expands</li>
+        </ul>
+    </section>
+
+    <!-- Location -->
+    <section class="mb-4">
+        <h3 style="color: #0D1B3E; font-weight: 800; margin-bottom: 16px;">
+            Location
+        </h3>
+        <div style="width: 60px; height: 4px; background: #F5B731; border-radius: 2px; margin-bottom: 20px;"></div>
+        <p style="color: #475569; line-height: 1.8; font-size: 16px;">
+            <i class="fa fa-map-marker" style="color: #F5B731; margin-right: 8px;"></i>
+            <strong>Abu Dhabi, United Arab Emirates</strong> — On-site
+        </p>
+    </section>
+
+</div>
+            </field>
+        </record>
+
+    </data>
+</odoo>
