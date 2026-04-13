@@ -33,6 +33,37 @@
     </template>
 
     <!-- ============================================================ -->
+    <!-- JOB DETAIL - Add missing schema.org JobPosting fields         -->
+    <!-- Fixes: description (critical), baseSalary, validThrough       -->
+    <!-- ============================================================ -->
+    <template id="job_detail_schema_fix" inherit_id="website_hr_recruitment.detail" name="Techrise Job Schema Fix">
+        <!-- Add itemprop="description" to the website_description div -->
+        <xpath expr="//div[@t-field='job.website_description']" position="attributes">
+            <attribute name="itemprop">description</attribute>
+        </xpath>
+
+        <!-- Add baseSalary and validThrough meta tags inside JobPosting itemscope -->
+        <xpath expr="//div[@itemtype='https://schema.org/JobPosting']/meta[@itemprop='directApply']" position="after">
+            <!-- Valid through: 90 days from posting date -->
+            <meta t-if="job.published_date" itemprop="validThrough"
+                  t-att-content="(job.published_date + datetime.timedelta(days=90)).isoformat()"/>
+
+            <!-- Base Salary Schema -->
+            <span itemprop="baseSalary" itemscope="itemscope" itemtype="https://schema.org/MonetaryAmount">
+                <meta itemprop="currency" content="AED"/>
+                <span itemprop="value" itemscope="itemscope" itemtype="https://schema.org/QuantitativeValue">
+                    <meta itemprop="unitText" content="MONTH"/>
+                    <meta itemprop="minValue" content="5000"/>
+                    <meta itemprop="maxValue" content="15000"/>
+                </span>
+            </span>
+
+            <!-- Industry -->
+            <meta itemprop="industry" content="Information Technology"/>
+        </xpath>
+    </template>
+
+    <!-- ============================================================ -->
     <!-- JOBS PAGE - Replace Right Sidebar with Techrise Info          -->
     <!-- ============================================================ -->
     <template id="jobs_custom_sidebar" inherit_id="website_hr_recruitment.job_right_side_bar" name="Techrise Jobs Sidebar">
