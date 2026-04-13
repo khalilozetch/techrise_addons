@@ -23,6 +23,7 @@
         'views/homepage.xml',
         'views/pages.xml',
         'views/jobs.xml',
+        'views/seo.xml',
         'data/website_data.xml',
         'data/jobs_data.xml',
     ],

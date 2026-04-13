@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- ================================================================ -->
+    <!-- ABOUT PAGE - SEO Meta Tags                                        -->
+    <!-- ================================================================ -->
+    <template id="about_page_seo" inherit_id="techrise_website.about_page" name="About Page SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">About Techrise – Odoo Gold Partner in Abu Dhabi, UAE</t>
+            <t t-set="website_meta_description">Techrise is a leading Odoo Gold Partner in the UAE, specializing in ERP implementation, digital transformation, and custom software development for businesses in Abu Dhabi, Dubai, and across the Middle East.</t>
+            <t t-set="website_meta_keywords">odoo gold partner uae, odoo partner abu dhabi, about techrise, odoo implementation company uae, digital transformation abu dhabi, erp consultant uae, odoo developer uae</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- SERVICES PAGE - SEO Meta Tags                                     -->
+    <!-- ================================================================ -->
+    <template id="services_page_seo" inherit_id="techrise_website.services_page" name="Services Page SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Odoo ERP, Web &amp; Mobile Development Services in UAE</t>
+            <t t-set="website_meta_description">Explore Techrise's comprehensive services: Odoo ERP implementation, custom web development, mobile apps, system integration, accounting automation, and cloud hosting in UAE.</t>
+            <t t-set="website_meta_keywords">odoo erp services uae, web development abu dhabi, mobile app development uae, system integration uae, erp consulting services, custom software development uae, odoo customization</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- SERVER &amp; HOSTING PAGE - SEO Meta Tags                         -->
+    <!-- ================================================================ -->
+    <template id="server_page_seo" inherit_id="techrise_website.server_page" name="Server Page SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Odoo Hosting &amp; Cloud Server Solutions in UAE</t>
+            <t t-set="website_meta_description">Reliable and secure Odoo hosting, dedicated servers, and cloud infrastructure services in UAE. 24/7 monitoring, daily backups, and enterprise-grade security for your business.</t>
+            <t t-set="website_meta_keywords">odoo hosting uae, cloud server uae, dedicated server abu dhabi, odoo cloud hosting, managed hosting uae, server maintenance uae, business cloud solutions</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- CONTACT PAGE - SEO Meta Tags                                      -->
+    <!-- ================================================================ -->
+    <template id="contact_page_seo" inherit_id="techrise_website.contact_page" name="Contact Page SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Contact Techrise – Get a Free Odoo Consultation in UAE</t>
+            <t t-set="website_meta_description">Contact Techrise for a free consultation on Odoo ERP, digital transformation, and custom software development. Based in Abu Dhabi, serving clients across UAE and the Middle East.</t>
+            <t t-set="website_meta_keywords">contact techrise, odoo consultation uae, erp consultant abu dhabi, odoo quote uae, digital transformation consultant, odoo implementation cost uae</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- GLOBAL SEO - JSON-LD Schema + GSC Verification + hreflang         -->
+    <!-- ================================================================ -->
+    <template id="techrise_global_seo" inherit_id="website.layout" name="Techrise Global SEO">
+        <xpath expr="//head" position="inside">
+
+            <!-- Google Search Console Verification (update with your code) -->
+            <!-- <meta name="google-site-verification" content="YOUR_GSC_CODE_HERE"/> -->
+
+            <!-- Bing Webmaster Tools Verification (update with your code) -->
+            <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE"/> -->
+
+            <!-- hreflang tags for English/Arabic -->
+            <link rel="alternate" hreflang="en" t-att-href="'https://techriseae.com' + request.httprequest.path"/>
+            <link rel="alternate" hreflang="ar" t-att-href="'https://techriseae.com/ar_001' + request.httprequest.path"/>
+            <link rel="alternate" hreflang="x-default" t-att-href="'https://techriseae.com' + request.httprequest.path"/>
+
+            <!-- JSON-LD: Organization Schema -->
+            <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Techrise",
+    "alternateName": "Techrise UAE",
+    "url": "https://techriseae.com",
+    "logo": "https://techriseae.com/techrise_website/static/src/img/logo.png",
+    "description": "Techrise is a leading Odoo Gold Partner and digital transformation company based in Abu Dhabi, UAE. We specialize in ERP implementation, custom software development, mobile apps, and cloud hosting.",
+    "foundingDate": "2024",
+    "founders": [{
+        "@type": "Person",
+        "name": "Techrise Founder"
+    }],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Bateen Commercial Tower",
+        "addressLocality": "Abu Dhabi",
+        "addressRegion": "Abu Dhabi",
+        "addressCountry": "AE"
+    },
+    "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+971-58-595-5064",
+        "contactType": "sales",
+        "availableLanguage": ["en", "ar"],
+        "areaServed": "AE"
+    },{
+        "@type": "ContactPoint",
+        "telephone": "+971-58-575-5064",
+        "contactType": "customer service",
+        "availableLanguage": ["en", "ar"],
+        "areaServed": "AE"
+    }],
+    "email": "info@techriseae.com",
+    "sameAs": [
+        "https://www.linkedin.com/company/techriseae"
+    ]
+}
+            </script>
+
+            <!-- JSON-LD: LocalBusiness Schema -->
+            <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Techrise",
+    "image": "https://techriseae.com/techrise_website/static/src/img/logo.png",
+    "url": "https://techriseae.com",
+    "telephone": "+971585955064",
+    "email": "info@techriseae.com",
+    "priceRange": "$$",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Bateen Commercial Tower",
+        "addressLocality": "Abu Dhabi",
+        "addressCountry": "AE"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.4539,
+        "longitude": 54.3773
+    },
+    "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "18:00"
+    }],
+    "areaServed": [
+        {"@type": "Country", "name": "United Arab Emirates"},
+        {"@type": "Country", "name": "Saudi Arabia"},
+        {"@type": "Country", "name": "Qatar"}
+    ],
+    "serviceType": [
+        "Odoo ERP Implementation",
+        "Digital Transformation",
+        "Custom Software Development",
+        "Mobile App Development",
+        "Cloud Hosting",
+        "System Integration",
+        "Accounting Automation"
+    ]
+}
+            </script>
+
+            <!-- JSON-LD: WebSite Schema (for sitelinks searchbox) -->
+            <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Techrise",
+    "url": "https://techriseae.com",
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://techriseae.com/website/search?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
+}
+            </script>
+
+        </xpath>
+    </template>
+
+</odoo>
