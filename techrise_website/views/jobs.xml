@@ -33,22 +33,41 @@
     </template>
 
     <!-- ============================================================ -->
-    <!-- JOB DETAIL - Add missing schema.org JobPosting fields         -->
-    <!-- Fixes: description (critical), baseSalary, validThrough       -->
+    <!-- JOB DETAIL - Fix Google Search Console schema.org issues      -->
+    <!-- Fixes:                                                         -->
+    <!--   CRITICAL: description                                        -->
+    <!--   Non-critical: streetAddress, addressLocality, addressRegion, -->
+    <!--                 postalCode, baseSalary, validThrough           -->
     <!-- ============================================================ -->
     <template id="job_detail_schema_fix" inherit_id="website_hr_recruitment.detail" name="Techrise Job Schema Fix">
-        <!-- Add itemprop="description" to the website_description div -->
+
+        <!-- Add itemprop="description" to the website_description div (CRITICAL) -->
         <xpath expr="//div[@t-field='job.website_description']" position="attributes">
             <attribute name="itemprop">description</attribute>
         </xpath>
 
-        <!-- Add baseSalary and validThrough meta tags inside JobPosting itemscope -->
-        <xpath expr="//div[@itemtype='https://schema.org/JobPosting']/meta[@itemprop='directApply']" position="after">
-            <!-- Valid through: 90 days from posting date -->
-            <meta t-if="job.published_date" itemprop="validThrough"
-                  t-att-content="(job.published_date + datetime.timedelta(days=90)).isoformat()"/>
+        <!-- Replace plain string address with structured PostalAddress schema -->
+        <xpath expr="//span[@itemprop='jobLocation']/meta[@itemprop='address']" position="replace">
+            <span itemprop="address" itemscope="itemscope" itemtype="https://schema.org/PostalAddress">
+                <meta itemprop="streetAddress"
+                      t-att-content="job.address_id.sudo().street or 'Al Bateen Commercial Tower'"/>
+                <meta itemprop="addressLocality"
+                      t-att-content="job.address_id.sudo().city or 'Abu Dhabi'"/>
+                <meta itemprop="addressRegion" content="Abu Dhabi"/>
+                <meta itemprop="postalCode"
+                      t-att-content="job.address_id.sudo().zip or '00000'"/>
+                <meta itemprop="addressCountry"
+                      t-att-content="job.address_id.sudo().country_id.code or 'AE'"/>
+            </span>
+        </xpath>
 
-            <!-- Base Salary Schema -->
+        <!-- Add baseSalary, validThrough, and industry inside JobPosting itemscope -->
+        <xpath expr="//div[@itemtype='https://schema.org/JobPosting']/meta[@itemprop='directApply']" position="after">
+            <!-- Valid through: always render, fallback to today if published_date missing -->
+            <meta itemprop="validThrough"
+                  t-att-content="((job.published_date or datetime.datetime.now()) + datetime.timedelta(days=90)).isoformat()"/>
+
+            <!-- Base Salary Schema (always render) -->
             <span itemprop="baseSalary" itemscope="itemscope" itemtype="https://schema.org/MonetaryAmount">
                 <meta itemprop="currency" content="AED"/>
                 <span itemprop="value" itemscope="itemscope" itemtype="https://schema.org/QuantitativeValue">
