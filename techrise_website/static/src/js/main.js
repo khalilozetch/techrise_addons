@@ -155,4 +155,98 @@ publicWidget.registry.TechriseAnimations = publicWidget.Widget.extend({
     },
 });
 
+// ============================================================
+// COOKIE CONSENT BANNER — Google Consent Mode V2
+// ============================================================
+publicWidget.registry.TechriseCookieBanner = publicWidget.Widget.extend({
+    selector: '#tr-cookie-banner',
+
+    CONSENT_KEY: 'tr_cookie_consent_v1',
+
+    start: function () {
+        this._super.apply(this, arguments);
+        var self = this;
+
+        var saved = this._readConsent();
+        if (saved) {
+            this._applyConsent(saved);
+            this._hideBanner();
+        } else {
+            this._showBanner();
+        }
+
+        var acceptBtn = this.el.querySelector('#tr-cookie-accept');
+        var rejectBtn = this.el.querySelector('#tr-cookie-reject');
+        var customizeBtn = this.el.querySelector('#tr-cookie-customize');
+        var saveBtn = this.el.querySelector('#tr-cookie-save');
+        var prefsPanel = this.el.querySelector('#tr-cookie-preferences');
+
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', function () {
+                self._setConsent({ analytics: true, ads: true });
+            });
+        }
+        if (rejectBtn) {
+            rejectBtn.addEventListener('click', function () {
+                self._setConsent({ analytics: false, ads: false });
+            });
+        }
+        if (customizeBtn && prefsPanel) {
+            customizeBtn.addEventListener('click', function () {
+                prefsPanel.hidden = !prefsPanel.hidden;
+            });
+        }
+        if (saveBtn) {
+            saveBtn.addEventListener('click', function () {
+                var analyticsCb = self.el.querySelector('#tr-cookie-analytics');
+                var adsCb = self.el.querySelector('#tr-cookie-ads');
+                self._setConsent({
+                    analytics: analyticsCb ? analyticsCb.checked : false,
+                    ads: adsCb ? adsCb.checked : false,
+                });
+            });
+        }
+    },
+
+    _readConsent: function () {
+        try {
+            var raw = localStorage.getItem(this.CONSENT_KEY);
+            return raw ? JSON.parse(raw) : null;
+        } catch (e) {
+            return null;
+        }
+    },
+
+    _setConsent: function (choice) {
+        try {
+            localStorage.setItem(this.CONSENT_KEY, JSON.stringify({
+                analytics: !!choice.analytics,
+                ads: !!choice.ads,
+                ts: Date.now(),
+            }));
+        } catch (e) { /* noop */ }
+        this._applyConsent(choice);
+        this._hideBanner();
+    },
+
+    _applyConsent: function (choice) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('consent', 'update', {
+            'ad_storage': choice.ads ? 'granted' : 'denied',
+            'ad_user_data': choice.ads ? 'granted' : 'denied',
+            'ad_personalization': choice.ads ? 'granted' : 'denied',
+            'analytics_storage': choice.analytics ? 'granted' : 'denied',
+        });
+    },
+
+    _showBanner: function () {
+        this.el.classList.add('tr-cookie-visible');
+    },
+
+    _hideBanner: function () {
+        this.el.classList.remove('tr-cookie-visible');
+    },
+});
+
 export default publicWidget.registry.TechriseAnimations;

@@ -24,6 +24,84 @@
     </template>
 
     <!-- ============================================================ -->
+    <!-- COOKIE CONSENT BANNER (Google Consent Mode V2 compatible)     -->
+    <!-- ============================================================ -->
+    <template id="techrise_cookie_banner" inherit_id="website.layout" name="Techrise Cookie Banner">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <div id="tr-cookie-banner" class="tr-cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+                <div class="tr-cookie-content">
+                    <div class="tr-cookie-text">
+                        <h5>
+                            <i class="fa fa-shield"/>
+                            <span class="tr-cookie-title-en">We value your privacy</span>
+                            <span class="tr-cookie-title-ar">نحن نحترم خصوصيتك</span>
+                        </h5>
+                        <p class="tr-cookie-desc-en">
+                            We use cookies to enhance your browsing experience, analyze site traffic, and personalize content.
+                            By clicking "Accept All", you consent to our use of cookies.
+                            See our <a href="/privacy-policy">Privacy Policy</a> for details.
+                        </p>
+                        <p class="tr-cookie-desc-ar">
+                            نستخدم ملفات تعريف الارتباط (Cookies) لتحسين تجربتك وتحليل زيارات الموقع وتخصيص المحتوى.
+                            بالنقر على "قبول الكل" فإنك توافق على استخدامنا لملفات تعريف الارتباط.
+                            راجع <a href="/privacy-policy">سياسة الخصوصية</a> للمزيد.
+                        </p>
+                    </div>
+                    <div class="tr-cookie-actions">
+                        <button type="button" id="tr-cookie-reject" class="tr-cookie-btn tr-cookie-btn-secondary">
+                            <span class="tr-cookie-btn-en">Reject All</span>
+                            <span class="tr-cookie-btn-ar">رفض الكل</span>
+                        </button>
+                        <button type="button" id="tr-cookie-customize" class="tr-cookie-btn tr-cookie-btn-secondary">
+                            <span class="tr-cookie-btn-en">Customize</span>
+                            <span class="tr-cookie-btn-ar">تخصيص</span>
+                        </button>
+                        <button type="button" id="tr-cookie-accept" class="tr-cookie-btn tr-cookie-btn-primary">
+                            <span class="tr-cookie-btn-en">Accept All</span>
+                            <span class="tr-cookie-btn-ar">قبول الكل</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Preferences panel -->
+                <div id="tr-cookie-preferences" class="tr-cookie-preferences" hidden="hidden">
+                    <h6>
+                        <span class="tr-cookie-title-en">Cookie Preferences</span>
+                        <span class="tr-cookie-title-ar">تفضيلات ملفات تعريف الارتباط</span>
+                    </h6>
+                    <div class="tr-cookie-option">
+                        <label>
+                            <input type="checkbox" checked="checked" disabled="disabled"/>
+                            <strong><span class="tr-cookie-btn-en">Essential</span><span class="tr-cookie-btn-ar">أساسية</span></strong>
+                            <small><span class="tr-cookie-btn-en">Required for the site to function. Always on.</span><span class="tr-cookie-btn-ar">ضرورية لعمل الموقع. مفعّلة دائماً.</span></small>
+                        </label>
+                    </div>
+                    <div class="tr-cookie-option">
+                        <label>
+                            <input type="checkbox" id="tr-cookie-analytics"/>
+                            <strong><span class="tr-cookie-btn-en">Analytics</span><span class="tr-cookie-btn-ar">تحليلات</span></strong>
+                            <small><span class="tr-cookie-btn-en">Help us understand how visitors use the site (Google Analytics).</span><span class="tr-cookie-btn-ar">تساعدنا على فهم كيفية استخدام الزوار للموقع (جوجل أنالتكس).</span></small>
+                        </label>
+                    </div>
+                    <div class="tr-cookie-option">
+                        <label>
+                            <input type="checkbox" id="tr-cookie-ads"/>
+                            <strong><span class="tr-cookie-btn-en">Advertising</span><span class="tr-cookie-btn-ar">إعلانات</span></strong>
+                            <small><span class="tr-cookie-btn-en">Used to measure ad performance and personalize marketing (Google Ads).</span><span class="tr-cookie-btn-ar">لقياس أداء الإعلانات وتخصيص التسويق (جوجل آدز).</span></small>
+                        </label>
+                    </div>
+                    <div class="tr-cookie-actions">
+                        <button type="button" id="tr-cookie-save" class="tr-cookie-btn tr-cookie-btn-primary">
+                            <span class="tr-cookie-btn-en">Save Preferences</span>
+                            <span class="tr-cookie-btn-ar">حفظ التفضيلات</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- ============================================================ -->
     <!-- CUSTOM FOOTER - Replace default footer content                -->
     <!-- ============================================================ -->
     <template id="techrise_footer" inherit_id="website.footer_custom" name="Techrise Footer">
@@ -104,7 +182,7 @@
                             Techrise - Your Partner in Organized Digital Transformation.
                             All rights reserved. |
                             <a href="/privacy-policy" style="color: inherit;">Privacy Policy</a> |
-                            Powered by <a href="https://www.odoo.com" target="_blank">Odoo</a>
+                            <a href="/terms" style="color: inherit;">Terms &amp; Conditions</a>
                         </p>
                     </div>
                 </div>

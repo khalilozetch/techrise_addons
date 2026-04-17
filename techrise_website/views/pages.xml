@@ -966,6 +966,207 @@
         </t>
     </template>
 
+    <!-- ============================================================ -->
+    <!-- TERMS AND CONDITIONS PAGE                                     -->
+    <!-- ============================================================ -->
+    <template id="terms_and_conditions_page" name="Terms and Conditions - Techrise">
+        <t t-call="website.layout">
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header">
+                    <div class="container">
+                        <h1>Terms and Conditions</h1>
+                        <p>The rules governing your use of our website and services</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <span class="active">Terms &amp; Conditions</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10" style="color: #475569; line-height: 1.9; font-size: 16px;">
+
+                                <p style="color: #94a3b8; margin-bottom: 2rem;">Last updated: April 17, 2026</p>
+
+                                <!-- 1. Acceptance -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">1. Acceptance of Terms</h3>
+                                <p>
+                                    Welcome to Techrise. By accessing or using <strong>techriseae.com</strong> (the "Website")
+                                    or engaging any of our services, you agree to be bound by these Terms and Conditions
+                                    ("Terms"). If you do not agree with any part of these Terms, you must not use our Website
+                                    or services.
+                                </p>
+                                <p>
+                                    Techrise is a company headquartered in Abu Dhabi, United Arab Emirates, operating in
+                                    compliance with UAE laws and regulations.
+                                </p>
+
+                                <!-- 2. Services -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">2. Our Services</h3>
+                                <p>Techrise provides the following professional services:</p>
+                                <ul>
+                                    <li>Odoo ERP implementation, customization, and ongoing support</li>
+                                    <li>Website design and development</li>
+                                    <li>Mobile application development (iOS and Android)</li>
+                                    <li>System integration and API development</li>
+                                    <li>Accounting and tax advisory services</li>
+                                    <li>Branding and digital marketing</li>
+                                    <li>Server, hosting, and cloud infrastructure management</li>
+                                </ul>
+                                <p>
+                                    Specific service deliverables, timelines, and fees are governed by a separate written
+                                    agreement or Statement of Work (SOW) signed between Techrise and the client.
+                                </p>
+
+                                <!-- 3. Use of Website -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">3. Use of Website</h3>
+                                <p>You agree to use our Website only for lawful purposes. You must not:</p>
+                                <ul>
+                                    <li>Use the Website in a way that violates any applicable UAE or international law</li>
+                                    <li>Attempt to gain unauthorized access to any part of the Website or our systems</li>
+                                    <li>Transmit any viruses, malware, or other harmful code</li>
+                                    <li>Engage in automated scraping, data mining, or similar activities without consent</li>
+                                    <li>Impersonate any person or entity or misrepresent your affiliation</li>
+                                </ul>
+
+                                <!-- 4. Intellectual Property -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">4. Intellectual Property</h3>
+                                <p>
+                                    All content on this Website — including but not limited to text, graphics, logos, images,
+                                    icons, videos, software, and design — is the property of Techrise or its licensors and is
+                                    protected by UAE and international copyright, trademark, and other intellectual property laws.
+                                </p>
+                                <p>
+                                    You may not reproduce, distribute, modify, create derivative works from, publicly display,
+                                    or otherwise exploit any content on this Website without our prior written permission.
+                                </p>
+                                <p>
+                                    "Techrise" and the Techrise logo are trademarks of Techrise. "Odoo" is a trademark of
+                                    Odoo S.A. and is used here under the terms of the official Odoo Partner program.
+                                </p>
+
+                                <!-- 5. Client Obligations -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">5. Client Obligations</h3>
+                                <p>When engaging our services, clients agree to:</p>
+                                <ul>
+                                    <li>Provide accurate, complete, and timely information required for service delivery</li>
+                                    <li>Cooperate reasonably with the Techrise team throughout the project lifecycle</li>
+                                    <li>Designate authorized representatives to make decisions on behalf of the client</li>
+                                    <li>Pay all fees in accordance with the agreed payment schedule</li>
+                                    <li>Maintain appropriate backups of their own data and systems</li>
+                                </ul>
+
+                                <!-- 6. Payment Terms -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">6. Fees and Payment</h3>
+                                <p>
+                                    Fees for our services are set out in the applicable quotation, proposal, or SOW.
+                                    Unless otherwise agreed in writing:
+                                </p>
+                                <ul>
+                                    <li>All fees are quoted in AED (UAE Dirhams) and are exclusive of VAT unless stated</li>
+                                    <li>Invoices are payable within 14 days of issue</li>
+                                    <li>Late payments may incur interest at the maximum rate permitted under UAE law</li>
+                                    <li>Techrise reserves the right to suspend service delivery for overdue accounts</li>
+                                </ul>
+
+                                <!-- 7. Warranties and Disclaimers -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">7. Warranties and Disclaimers</h3>
+                                <p>
+                                    We strive to deliver our services with reasonable skill and care, consistent with
+                                    industry standards. However, the Website and its content are provided on an
+                                    <em>"as is"</em> and <em>"as available"</em> basis without warranties of any kind,
+                                    either express or implied.
+                                </p>
+                                <p>
+                                    We do not warrant that the Website will be uninterrupted, error-free, or free of viruses
+                                    or other harmful components. Third-party platforms (including Odoo, hosting providers,
+                                    and integrations) are subject to their own terms and availability.
+                                </p>
+
+                                <!-- 8. Limitation of Liability -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">8. Limitation of Liability</h3>
+                                <p>
+                                    To the maximum extent permitted by UAE law, Techrise, its directors, employees, and
+                                    affiliates shall not be liable for any indirect, incidental, special, consequential, or
+                                    punitive damages — including loss of profits, revenue, data, or business opportunities —
+                                    arising from your use of the Website or our services.
+                                </p>
+                                <p>
+                                    Our total aggregate liability for any claim arising from a service engagement shall not
+                                    exceed the total fees paid by the client for the specific service in the 12 months
+                                    preceding the claim.
+                                </p>
+
+                                <!-- 9. Indemnification -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">9. Indemnification</h3>
+                                <p>
+                                    You agree to indemnify and hold Techrise harmless from any claims, damages, liabilities,
+                                    or expenses (including reasonable legal fees) arising from your breach of these Terms,
+                                    your misuse of the Website, or your violation of any applicable law or third-party right.
+                                </p>
+
+                                <!-- 10. Third-Party Services -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">10. Third-Party Services and Links</h3>
+                                <p>
+                                    Our Website and services may integrate with or link to third-party platforms such as
+                                    Odoo, Google, Facebook, LinkedIn, WhatsApp, and payment gateways. We are not responsible
+                                    for the content, policies, or practices of these third parties. Your use of such services
+                                    is governed by their respective terms.
+                                </p>
+
+                                <!-- 11. Termination -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">11. Termination</h3>
+                                <p>
+                                    We reserve the right to suspend or terminate your access to the Website at any time,
+                                    without notice, for conduct that we believe violates these Terms or is harmful to other
+                                    users, us, or third parties. Termination of a service engagement is governed by the
+                                    applicable SOW or service agreement.
+                                </p>
+
+                                <!-- 12. Governing Law -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">12. Governing Law and Jurisdiction</h3>
+                                <p>
+                                    These Terms are governed by and construed in accordance with the laws of the United Arab
+                                    Emirates, and any disputes arising from or relating to these Terms or your use of the
+                                    Website shall be subject to the exclusive jurisdiction of the competent courts of
+                                    Abu Dhabi, UAE.
+                                </p>
+
+                                <!-- 13. Changes to Terms -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">13. Changes to These Terms</h3>
+                                <p>
+                                    We may update these Terms from time to time to reflect changes in our services,
+                                    legal requirements, or business practices. Updated Terms will be posted on this page
+                                    with a revised "Last updated" date. Continued use of the Website after changes constitutes
+                                    acceptance of the revised Terms.
+                                </p>
+
+                                <!-- 14. Contact -->
+                                <h3 style="color: #0D1B3E; font-weight: 700; margin-top: 2rem;">14. Contact Us</h3>
+                                <p>
+                                    If you have any questions about these Terms and Conditions, please contact us:
+                                </p>
+                                <ul style="list-style: none; padding-left: 0;">
+                                    <li><i class="fa fa-building" style="color: #F5B731; width: 20px;"/> <strong>Techrise</strong></li>
+                                    <li><i class="fa fa-map-marker" style="color: #F5B731; width: 20px;"/> Al Bateen Commercial Tower, Abu Dhabi, UAE</li>
+                                    <li><i class="fa fa-envelope" style="color: #F5B731; width: 20px;"/> <a href="mailto:info@techriseae.com" style="color: #F5B731;">info@techriseae.com</a></li>
+                                    <li><i class="fa fa-phone" style="color: #F5B731; width: 20px;"/> <a href="tel:+971585955064" style="color: #F5B731;">+971 58 595 5064</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
     <!-- Contact Thank You Page -->
     <template id="contact_thankyou" name="Contact Thank You">
         <t t-call="website.layout">

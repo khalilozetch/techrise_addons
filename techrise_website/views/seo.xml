@@ -2,6 +2,18 @@
 <odoo>
 
     <!-- ================================================================ -->
+    <!-- HOMEPAGE - SEO Meta Tags                                          -->
+    <!-- ================================================================ -->
+    <template id="homepage_seo" inherit_id="techrise_website.techrise_homepage" name="Homepage SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Techrise | Odoo Partner &amp; Digital Transformation in UAE</t>
+            <t t-set="website_meta_description">Techrise is an Odoo Gold Partner in Abu Dhabi, UAE. We deliver Odoo ERP implementation, web &amp; mobile development, accounting automation, branding, and cloud hosting to accelerate your digital transformation.</t>
+            <t t-set="website_meta_keywords">odoo partner uae, odoo gold partner abu dhabi, digital transformation uae, erp implementation uae, odoo erp abu dhabi, web development uae, mobile app development uae, techrise</t>
+            <t t-set="website_meta_og_img">https://techriseae.com/techrise_website/static/src/img/logo.png</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
     <!-- ABOUT PAGE - SEO Meta Tags                                        -->
     <!-- ================================================================ -->
     <template id="about_page_seo" inherit_id="techrise_website.about_page" name="About Page SEO">
@@ -50,6 +62,23 @@
     <!-- ================================================================ -->
     <template id="techrise_global_seo" inherit_id="website.layout" name="Techrise Global SEO">
         <xpath expr="//head" position="inside">
+
+            <!-- Google Consent Mode V2 - Default: deny until user consents -->
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied',
+                    'functionality_storage': 'granted',
+                    'security_storage': 'granted',
+                    'wait_for_update': 500
+                });
+                gtag('set', 'ads_data_redaction', true);
+                gtag('set', 'url_passthrough', true);
+            </script>
 
             <!-- Google Search Console Verification (update with your code) -->
             <!-- <meta name="google-site-verification" content="YOUR_GSC_CODE_HERE"/> -->
