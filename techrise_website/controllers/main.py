@@ -71,6 +71,6 @@ class TechriseWebsite(http.Controller):
     def privacy_policy_page(self, **kwargs):
         return request.render('techrise_website.privacy_policy_page')
 
-    @http.route(['/terms', '/terms-and-conditions'], type='http', auth='public', website=True, sitemap=True)
+    @http.route('/terms-and-conditions', type='http', auth='public', website=True, sitemap=True)
     def terms_and_conditions_page(self, **kwargs):
         return request.render('techrise_website.terms_and_conditions_page')
