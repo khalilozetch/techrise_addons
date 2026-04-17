@@ -34,7 +34,7 @@
                         <!-- Company Info -->
                         <div class="col-lg-4 col-md-6 mb-4">
                             <img src="/techrise_website/static/src/img/logo.png"
-                                 alt="Techrise" class="tr-footer-logo"/>
+                                 alt="Techrise" class="tr-footer-logo" width="160" height="45"/>
                             <p class="tr-footer-about">
                                 Techrise - Your Partner in Organized Digital Transformation.
                                 A specialized entity providing comprehensive technical and

@@ -15,6 +15,8 @@
                                 frameborder="0"
                                 allow="autoplay; fullscreen"
                                 allowfullscreen="allowfullscreen"
+                                loading="lazy"
+                                width="1920" height="1080"
                                 title="Techrise Hero Video"/>
                     </div>
                     <div class="tr-hero-overlay"/>
@@ -124,7 +126,7 @@
                         <div class="tr-services-grid">
                             <div class="tr-service-card tr-animate">
                                 <div class="tr-service-icon-img">
-                                    <img src="/techrise_website/static/src/img/services-erp.svg" alt="ERP Systems"/>
+                                    <img src="/techrise_website/static/src/img/services-erp.svg" alt="ERP Systems" width="64" height="64"/>
                                 </div>
                                 <h4>ERP System Design (Odoo)</h4>
                                 <p>
@@ -134,7 +136,7 @@
                             </div>
                             <div class="tr-service-card tr-animate tr-animate-delay-1">
                                 <div class="tr-service-icon-img">
-                                    <img src="/techrise_website/static/src/img/services-web.svg" alt="Website Development"/>
+                                    <img src="/techrise_website/static/src/img/services-web.svg" alt="Website Development" width="64" height="64"/>
                                 </div>
                                 <h4>Website Design &amp; Development</h4>
                                 <p>
@@ -144,7 +146,7 @@
                             </div>
                             <div class="tr-service-card tr-animate tr-animate-delay-2">
                                 <div class="tr-service-icon-img">
-                                    <img src="/techrise_website/static/src/img/services-mobile.svg" alt="Mobile Apps"/>
+                                    <img src="/techrise_website/static/src/img/services-mobile.svg" alt="Mobile Apps" width="64" height="64"/>
                                 </div>
                                 <h4>Mobile App Development</h4>
                                 <p>

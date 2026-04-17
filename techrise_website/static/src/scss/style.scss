@@ -3,6 +3,16 @@
 // Brand: Blue #1A5DAB | Gold #F5B731 | Navy #0D1B3E
 // ============================================================
 
+// --- Font Display Optimization ---
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Font Awesome 5 Brands';
+    font-display: swap;
+}
+
 // --- Variables ---
 $tr-blue: #1A5DAB;
 $tr-blue-dark: #14478A;

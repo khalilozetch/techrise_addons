@@ -92,7 +92,7 @@
                     <div class="tr-sidebar-card">
                         <img src="/techrise_website/static/src/img/logo.png"
                              class="tr-sidebar-logo"
-                             alt="Techrise"/>
+                             alt="Techrise" width="160" height="45"/>
                         <p class="tr-sidebar-intro">
                             Techrise is your trusted partner for organized digital transformation.
                             We help businesses grow through smart technology solutions.

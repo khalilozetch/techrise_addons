@@ -761,10 +761,9 @@
                                     </div>
 
                                     <div class="tr-social-links">
-                                        <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
-                                        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"/></a>
-                                        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"/></a>
-                                        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                                        <a href="https://www.linkedin.com/company/108618958" target="_blank" rel="noopener" aria-label="Techrise on LinkedIn"><i class="fa fa-linkedin"/></a>
+                                        <a href="https://www.facebook.com/techriseae" target="_blank" rel="noopener" aria-label="Techrise on Facebook"><i class="fa fa-facebook"/></a>
+                                        <a href="https://www.instagram.com/techriseae" target="_blank" rel="noopener" aria-label="Techrise on Instagram"><i class="fa fa-instagram"/></a>
                                     </div>
                                 </div>
                             </div>
