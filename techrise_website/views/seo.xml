@@ -58,6 +58,18 @@
     </template>
 
     <!-- ================================================================ -->
+    <!-- FORCE INDEXABLE — replace the conditional noindex with index,follow -->
+    <!-- Odoo's default website.layout emits <meta robots=noindex> whenever  -->
+    <!-- main_object.website_indexed is False OR the request host mismatches -->
+    <!-- website.domain. We override it to always allow search engines in.   -->
+    <!-- ================================================================ -->
+    <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
+        <xpath expr="//meta[@name='robots']" position="replace">
+            <meta name="robots" content="index, follow"/>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
     <!-- GLOBAL SEO - JSON-LD Schema + GSC Verification + hreflang         -->
     <!-- ================================================================ -->
     <template id="techrise_global_seo" inherit_id="website.layout" name="Techrise Global SEO">
