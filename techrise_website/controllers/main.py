@@ -66,3 +66,7 @@ class TechriseWebsite(http.Controller):
         request.env['crm.lead'].sudo().create(vals)
 
         return request.render('techrise_website.contact_thankyou')
+
+    @http.route('/privacy-policy', type='http', auth='public', website=True, sitemap=True)
+    def privacy_policy_page(self, **kwargs):
+        return request.render('techrise_website.privacy_policy_page')
