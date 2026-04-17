@@ -69,11 +69,29 @@
         </xpath>
     </template>
 
+    <!-- Remove the header search modal & its non-crawlable href="#" trigger.
+         The search box is hidden via CSS anyway and hurts Lighthouse SEO -->
+    <record id="website.header_search_box" model="ir.ui.view">
+        <field name="active" eval="False"/>
+    </record>
+
+    <!-- Remove Odoo brand promotion (empty-text link to odoo.com) -->
+    <template id="techrise_hide_brand_promotion" inherit_id="web.brand_promotion" name="Hide Brand Promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace">
+            <t/>
+        </xpath>
+    </template>
+
     <!-- ================================================================ -->
     <!-- GLOBAL SEO - JSON-LD Schema + GSC Verification + hreflang         -->
     <!-- ================================================================ -->
     <template id="techrise_global_seo" inherit_id="website.layout" name="Techrise Global SEO">
         <xpath expr="//head" position="inside">
+
+            <!-- Preconnect to third-party origins used by hero video to cut LCP -->
+            <link rel="preconnect" href="https://player.vimeo.com" crossorigin="anonymous"/>
+            <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin="anonymous"/>
+            <link rel="dns-prefetch" href="https://f.vimeocdn.com"/>
 
             <!-- Google Consent Mode V2 - Default: deny until user consents -->
             <script>

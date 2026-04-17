@@ -15,9 +15,11 @@
                                 frameborder="0"
                                 allow="autoplay; fullscreen"
                                 allowfullscreen="allowfullscreen"
-                                loading="lazy"
+                                loading="eager"
+                                fetchpriority="high"
                                 width="1920" height="1080"
-                                title="Techrise Hero Video"/>
+                                title="Techrise Hero Video"
+                                aria-hidden="true"/>
                     </div>
                     <div class="tr-hero-overlay"/>
                     <div class="container">
@@ -86,7 +88,8 @@
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
                                      alt="Techrise Digital Transformation" class="img-fluid rounded-4 shadow-lg"
-                                     style="width: 100%; object-fit: cover;"/>
+                                     width="640" height="480" loading="lazy" decoding="async"
+                                     style="width: 100%; height: auto; object-fit: cover;"/>
                             </div>
                             <div class="col-lg-6">
                                 <h2 class="tr-section-title tr-animate">
@@ -104,8 +107,9 @@
                                     interconnected systems that enable departments to work within a unified
                                     framework, ensuring data clarity and improved performance efficiency.
                                 </p>
-                                <a href="/about" class="tr-btn tr-btn-blue mt-3 tr-animate tr-animate-delay-3">
-                                    Learn More <i class="fa fa-arrow-right"/>
+                                <a href="/about" class="tr-btn tr-btn-blue mt-3 tr-animate tr-animate-delay-3"
+                                   aria-label="Learn More About Techrise">
+                                    Learn More About Techrise <i class="fa fa-arrow-right" aria-hidden="true"/>
                                 </a>
                             </div>
                         </div>

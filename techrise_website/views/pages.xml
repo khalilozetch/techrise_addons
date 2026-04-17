@@ -53,7 +53,8 @@
                                 <div class="tr-animate tr-animate-delay-2">
                                     <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
                                          alt="Techrise Team" class="img-fluid rounded-4 shadow-lg"
-                                         style="width: 100%; object-fit: cover;"/>
+                                         width="640" height="480" loading="lazy" decoding="async"
+                                         style="width: 100%; height: auto; object-fit: cover;"/>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +214,8 @@
                         <div class="tr-service-detail" id="erp">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-erp.svg"
-                                     alt="ERP Systems" style="width: 80%; max-width: 280px;"/>
+                                     alt="ERP Systems" width="280" height="280" loading="lazy" decoding="async"
+                                     style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
                                 <h3>ERP System Design &amp; Development (Odoo)</h3>
@@ -237,7 +239,8 @@
                         <div class="tr-service-detail" id="website">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-web.svg"
-                                     alt="Website Development" style="width: 80%; max-width: 280px;"/>
+                                     alt="Website Development" width="280" height="280" loading="lazy" decoding="async"
+                                     style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
                                 <h3>Website Design &amp; Development</h3>
@@ -261,7 +264,8 @@
                         <div class="tr-service-detail" id="mobile">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-mobile.svg"
-                                     alt="Mobile App Development" style="width: 80%; max-width: 280px;"/>
+                                     alt="Mobile App Development" width="280" height="280" loading="lazy" decoding="async"
+                                     style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
                                 <h3>Mobile App Development</h3>
@@ -419,7 +423,8 @@
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <img src="/techrise_website/static/src/img/bg/server-room.jpg"
                                      alt="Server and Hosting" class="img-fluid rounded-4 shadow-lg"
-                                     style="width: 100%; object-fit: cover;"/>
+                                     width="640" height="480" loading="lazy" decoding="async"
+                                     style="width: 100%; height: auto; object-fit: cover;"/>
                             </div>
                             <div class="col-lg-6">
                                 <h2 class="tr-section-title tr-animate">
