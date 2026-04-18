@@ -25,17 +25,18 @@
                     <div class="container">
                         <div class="tr-hero-content text-center">
                             <h1>
-                                Your Partner in Organized
+                                Odoo Partner in Abu Dhabi for
                                 <span class="tr-text-gold">Digital Transformation</span>
+                                Across the UAE
                             </h1>
                             <p class="tr-hero-description">
-                                We support companies and organizations in rebuilding their operational
-                                processes through modern digital methodology based on organization,
-                                accuracy, and sustainability
+                                Techrise delivers Odoo ERP implementation, customization, accounting,
+                                CRM, HR, and inventory management for businesses in Abu Dhabi, Dubai,
+                                and across the UAE — from small companies to enterprise rollouts.
                             </p>
                             <div class="tr-hero-btns">
                                 <a href="/contact" class="tr-btn tr-btn-primary">
-                                    Get a Free Consultation
+                                    Get a Free Odoo Consultation
                                 </a>
                                 <a href="/services" class="tr-btn tr-btn-outline">
                                     Explore Our Services
@@ -87,7 +88,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
-                                     alt="Techrise Digital Transformation" class="img-fluid rounded-4 shadow-lg"
+                                     alt="Techrise team delivering Odoo ERP and digital transformation for UAE businesses" class="img-fluid rounded-4 shadow-lg"
                                      width="640" height="480" loading="lazy" decoding="async"
                                      style="width: 100%; height: auto; object-fit: cover;"/>
                             </div>
@@ -291,29 +292,30 @@
                     <div class="container">
                         <div class="text-center mb-5">
                             <h2 class="tr-section-title tr-section-title-light tr-animate">
-                                Industries We Serve
+                                ERP for Construction, Healthcare, Retail &amp; More in the UAE
                             </h2>
                             <div class="tr-gold-line"/>
                             <p class="tr-section-subtitle tr-section-subtitle-light tr-animate tr-animate-delay-1">
-                                Flexible and scalable ERP solutions that support a variety of sectors.
+                                Flexible and scalable Odoo ERP solutions tailored for the leading
+                                industries across Abu Dhabi, Dubai, and the wider UAE market.
                             </p>
                         </div>
                         <div class="tr-industries-grid">
-                            <div class="tr-industry-card tr-animate">
+                            <a href="/erp-for-healthcare-uae" class="tr-industry-card tr-animate" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-heartbeat"/></div>
-                                <h5>Medical Centers</h5>
+                                <h5>ERP for Healthcare UAE</h5>
                                 <p>Patient management, billing, pharmacy, and compliance</p>
-                            </div>
+                            </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-1">
                                 <div class="tr-industry-icon"><i class="fa fa-building"/></div>
                                 <h5>Real Estate</h5>
                                 <p>Property management, contracts, CRM, and accounting</p>
                             </div>
-                            <div class="tr-industry-card tr-animate tr-animate-delay-2">
+                            <a href="/erp-for-construction-uae" class="tr-industry-card tr-animate tr-animate-delay-2" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-wrench"/></div>
-                                <h5>Construction</h5>
+                                <h5>ERP for Construction UAE</h5>
                                 <p>Project cost tracking, procurement, and resource planning</p>
-                            </div>
+                            </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-3">
                                 <div class="tr-industry-icon"><i class="fa fa-medkit"/></div>
                                 <h5>Pharmacies</h5>
@@ -329,11 +331,11 @@
                                 <h5>Cooperative Associations</h5>
                                 <p>Member management, operations, and financial tracking</p>
                             </div>
-                            <div class="tr-industry-card tr-animate tr-animate-delay-2">
+                            <a href="/erp-for-retail-uae" class="tr-industry-card tr-animate tr-animate-delay-2" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-shopping-cart"/></div>
-                                <h5>Retail &amp; POS</h5>
+                                <h5>ERP for Retail UAE</h5>
                                 <p>Point of sale, multi-branch, inventory, and omnichannel</p>
-                            </div>
+                            </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-3">
                                 <div class="tr-industry-icon"><i class="fa fa-plane"/></div>
                                 <h5>Travel &amp; Tourism</h5>

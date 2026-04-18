@@ -1,6 +1,6 @@
 {
     'name': 'Techrise Website',
-    'version': '18.0.1.0.5',
+    'version': '18.0.1.0.6',
     'category': 'Website',
     'summary': 'Professional Website for Techrise - Your Partner in Organized Digital Transformation',
     'description': """
@@ -22,6 +22,7 @@
         'views/layout.xml',
         'views/homepage.xml',
         'views/pages.xml',
+        'views/industry_pages.xml',
         'views/jobs.xml',
         'views/seo.xml',
         'data/website_data.xml',

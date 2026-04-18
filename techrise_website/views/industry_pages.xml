@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- =============================================================== -->
+    <!-- Shared snippets used inside the industry landing pages           -->
+    <!-- =============================================================== -->
+
+    <!-- =============================================================== -->
+    <!-- ERP FOR CONSTRUCTION UAE                                         -->
+    <!-- =============================================================== -->
+    <template id="erp_construction_page" name="ERP for Construction UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">ERP for Construction UAE — Odoo for Contractors &amp; Projects</t>
+            <t t-set="website_meta_description">ERP for Construction UAE on Odoo — project cost tracking, procurement, subcontractor management, BOQ, payroll, and real-time profitability for contractors in Abu Dhabi and Dubai.</t>
+            <t t-set="website_meta_keywords">erp for construction uae, odoo for contractors uae, construction erp abu dhabi, project cost accounting uae, boq software uae, subcontractor management uae</t>
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header">
+                    <div class="container">
+                        <h1>ERP for Construction in the UAE</h1>
+                        <p>Project costs, procurement, and profitability under one roof — Odoo built for UAE contractors.</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <a href="/#industries">Industries</a>
+                            <span> / </span>
+                            <span class="active">ERP for Construction UAE</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intro -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10" style="color: #475569; line-height: 1.9; font-size: 16px;">
+                                <h2 style="color: #0D1B3E; font-weight: 700;">Why contractors in the UAE choose Techrise Odoo</h2>
+                                <p>
+                                    Construction businesses in Abu Dhabi, Dubai, Sharjah, and the Northern Emirates run
+                                    on thin margins and long cash cycles. An ERP for Construction UAE has to handle
+                                    BOQ-driven budgeting, variation orders, retention, subcontractor payments, and
+                                    project cost accounting — in a single source of truth.
+                                </p>
+                                <p>
+                                    Techrise configures Odoo as a construction ERP so every purchase order, timesheet,
+                                    invoice, and inventory movement is tagged to a project and a cost element, giving
+                                    the project manager real-time profitability and the CFO a full financial picture.
+                                </p>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">What our Construction ERP covers</h2>
+                                <ul>
+                                    <li><strong>Project &amp; BOQ management:</strong> structured project hierarchies, budget vs. actual, and variation order tracking</li>
+                                    <li><strong>Procurement:</strong> RFQs, vendor bidding, multi-level purchase approvals, and delivery matching</li>
+                                    <li><strong>Subcontractor management:</strong> contracts, interim payment certificates, retention, and compliance</li>
+                                    <li><strong>Project cost accounting:</strong> analytic accounts, cost centers, and profitability by phase</li>
+                                    <li><strong>Timesheets &amp; payroll:</strong> site labor costing, productivity, and UAE payroll compliance</li>
+                                    <li><strong>Inventory &amp; equipment:</strong> stores, material transfers between sites, and asset tracking</li>
+                                    <li><strong>Accounting &amp; tax:</strong> VAT, Corporate Tax, and E-invoicing UAE 2026 readiness</li>
+                                </ul>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">Typical wins</h2>
+                                <ul>
+                                    <li>20–40% reduction in invoice processing time with vendor portal &amp; digital approvals</li>
+                                    <li>Accurate project margins visible to the PMO every week — not just at closeout</li>
+                                    <li>Full audit trail from PO to payment, satisfying UAE tax and audit requirements</li>
+                                    <li>Less double entry: payroll, procurement, inventory, and accounting in one platform</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Talk to an Odoo Construction ERP Specialist</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Get a free scoping call tailored to your portfolio, team size, and current systems.
+                        </p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="/contactus" class="tr-btn tr-btn-primary" style="margin-right: 12px;">
+                                Request a Free Demo <i class="fa fa-arrow-right"/>
+                            </a>
+                            <a href="tel:+971585955064" class="tr-btn tr-btn-dark">
+                                <i class="fa fa-phone"/> +971 58 595 5064
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- ERP FOR HEALTHCARE UAE                                           -->
+    <!-- =============================================================== -->
+    <template id="erp_healthcare_page" name="ERP for Healthcare UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">ERP for Healthcare UAE — Clinics, Pharmacies &amp; Hospitals</t>
+            <t t-set="website_meta_description">ERP for Healthcare UAE on Odoo — patient billing, pharmacy, insurance claims, inventory, HR, and accounting for clinics and medical centers in Abu Dhabi and Dubai.</t>
+            <t t-set="website_meta_keywords">erp for healthcare uae, healthcare erp abu dhabi, clinic management system uae, pharmacy erp uae, medical center software uae, odoo healthcare</t>
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header">
+                    <div class="container">
+                        <h1>ERP for Healthcare in the UAE</h1>
+                        <p>Patients, pharmacy, insurance, and accounting — one connected platform for clinics and medical centers.</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <a href="/#industries">Industries</a>
+                            <span> / </span>
+                            <span class="active">ERP for Healthcare UAE</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intro -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10" style="color: #475569; line-height: 1.9; font-size: 16px;">
+                                <h2 style="color: #0D1B3E; font-weight: 700;">ERP built for UAE clinics, pharmacies, and medical centers</h2>
+                                <p>
+                                    Healthcare providers in the UAE operate in a tightly regulated environment — DHA,
+                                    DOH, MOHAP, and insurance TPA workflows all have to coexist with day-to-day clinic
+                                    operations. An ERP for Healthcare UAE has to tie patients, encounters, pharmacy,
+                                    inventory, and accounting together without friction.
+                                </p>
+                                <p>
+                                    Techrise configures Odoo as a healthcare ERP backbone, connecting patient records
+                                    and billing with pharmacy dispensing, stock, procurement, HR, and the financials
+                                    your CFO and auditor expect.
+                                </p>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">Core capabilities</h2>
+                                <ul>
+                                    <li><strong>Patient &amp; encounter management:</strong> registration, queue, clinician notes, and follow-ups</li>
+                                    <li><strong>Billing &amp; insurance:</strong> self-pay, corporate, and insurance TPA claim flows</li>
+                                    <li><strong>Pharmacy:</strong> dispensing, expiry/batch tracking, controlled substances, and supplier portal</li>
+                                    <li><strong>Inventory:</strong> multi-location stock, reorder rules, and sterile supply workflows</li>
+                                    <li><strong>HR &amp; payroll:</strong> clinician rostering, UAE payroll, and license/credentialing tracking</li>
+                                    <li><strong>Accounting &amp; reporting:</strong> VAT, Corporate Tax, E-invoicing UAE 2026, and management dashboards</li>
+                                </ul>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">Why Techrise for healthcare ERP</h2>
+                                <ul>
+                                    <li>Odoo Partner in Abu Dhabi with hands-on clinic deployments</li>
+                                    <li>Arabic &amp; English UI, configured for UAE regulators and insurance TPAs</li>
+                                    <li>Phased rollouts that do not disrupt patient flow</li>
+                                    <li>Integrations with medical devices, queue displays, and government portals</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Book a Healthcare ERP Discovery Call</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Share your specialty, clinic count, and current software — we'll map a practical Odoo path.
+                        </p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="/contactus" class="tr-btn tr-btn-primary" style="margin-right: 12px;">
+                                Request a Free Demo <i class="fa fa-arrow-right"/>
+                            </a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20ERP%20for%20Healthcare%20solution%20and%20would%20like%20to%20know%20more." target="_blank" class="tr-btn tr-btn-dark">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- ERP FOR RETAIL UAE                                               -->
+    <!-- =============================================================== -->
+    <template id="erp_retail_page" name="ERP for Retail UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">ERP for Retail UAE — POS, Inventory &amp; Omnichannel</t>
+            <t t-set="website_meta_description">ERP for Retail UAE on Odoo — POS, multi-branch inventory, e-commerce, loyalty, and accounting. Retail management software built for UAE shops, chains, and omnichannel brands.</t>
+            <t t-set="website_meta_keywords">erp for retail uae, retail management system uae, odoo pos uae, multi-branch retail software uae, omnichannel retail abu dhabi, retail erp dubai</t>
+            <div id="wrap">
+
+                <!-- Page Header -->
+                <section class="tr-page-header">
+                    <div class="container">
+                        <h1>ERP for Retail in the UAE</h1>
+                        <p>POS, stock, e-commerce, and accounting — one platform across every UAE store.</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <a href="/#industries">Industries</a>
+                            <span> / </span>
+                            <span class="active">ERP for Retail UAE</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intro -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10" style="color: #475569; line-height: 1.9; font-size: 16px;">
+                                <h2 style="color: #0D1B3E; font-weight: 700;">Omnichannel retail, powered by Odoo</h2>
+                                <p>
+                                    From a single boutique in Abu Dhabi to a multi-mall chain across the UAE, Techrise
+                                    deploys Odoo as a retail ERP that unifies POS, stock, e-commerce, and accounting.
+                                    One product catalog, one customer view, one profit-and-loss — across every channel.
+                                </p>
+                                <p>
+                                    Cashiers get a fast, offline-capable POS. Ops get real-time stock and transfers
+                                    across branches. Finance gets VAT-ready accounting and E-invoicing UAE 2026
+                                    compliance out of the box.
+                                </p>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">What retailers get</h2>
+                                <ul>
+                                    <li><strong>Odoo POS:</strong> fast checkout, offline mode, barcode scanning, receipts, and shift management</li>
+                                    <li><strong>Multi-branch inventory:</strong> real-time stock, inter-store transfers, and reorder rules</li>
+                                    <li><strong>Omnichannel:</strong> e-commerce, marketplace, and social selling synced to one stock pool</li>
+                                    <li><strong>Customer &amp; loyalty:</strong> CRM, loyalty programs, gift cards, and targeted promotions</li>
+                                    <li><strong>Purchasing:</strong> vendor catalogs, promotions, and automated replenishment</li>
+                                    <li><strong>Accounting &amp; tax:</strong> UAE VAT, Corporate Tax, and E-invoicing UAE 2026 compliant</li>
+                                </ul>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">Who it's for</h2>
+                                <ul>
+                                    <li>Single-store and multi-store retailers across Abu Dhabi, Dubai, and the UAE</li>
+                                    <li>F&amp;B brands, apparel, electronics, and specialty retail</li>
+                                    <li>Omnichannel brands combining physical stores with e-commerce and marketplaces</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">See Odoo Retail Live</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Get a tailored demo of POS, inventory, and e-commerce running together on one platform.
+                        </p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="/contactus" class="tr-btn tr-btn-primary" style="margin-right: 12px;">
+                                Book a Retail Demo <i class="fa fa-arrow-right"/>
+                            </a>
+                            <a href="tel:+971585955064" class="tr-btn tr-btn-dark">
+                                <i class="fa fa-phone"/> +971 58 595 5064
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+</odoo>

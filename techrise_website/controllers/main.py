@@ -74,3 +74,18 @@ class TechriseWebsite(http.Controller):
     @http.route('/terms-and-conditions', type='http', auth='public', website=True, sitemap=True)
     def terms_and_conditions_page(self, **kwargs):
         return request.render('techrise_website.terms_and_conditions_page')
+
+    # ================================================================
+    # Industry landing pages (Google Ads + SEO targeted)
+    # ================================================================
+    @http.route('/erp-for-construction-uae', type='http', auth='public', website=True, sitemap=True)
+    def erp_construction_page(self, **kwargs):
+        return request.render('techrise_website.erp_construction_page')
+
+    @http.route('/erp-for-healthcare-uae', type='http', auth='public', website=True, sitemap=True)
+    def erp_healthcare_page(self, **kwargs):
+        return request.render('techrise_website.erp_healthcare_page')
+
+    @http.route('/erp-for-retail-uae', type='http', auth='public', website=True, sitemap=True)
+    def erp_retail_page(self, **kwargs):
+        return request.render('techrise_website.erp_retail_page')

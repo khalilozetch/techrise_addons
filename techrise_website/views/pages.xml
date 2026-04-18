@@ -52,7 +52,7 @@
                             <div class="col-lg-6">
                                 <div class="tr-animate tr-animate-delay-2">
                                     <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
-                                         alt="Techrise Team" class="img-fluid rounded-4 shadow-lg"
+                                         alt="Techrise — Odoo Partner team in Abu Dhabi, UAE" class="img-fluid rounded-4 shadow-lg"
                                          width="640" height="480" loading="lazy" decoding="async"
                                          style="width: 100%; height: auto; object-fit: cover;"/>
                                 </div>
@@ -196,8 +196,9 @@
                 <!-- Page Header -->
                 <section class="tr-page-header tr-header-services">
                     <div class="container">
-                        <h1>Our Services</h1>
-                        <p>Comprehensive digital solutions from implementation to ongoing support</p>
+                        <h1>Odoo ERP, Accounting, CRM, HR &amp; Inventory Services in the UAE</h1>
+                        <p>Odoo implementation, customization, accounting software, CRM, HR management,
+                           inventory, and E-invoicing UAE 2026 — all from a certified Odoo Partner in Abu Dhabi.</p>
                         <div class="tr-breadcrumb">
                             <a href="/">Home</a>
                             <span> / </span>
@@ -214,23 +215,23 @@
                         <div class="tr-service-detail" id="erp">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-erp.svg"
-                                     alt="ERP Systems" width="280" height="280" loading="lazy" decoding="async"
+                                     alt="Odoo ERP implementation UAE — accounting, sales, inventory, HR and POS" width="280" height="280" loading="lazy" decoding="async"
                                      style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
-                                <h3>ERP System Design &amp; Development (Odoo)</h3>
+                                <h3>Odoo ERP Implementation &amp; Customization in UAE</h3>
                                 <p>
-                                    We design and develop comprehensive ERP systems based on the Odoo platform,
-                                    tailored to the specific nature of each business and its operational needs.
-                                    We start with a thorough analysis of internal processes, then customize
-                                    the system to cover various departments.
+                                    As an Odoo Partner in Abu Dhabi, we deliver full Odoo ERP implementation
+                                    and Odoo customization for businesses across the UAE. We cover accounting,
+                                    sales, purchasing, inventory, manufacturing, HR, and POS — making Odoo the
+                                    best ERP for small business UAE and growing enterprises alike.
                                 </p>
                                 <ul>
-                                    <li>Accounting, Sales, Inventory, HR, and Procurement</li>
-                                    <li>Customer Service, Call Centers, and POS systems</li>
-                                    <li>Multi-branch centralized monitoring</li>
-                                    <li>Social media and marketing integration</li>
-                                    <li>Data unification and real-time performance tracking</li>
+                                    <li>Odoo implementation UAE — Community and Enterprise editions</li>
+                                    <li>Odoo customization tailored to your operating model</li>
+                                    <li>Multi-branch and multi-company setup for Dubai and Abu Dhabi operations</li>
+                                    <li>Arabic language &amp; RTL support, UAE VAT and Corporate Tax ready</li>
+                                    <li>Data migration from legacy systems and real-time dashboards</li>
                                 </ul>
                             </div>
                         </div>
@@ -239,7 +240,7 @@
                         <div class="tr-service-detail" id="website">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-web.svg"
-                                     alt="Website Development" width="280" height="280" loading="lazy" decoding="async"
+                                     alt="Custom website design and development in the UAE by Techrise" width="280" height="280" loading="lazy" decoding="async"
                                      style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
@@ -264,7 +265,7 @@
                         <div class="tr-service-detail" id="mobile">
                             <div class="tr-service-detail-icon tr-animate">
                                 <img src="/techrise_website/static/src/img/services-mobile.svg"
-                                     alt="Mobile App Development" width="280" height="280" loading="lazy" decoding="async"
+                                     alt="iOS and Android mobile app development UAE, Odoo-integrated" width="280" height="280" loading="lazy" decoding="async"
                                      style="width: 80%; max-width: 280px; height: auto;"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
@@ -313,19 +314,87 @@
                                 <i class="fa fa-calculator"/>
                             </div>
                             <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
-                                <h3>Accounting &amp; Tax Services</h3>
+                                <h3>Accounting Software UAE &amp; E-Invoicing UAE 2026</h3>
                                 <p>
-                                    We provide comprehensive services for organizing and managing accounts,
-                                    VAT filing, Corporate Tax returns, and establishing qualified accounting
-                                    teams with clear policies and procedures.
+                                    Accounting software UAE built on Odoo — automated bookkeeping, VAT,
+                                    Corporate Tax, bank reconciliation, and the E-invoicing UAE 2026 mandate
+                                    handled in one platform. We deliver compliant accounting software for
+                                    businesses across Abu Dhabi, Dubai, and the wider UAE.
                                 </p>
                                 <ul>
-                                    <li>VAT return preparation and filing</li>
-                                    <li>Corporate Tax annual return filing</li>
-                                    <li>Accounting organization and restructuring</li>
-                                    <li>Establishment of qualified accounting teams</li>
-                                    <li>Financial policies, workflows, and internal controls</li>
-                                    <li>Odoo accounting system configuration</li>
+                                    <li>E-invoicing UAE 2026 — compliance with FTA mandates and XML formats</li>
+                                    <li>Full VAT return preparation and automatic filing</li>
+                                    <li>UAE Corporate Tax annual return filing and qualified groups</li>
+                                    <li>Accounting organization, chart of accounts, and cost centers</li>
+                                    <li>Bank statement reconciliation and payment automation</li>
+                                    <li>Financial policies, workflow approvals, and internal controls</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- CRM software Dubai -->
+                        <div class="tr-service-detail" id="crm">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-users"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>CRM Software Dubai — Lead to Deal Automation</h3>
+                                <p>
+                                    CRM software in Dubai and Abu Dhabi, built on Odoo CRM. Capture leads
+                                    from your website, WhatsApp, and ad campaigns, assign owners automatically,
+                                    track every stage of the pipeline, and measure conversion — all integrated
+                                    with accounting and inventory so deals flow straight into delivery.
+                                </p>
+                                <ul>
+                                    <li>Lead capture from web forms, Meta/Google Ads, and WhatsApp</li>
+                                    <li>Automated lead assignment and SLA tracking</li>
+                                    <li>Pipeline stages, forecasting, and win/loss analysis</li>
+                                    <li>Email marketing, quotation templates, and e-sign</li>
+                                    <li>Integration with Odoo sales, invoicing, and delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- HR management system UAE -->
+                        <div class="tr-service-detail" id="hr">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-id-badge"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>HR Management System UAE — Payroll, Attendance &amp; Compliance</h3>
+                                <p>
+                                    HR management system UAE on Odoo — recruitment, onboarding, attendance,
+                                    leaves, payroll (with end-of-service gratuity), and performance appraisal
+                                    in one place. Built for UAE labor law with multi-nationality workforce support.
+                                </p>
+                                <ul>
+                                    <li>UAE payroll with gratuity, leave encashment, and allowances</li>
+                                    <li>Attendance via biometric, RFID, or mobile geo check-in</li>
+                                    <li>Leave management, approval workflows, and calendar views</li>
+                                    <li>Recruitment pipeline and onboarding checklists</li>
+                                    <li>Performance appraisal, skills matrix, and training tracking</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Inventory management system -->
+                        <div class="tr-service-detail" id="inventory">
+                            <div class="tr-service-detail-icon tr-animate">
+                                <i class="fa fa-cubes"/>
+                            </div>
+                            <div class="tr-service-detail-content tr-animate tr-animate-delay-1">
+                                <h3>Inventory Management System — Multi-Warehouse &amp; Barcode</h3>
+                                <p>
+                                    Inventory management system on Odoo — real-time stock tracking across
+                                    multiple warehouses, barcode/QR picking, serial and lot traceability,
+                                    automated reorder rules, and tight integration with purchasing and sales.
+                                </p>
+                                <ul>
+                                    <li>Multi-warehouse, multi-location, and inter-company transfers</li>
+                                    <li>Barcode &amp; QR scanning for picking, packing, and stock counts</li>
+                                    <li>Serial number and lot/batch traceability end-to-end</li>
+                                    <li>Automated reorder rules, MTO/MTS, and drop-shipping</li>
+                                    <li>Integration with POS, e-commerce, manufacturing, and accounting</li>
                                 </ul>
                             </div>
                         </div>
@@ -422,7 +491,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
                                 <img src="/techrise_website/static/src/img/bg/server-room.jpg"
-                                     alt="Server and Hosting" class="img-fluid rounded-4 shadow-lg"
+                                     alt="Cloud ERP UAE — Techrise-managed Odoo hosting and dedicated servers" class="img-fluid rounded-4 shadow-lg"
                                      width="640" height="480" loading="lazy" decoding="async"
                                      style="width: 100%; height: auto; object-fit: cover;"/>
                             </div>
