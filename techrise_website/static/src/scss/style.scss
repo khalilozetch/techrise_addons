@@ -224,7 +224,7 @@ body {
 }
 
 // ============================================================
-// HERO SECTION - Video Background
+// HERO SECTION - Video Background (desktop) / Static image (mobile)
 // ============================================================
 .tr-hero {
     position: relative;
@@ -233,10 +233,17 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: $tr-navy; // fallback while video loads
+    // Static poster image — renders instantly, no network wait for LCP
+    background-color: $tr-navy;
+    background-image:
+        linear-gradient(135deg, rgba(13,27,62,0.85), rgba(13,27,62,0.6)),
+        url('/techrise_website/static/src/img/bg/tech-office.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-// Fullscreen Vimeo video background - covers entire section
+// Fullscreen Vimeo video background - desktop only, injected via JS
 .tr-hero-video-bg {
     position: absolute;
     top: 0;
@@ -257,6 +264,12 @@ body {
         min-width: 177.78vh; // 16:9 inverse
         transform: translate(-50%, -50%);
         border: 0;
+    }
+
+    // Hide the iframe container entirely on phones/tablets —
+    // mobile uses the background-image poster, saving ~9 MB payload.
+    @media (max-width: 991.98px) {
+        display: none;
     }
 }
 

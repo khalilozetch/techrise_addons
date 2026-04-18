@@ -8,18 +8,14 @@
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="wrap">
 
-                <!-- ======== HERO SECTION WITH VIDEO BACKGROUND ======== -->
+                <!-- ======== HERO SECTION WITH VIDEO BACKGROUND ========
+                     Mobile: CSS background image only (no video) — avoids ~9 MB payload
+                     Desktop: iframe is injected by JS after page load to keep LCP fast. -->
                 <section class="tr-hero">
-                    <div class="tr-hero-video-bg">
-                        <iframe src="https://player.vimeo.com/video/1138384954?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1&amp;background=1"
-                                frameborder="0"
-                                allow="autoplay; fullscreen"
-                                allowfullscreen="allowfullscreen"
-                                loading="eager"
-                                fetchpriority="high"
-                                width="1920" height="1080"
-                                title="Techrise Hero Video"
-                                aria-hidden="true"/>
+                    <div class="tr-hero-video-bg"
+                         data-vimeo-src="https://player.vimeo.com/video/1138384954?autoplay=1&amp;muted=1&amp;autopause=0&amp;controls=0&amp;loop=1&amp;background=1"
+                         aria-hidden="true">
+                        <!-- iframe injected after page load, only on viewports >= 992px -->
                     </div>
                     <div class="tr-hero-overlay"/>
                     <div class="container">
