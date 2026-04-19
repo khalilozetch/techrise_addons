@@ -83,10 +83,19 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
-                                     alt="Techrise team delivering Odoo ERP and digital transformation for UAE businesses" class="img-fluid rounded-4 shadow-lg"
-                                     width="640" height="480" loading="lazy" decoding="async"
-                                     style="width: 100%; height: auto; object-fit: cover;"/>
+                                <picture>
+                                    <source media="(max-width: 991.98px)" type="image/webp"
+                                            srcset="/techrise_website/static/src/img/bg/about-team-erp-mobile.webp"/>
+                                    <source media="(max-width: 991.98px)" type="image/jpeg"
+                                            srcset="/techrise_website/static/src/img/bg/about-team-erp-mobile.jpg"/>
+                                    <source type="image/webp"
+                                            srcset="/techrise_website/static/src/img/bg/about-team-erp.webp"/>
+                                    <img src="/techrise_website/static/src/img/bg/about-team-erp.jpg"
+                                         alt="Techrise team delivering Odoo ERP and digital transformation for UAE businesses"
+                                         class="img-fluid rounded-4 shadow-lg"
+                                         width="640" height="640" loading="lazy" decoding="async"
+                                         style="width: 100%; height: auto; object-fit: cover;"/>
+                                </picture>
                             </div>
                             <div class="col-lg-6">
                                 <h2 class="tr-section-title tr-animate">
@@ -129,7 +138,7 @@
                                 <div class="tr-service-icon-img">
                                     <img src="/techrise_website/static/src/img/services-erp.svg" alt="ERP Systems" width="64" height="64"/>
                                 </div>
-                                <h4>ERP System Design (Odoo)</h4>
+                                <h3>ERP System Design (Odoo)</h3>
                                 <p>
                                     Comprehensive ERP systems tailored to your business -
                                     Accounting, Sales, Inventory, HR, and Procurement in one unified platform.
@@ -139,7 +148,7 @@
                                 <div class="tr-service-icon-img">
                                     <img src="/techrise_website/static/src/img/services-web.svg" alt="Website Development" width="64" height="64"/>
                                 </div>
-                                <h4>Website Design &amp; Development</h4>
+                                <h3>Website Design &amp; Development</h3>
                                 <p>
                                     Professional websites with strong visual identity,
                                     responsive across all devices with fast loading and great UX.
@@ -149,7 +158,7 @@
                                 <div class="tr-service-icon-img">
                                     <img src="/techrise_website/static/src/img/services-mobile.svg" alt="Mobile Apps" width="64" height="64"/>
                                 </div>
-                                <h4>Mobile App Development</h4>
+                                <h3>Mobile App Development</h3>
                                 <p>
                                     Android and iOS apps with high performance, security,
                                     and seamless integration with Odoo or any other platforms.
@@ -159,7 +168,7 @@
                                 <div class="tr-service-icon">
                                     <i class="fa fa-plug"/>
                                 </div>
-                                <h4>System Integration</h4>
+                                <h3>System Integration</h3>
                                 <p>
                                     Integration between Odoo and other software, government authorities,
                                     and official platforms for unified data and faster operations.
@@ -169,7 +178,7 @@
                                 <div class="tr-service-icon">
                                     <i class="fa fa-calculator"/>
                                 </div>
-                                <h4>Accounting &amp; Tax Services</h4>
+                                <h3>Accounting &amp; Tax Services</h3>
                                 <p>
                                     VAT filing, Corporate Tax returns, accounting organization,
                                     and establishment of qualified accounting teams.
@@ -179,7 +188,7 @@
                                 <div class="tr-service-icon">
                                     <i class="fa fa-bullhorn"/>
                                 </div>
-                                <h4>Branding &amp; Marketing</h4>
+                                <h3>Branding &amp; Marketing</h3>
                                 <p>
                                     Complete brand identity, marketing strategies, smart campaigns
                                     integrated with operational systems for measurable results.
@@ -213,7 +222,7 @@
                                     <div class="tr-why-icon">
                                         <i class="fa fa-search"/>
                                     </div>
-                                    <h5>Deep Business Analysis</h5>
+                                    <h3>Deep Business Analysis</h3>
                                     <p>We analyze your work environment accurately to provide solutions that reflect operational reality.</p>
                                 </div>
                             </div>
@@ -222,7 +231,7 @@
                                     <div class="tr-why-icon">
                                         <i class="fa fa-shield"/>
                                     </div>
-                                    <h5>Proven Solutions</h5>
+                                    <h3>Proven Solutions</h3>
                                     <p>Tested software and technical solutions trusted by leading companies with reliable high-quality results.</p>
                                 </div>
                             </div>
@@ -231,7 +240,7 @@
                                     <div class="tr-why-icon">
                                         <i class="fa fa-users"/>
                                     </div>
-                                    <h5>Expert Team</h5>
+                                    <h3>Expert Team</h3>
                                     <p>Specialists in information systems, technical intelligence, and software development with precision and usability.</p>
                                 </div>
                             </div>
@@ -240,7 +249,7 @@
                                     <div class="tr-why-icon">
                                         <i class="fa fa-expand"/>
                                     </div>
-                                    <h5>Scalable Solutions</h5>
+                                    <h3>Scalable Solutions</h3>
                                     <p>Solutions adaptable to technological changes and growth requirements for sustainable digital transformation.</p>
                                 </div>
                             </div>
@@ -261,22 +270,22 @@
                         <div class="tr-process-grid">
                             <div class="tr-process-card tr-animate">
                                 <div class="tr-process-number">1</div>
-                                <h5>Analysis</h5>
+                                <h3>Analysis</h3>
                                 <p>Comprehensive analysis of the current work environment and precise evaluation of operational workflows.</p>
                             </div>
                             <div class="tr-process-card tr-animate tr-animate-delay-1">
                                 <div class="tr-process-number">2</div>
-                                <h5>Design &amp; Plan</h5>
+                                <h3>Design &amp; Plan</h3>
                                 <p>Design integrated technical solutions balancing operational requirements with strategic objectives.</p>
                             </div>
                             <div class="tr-process-card tr-animate tr-animate-delay-2">
                                 <div class="tr-process-number">3</div>
-                                <h5>Implement</h5>
+                                <h3>Implement</h3>
                                 <p>System implementation according to clear standards with data migration and rigorous testing.</p>
                             </div>
                             <div class="tr-process-card tr-animate tr-animate-delay-3">
                                 <div class="tr-process-number">4</div>
-                                <h5>Support &amp; Grow</h5>
+                                <h3>Support &amp; Grow</h3>
                                 <p>Ongoing support and development ensuring system stability and ability to adapt to business growth.</p>
                             </div>
                         </div>
@@ -299,42 +308,42 @@
                         <div class="tr-industries-grid">
                             <a href="/erp-for-healthcare-uae" class="tr-industry-card tr-animate" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-heartbeat"/></div>
-                                <h5>ERP for Healthcare UAE</h5>
+                                <h3>ERP for Healthcare UAE</h3>
                                 <p>Patient management, billing, pharmacy, and compliance</p>
                             </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-1">
                                 <div class="tr-industry-icon"><i class="fa fa-building"/></div>
-                                <h5>Real Estate</h5>
+                                <h3>Real Estate</h3>
                                 <p>Property management, contracts, CRM, and accounting</p>
                             </div>
                             <a href="/erp-for-construction-uae" class="tr-industry-card tr-animate tr-animate-delay-2" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-wrench"/></div>
-                                <h5>ERP for Construction UAE</h5>
+                                <h3>ERP for Construction UAE</h3>
                                 <p>Project cost tracking, procurement, and resource planning</p>
                             </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-3">
                                 <div class="tr-industry-icon"><i class="fa fa-medkit"/></div>
-                                <h5>Pharmacies</h5>
+                                <h3>Pharmacies</h3>
                                 <p>Inventory, prescriptions, POS, and supplier management</p>
                             </div>
                             <div class="tr-industry-card tr-animate">
                                 <div class="tr-industry-icon"><i class="fa fa-futbol-o"/></div>
-                                <h5>Sports Clubs</h5>
+                                <h3>Sports Clubs</h3>
                                 <p>Membership, scheduling, billing, and facility management</p>
                             </div>
                             <div class="tr-industry-card tr-animate tr-animate-delay-1">
                                 <div class="tr-industry-icon"><i class="fa fa-handshake-o"/></div>
-                                <h5>Cooperative Associations</h5>
+                                <h3>Cooperative Associations</h3>
                                 <p>Member management, operations, and financial tracking</p>
                             </div>
                             <a href="/erp-for-retail-uae" class="tr-industry-card tr-animate tr-animate-delay-2" style="color: inherit; text-decoration: none;">
                                 <div class="tr-industry-icon"><i class="fa fa-shopping-cart"/></div>
-                                <h5>ERP for Retail UAE</h5>
+                                <h3>ERP for Retail UAE</h3>
                                 <p>Point of sale, multi-branch, inventory, and omnichannel</p>
                             </a>
                             <div class="tr-industry-card tr-animate tr-animate-delay-3">
                                 <div class="tr-industry-icon"><i class="fa fa-plane"/></div>
-                                <h5>Travel &amp; Tourism</h5>
+                                <h3>Travel &amp; Tourism</h3>
                                 <p>Booking, CRM, invoicing, and partner management</p>
                             </div>
                         </div>

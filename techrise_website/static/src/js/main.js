@@ -9,21 +9,35 @@ publicWidget.registry.TechriseAnimations = publicWidget.Widget.extend({
         var self = this;
         this._super.apply(this, arguments);
 
-        // Mark JS as ready so CSS animations activate
-        document.body.classList.add('tr-js-ready');
+        // Skip the fade-in animation gate on mobile and for users that opt
+        // out of motion. Adding `tr-js-ready` to body forces every
+        // `.tr-animate` descendant to recompute styles (visible → hidden →
+        // animate), which Lighthouse flags as a forced reflow on slow CPUs.
+        var skipAnim =
+            window.innerWidth < 992 ||
+            (window.matchMedia &&
+             window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+        if (!skipAnim) {
+            document.body.classList.add('tr-js-ready');
+        }
 
         // Force dark navbar immediately
         self._forceNavbarDark();
 
-        // Small delay to let page fully render
-        setTimeout(function () {
+        // Run after first paint without artificial delay so LCP isn't pushed.
+        var run = function () {
             self._initCounters();
-            self._initScrollAnimations();
+            if (!skipAnim) self._initScrollAnimations();
             self._initNavbarScroll();
             self._initSmoothScroll();
-            // Re-apply after Odoo finishes rendering
             self._forceNavbarDark();
-        }, 100);
+        };
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(run, { timeout: 800 });
+        } else {
+            setTimeout(run, 0);
+        }
     },
 
     _initCounters: function () {

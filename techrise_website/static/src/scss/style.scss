@@ -58,8 +58,13 @@ body {
 
 .tr-section-dark {
     background: linear-gradient(135deg, rgba($tr-navy, 0.92) 0%, rgba($tr-dark, 0.88) 100%),
-                url('/techrise_website/static/src/img/bg/circuit-board.jpg') center/cover no-repeat;
+                url('/techrise_website/static/src/img/bg/circuit-board.webp') center/cover no-repeat;
     color: $tr-white;
+
+    @media (max-width: 991.98px) {
+        background: linear-gradient(135deg, rgba($tr-navy, 0.92) 0%, rgba($tr-dark, 0.88) 100%),
+                    url('/techrise_website/static/src/img/bg/circuit-board-mobile.webp') center/cover no-repeat;
+    }
 }
 
 .tr-section-light {
@@ -237,10 +242,17 @@ body {
     background-color: $tr-navy;
     background-image:
         linear-gradient(135deg, rgba(13,27,62,0.85), rgba(13,27,62,0.6)),
-        url('/techrise_website/static/src/img/bg/tech-office.jpg');
+        url('/techrise_website/static/src/img/bg/tech-office.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    // Mobile: serve a much smaller poster (≈48 KB vs 110 KB) to fix LCP.
+    @media (max-width: 991.98px) {
+        background-image:
+            linear-gradient(135deg, rgba(13,27,62,0.85), rgba(13,27,62,0.6)),
+            url('/techrise_website/static/src/img/bg/tech-office-mobile.webp');
+    }
 }
 
 // Fullscreen Vimeo video background - desktop only, injected via JS
@@ -553,6 +565,7 @@ body {
     transition: $tr-transition;
 }
 
+.tr-service-card h3,
 .tr-service-card h4 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -687,7 +700,7 @@ body {
         transition: $tr-transition;
     }
 
-    h5 {
+    h3, h5 {
         font-weight: 800;
         color: $tr-navy;
         margin-bottom: 0.75rem;
@@ -753,7 +766,7 @@ body {
         transition: $tr-transition;
     }
 
-    h5 {
+    h3, h5 {
         color: $tr-white;
         font-weight: 700;
         margin-bottom: 0.5rem;
@@ -805,10 +818,11 @@ body {
         z-index: 2;
     }
 
-    h5 {
+    h3, h5 {
         font-weight: 700;
         color: $tr-navy;
         margin-bottom: 0.5rem;
+        font-size: 1.1rem;
     }
 
     p {
@@ -1598,11 +1612,16 @@ header.tr-navbar,
 // ============================================================
 .tr-page-header {
     background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
-                url('/techrise_website/static/src/img/bg/page-header.jpg') center/cover no-repeat;
+                url('/techrise_website/static/src/img/bg/page-header.webp') center/cover no-repeat;
     padding: 140px 0 80px;
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 991.98px) {
+        background-image: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
+                          url('/techrise_website/static/src/img/bg/page-header-mobile.webp');
+    }
 
     &::before {
         content: '';
@@ -1617,22 +1636,37 @@ header.tr-navbar,
     // Page-specific header backgrounds
     &.tr-header-services {
         background: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
-                    url('/techrise_website/static/src/img/bg/services-header.jpg') center/cover no-repeat;
+                    url('/techrise_website/static/src/img/bg/services-header.webp') center/cover no-repeat;
+
+        @media (max-width: 991.98px) {
+            background-image: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
+                              url('/techrise_website/static/src/img/bg/services-header-mobile.webp');
+        }
     }
 
     &.tr-header-server {
         background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
-                    url('/techrise_website/static/src/img/bg/server-room.jpg') center/cover no-repeat;
+                    url('/techrise_website/static/src/img/bg/server-room.webp') center/cover no-repeat;
+
+        @media (max-width: 991.98px) {
+            background-image: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
+                              url('/techrise_website/static/src/img/bg/server-room-mobile.webp');
+        }
     }
 
     &.tr-header-contact {
         background: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
-                    url('/techrise_website/static/src/img/bg/contact-office.jpg') center/cover no-repeat;
+                    url('/techrise_website/static/src/img/bg/contact-office.webp') center/cover no-repeat;
+
+        @media (max-width: 991.98px) {
+            background-image: linear-gradient(135deg, rgba($tr-navy, 0.88) 0%, rgba($tr-blue-dark, 0.82) 100%),
+                              url('/techrise_website/static/src/img/bg/contact-office-mobile.webp');
+        }
     }
 
     &.tr-header-about {
         background: linear-gradient(135deg, rgba($tr-navy, 0.85) 0%, rgba($tr-blue-dark, 0.8) 100%),
-                    url('/techrise_website/static/src/img/bg/about-meeting.jpg') center/cover no-repeat;
+                    url('/techrise_website/static/src/img/bg/about-meeting.webp') center/cover no-repeat;
     }
 
     h1 {
@@ -1988,7 +2022,12 @@ html[lang="ar"] {
 // Jobs page header variant
 .tr-header-jobs {
     background: linear-gradient(135deg, rgba($tr-navy, 0.90) 0%, rgba($tr-blue-dark, 0.85) 100%),
-                url('/techrise_website/static/src/img/bg/page-header.jpg') center/cover no-repeat;
+                url('/techrise_website/static/src/img/bg/page-header.webp') center/cover no-repeat;
+
+    @media (max-width: 991.98px) {
+        background-image: linear-gradient(135deg, rgba($tr-navy, 0.90) 0%, rgba($tr-blue-dark, 0.85) 100%),
+                          url('/techrise_website/static/src/img/bg/page-header-mobile.webp');
+    }
 }
 
 // Jobs listing wrapper

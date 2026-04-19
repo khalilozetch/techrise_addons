@@ -1,6 +1,6 @@
 {
     'name': 'Techrise Website',
-    'version': '18.0.1.0.7',
+    'version': '18.0.1.0.8',
     'category': 'Website',
     'summary': 'Professional Website for Techrise - Your Partner in Organized Digital Transformation',
     'description': """

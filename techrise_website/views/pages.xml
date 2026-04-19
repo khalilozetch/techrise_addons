@@ -51,10 +51,19 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="tr-animate tr-animate-delay-2">
-                                    <img src="/techrise_website/static/src/img/bg/about-team-erp.png"
-                                         alt="Techrise — Odoo Partner team in Abu Dhabi, UAE" class="img-fluid rounded-4 shadow-lg"
-                                         width="640" height="480" loading="lazy" decoding="async"
-                                         style="width: 100%; height: auto; object-fit: cover;"/>
+                                    <picture>
+                                        <source media="(max-width: 991.98px)" type="image/webp"
+                                                srcset="/techrise_website/static/src/img/bg/about-team-erp-mobile.webp"/>
+                                        <source media="(max-width: 991.98px)" type="image/jpeg"
+                                                srcset="/techrise_website/static/src/img/bg/about-team-erp-mobile.jpg"/>
+                                        <source type="image/webp"
+                                                srcset="/techrise_website/static/src/img/bg/about-team-erp.webp"/>
+                                        <img src="/techrise_website/static/src/img/bg/about-team-erp.jpg"
+                                             alt="Techrise — Odoo Partner team in Abu Dhabi, UAE"
+                                             class="img-fluid rounded-4 shadow-lg"
+                                             width="640" height="640" loading="lazy" decoding="async"
+                                             style="width: 100%; height: auto; object-fit: cover;"/>
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -490,10 +499,19 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img src="/techrise_website/static/src/img/bg/server-room.jpg"
-                                     alt="Cloud ERP UAE — Techrise-managed Odoo hosting and dedicated servers" class="img-fluid rounded-4 shadow-lg"
-                                     width="640" height="480" loading="lazy" decoding="async"
-                                     style="width: 100%; height: auto; object-fit: cover;"/>
+                                <picture>
+                                    <source media="(max-width: 991.98px)" type="image/webp"
+                                            srcset="/techrise_website/static/src/img/bg/server-room-mobile.webp"/>
+                                    <source media="(max-width: 991.98px)" type="image/jpeg"
+                                            srcset="/techrise_website/static/src/img/bg/server-room-mobile.jpg"/>
+                                    <source type="image/webp"
+                                            srcset="/techrise_website/static/src/img/bg/server-room.webp"/>
+                                    <img src="/techrise_website/static/src/img/bg/server-room.jpg"
+                                         alt="Cloud ERP UAE — Techrise-managed Odoo hosting and dedicated servers"
+                                         class="img-fluid rounded-4 shadow-lg"
+                                         width="640" height="480" loading="lazy" decoding="async"
+                                         style="width: 100%; height: auto; object-fit: cover;"/>
+                                </picture>
                             </div>
                             <div class="col-lg-6">
                                 <h2 class="tr-section-title tr-animate">
