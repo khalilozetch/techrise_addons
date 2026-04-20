@@ -93,6 +93,11 @@
             <link rel="preconnect" href="https://i.vimeocdn.com" crossorigin="anonymous"/>
             <link rel="dns-prefetch" href="https://f.vimeocdn.com"/>
 
+            <!-- Preconnect for Google Analytics / gtag.js — saves DNS+TLS on
+                 the async script fetch so it doesn't push back TBT/LCP. -->
+            <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"/>
+            <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
             <!-- Preload the hero background poster (LCP candidate). Per-viewport so
                  mobile pulls the 48 KB variant and desktop pulls the 110 KB one.
                  fetchpriority="high" tells the browser to schedule this ahead of
@@ -124,7 +129,10 @@
                 </style>
             </t>
 
-            <!-- Google Consent Mode V2 - Default: deny until user consents -->
+            <!-- Google Consent Mode V2 — MUST run before gtag.js loads so the
+                 default "denied" state is in effect before any analytics fires.
+                 The banner widget (main.js #tr-cookie-banner) calls
+                 gtag('consent','update',...) when the user accepts/rejects. -->
             <script>
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
@@ -139,6 +147,18 @@
                 });
                 gtag('set', 'ads_data_redaction', true);
                 gtag('set', 'url_passthrough', true);
+            </script>
+
+            <!-- Google Analytics 4 (gtag.js) — G-CJTPLY088E.
+                 Loaded async so it never blocks rendering. Respects the
+                 Consent Mode default above (no tracking until accept). -->
+            <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-CJTPLY088E"/>
+            <script>
+                gtag('js', new Date());
+                gtag('config', 'G-CJTPLY088E', {
+                    'anonymize_ip': true,
+                    'transport_type': 'beacon'
+                });
             </script>
 
             <!-- Google Search Console Verification (update with your code) -->
