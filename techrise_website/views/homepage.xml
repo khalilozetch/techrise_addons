@@ -31,7 +31,7 @@
                                 and across the UAE — from small companies to enterprise rollouts.
                             </p>
                             <div class="tr-hero-btns">
-                                <a href="/contact" class="tr-btn tr-btn-primary">
+                                <a href="/contact" class="tr-btn tr-btn-primary" data-tr-event="consultation_cta_click">
                                     Get a Free Odoo Consultation
                                 </a>
                                 <a href="/services" class="tr-btn tr-btn-outline">

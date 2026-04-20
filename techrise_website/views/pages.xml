@@ -1262,7 +1262,7 @@
     <!-- Contact Thank You Page -->
     <template id="contact_thankyou" name="Contact Thank You">
         <t t-call="website.layout">
-            <div id="wrap" class="oe_structure">
+            <div id="wrap" class="oe_structure" data-tr-event-fire="contact_form_submit">
 
                 <!-- Page Header -->
                 <section class="tr-page-header">

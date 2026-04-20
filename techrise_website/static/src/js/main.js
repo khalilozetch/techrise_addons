@@ -312,4 +312,41 @@ publicWidget.registry.TechriseCookieBanner = publicWidget.Widget.extend({
     },
 });
 
+// ============================================================
+// GA4 EVENT TRACKER
+// Fires gtag('event', name) for:
+//   * [data-tr-event]       → on click
+//   * [data-tr-event-fire]  → once on page load
+// No-op when gtag isn't loaded, so safe on admin/backend pages.
+// One delegated click listener → zero perf cost.
+// ============================================================
+publicWidget.registry.TechriseEventTracker = publicWidget.Widget.extend({
+    selector: '#wrapwrap',
+
+    start: function () {
+        this._super.apply(this, arguments);
+
+        // Page-load events (e.g. thank-you page).
+        var fireOnLoad = document.querySelectorAll('[data-tr-event-fire]');
+        fireOnLoad.forEach(function (el) {
+            var name = el.getAttribute('data-tr-event-fire');
+            if (name && typeof window.gtag === 'function') {
+                window.gtag('event', name);
+            }
+        });
+
+        // Click events — delegated so dynamically added nodes work too.
+        document.addEventListener('click', function (ev) {
+            var target = ev.target.closest('[data-tr-event]');
+            if (!target) return;
+            var name = target.getAttribute('data-tr-event');
+            if (name && typeof window.gtag === 'function') {
+                window.gtag('event', name, {
+                    link_url: target.getAttribute('href') || undefined,
+                });
+            }
+        }, { passive: true, capture: true });
+    },
+});
+
 export default publicWidget.registry.TechriseAnimations;
