@@ -164,8 +164,8 @@
                 (function () {
                     // Schedule gtag.js to load after window.load so it never
                     // blocks LCP/TBT, but before the user can navigate away —
-                    // critical for click-through events on <a href="/..."> links
-                    // where lazy-on-interaction would race with navigation.
+                    // critical for click-through events on anchor links where
+                    // lazy-on-interaction would race with navigation.
                     var loaded = false;
                     function load() {
                         if (loaded) return;
