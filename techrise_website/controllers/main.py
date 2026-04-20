@@ -30,9 +30,14 @@ class TechriseWebsite(http.Controller):
     def server_page(self, **kwargs):
         return request.render('techrise_website.server_page')
 
-    @http.route(['/contact', '/contactus'], type='http', auth='public', website=True, sitemap=True)
+    @http.route('/contactus', type='http', auth='public', website=True, sitemap=True)
     def contact_page(self, **kwargs):
         return request.render('techrise_website.contact_page')
+
+    @http.route('/contact', type='http', auth='public', website=True, sitemap=False)
+    def contact_alias(self, **kwargs):
+        # Canonical URL is /contactus; 301 kills the duplicate-content signal in GSC.
+        return redirect('/contactus', code=301)
 
     @http.route('/contact/submit', type='http', auth='public', website=True, methods=['POST'], csrf=True)
     def contact_submit(self, **kwargs):

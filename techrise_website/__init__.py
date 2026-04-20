@@ -1,8 +1,18 @@
 from . import controllers
+from . import models
+
+
+def _unpublish_all_jobs(env):
+    """Ensure all hr.job records are unpublished. Career pages are disabled."""
+    jobs = env['hr.job'].sudo().search([('is_published', '=', True)])
+    if jobs:
+        jobs.write({'is_published': False})
 
 
 def _post_init_hook(env):
     """Fix menu parent IDs to point to the website-specific top menu."""
+    _unpublish_all_jobs(env)
+
     website = env.ref('website.default_website', raise_if_not_found=False)
     if not website:
         return
@@ -35,3 +45,9 @@ def _post_init_hook(env):
         ('id', 'not in', [env.ref(x, raise_if_not_found=False).id for x in menu_xmlids if env.ref(x, raise_if_not_found=False)]),
     ])
     (default_home | default_contact).unlink()
+
+    # Also drop any Careers/Jobs menu item
+    careers_menus = env['website.menu'].search([
+        '|', ('url', '=like', '/jobs%'), ('name', 'ilike', 'job'),
+    ])
+    careers_menus.unlink()
