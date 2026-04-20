@@ -94,14 +94,34 @@
             <link rel="dns-prefetch" href="https://f.vimeocdn.com"/>
 
             <!-- Preload the hero background poster (LCP candidate). Per-viewport so
-                 mobile pulls the 48 KB variant and desktop pulls the 110 KB one. -->
+                 mobile pulls the 48 KB variant and desktop pulls the 110 KB one.
+                 fetchpriority="high" tells the browser to schedule this ahead of
+                 other async requests — critical for mobile LCP. -->
             <t t-if="(main_object and main_object._name == 'website.page' and main_object.is_homepage) or request.httprequest.path in ('/', '/ar_001/', '/ar_001')">
                 <link rel="preload" as="image" type="image/webp"
                       href="/techrise_website/static/src/img/bg/tech-office-mobile.webp"
-                      media="(max-width: 991.98px)"/>
+                      media="(max-width: 991.98px)" fetchpriority="high"/>
                 <link rel="preload" as="image" type="image/webp"
                       href="/techrise_website/static/src/img/bg/tech-office.webp"
-                      media="(min-width: 992px)"/>
+                      media="(min-width: 992px)" fetchpriority="high"/>
+
+                <!-- Inline critical CSS for the hero so the H1 paints immediately
+                     without waiting for the render-blocking Odoo CSS bundle
+                     (~2 s savings on simulated mobile). Matches style.scss. -->
+                <style>
+.tr-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background-color:#0D1B3E;background-image:linear-gradient(135deg,rgba(13,27,62,.85),rgba(13,27,62,.6)),url('/techrise_website/static/src/img/bg/tech-office-mobile.webp');background-size:cover;background-position:center;background-repeat:no-repeat}
+@media(min-width:992px){.tr-hero{background-image:linear-gradient(135deg,rgba(13,27,62,.85),rgba(13,27,62,.6)),url('/techrise_website/static/src/img/bg/tech-office.webp')}}
+.tr-hero-overlay{position:absolute;inset:0;background:rgba(17,17,17,.55);z-index:2}
+.tr-hero .container{position:relative;z-index:3}
+.tr-hero-content{max-width:900px;margin:0 auto;padding-top:80px;text-align:center}
+.tr-hero h1{font-size:2rem;font-weight:900;color:#fff;line-height:1.15;margin:0 0 1.5rem;letter-spacing:-.02em}
+@media(min-width:577px){.tr-hero h1{font-size:2.75rem}}
+@media(min-width:993px){.tr-hero h1{font-size:3.75rem}}
+.tr-hero-description{font-size:1.05rem;color:rgba(255,255,255,.8);line-height:1.8;max-width:700px;margin:0 auto 2.5rem}
+@media(min-width:577px){.tr-hero-description{font-size:1.25rem}}
+.tr-hero-btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.tr-text-gold{color:#F5B731}
+                </style>
             </t>
 
             <!-- Google Consent Mode V2 - Default: deny until user consents -->

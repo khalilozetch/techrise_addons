@@ -319,7 +319,6 @@ body {
     line-height: 1.15;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
-    animation: fadeInUp 0.8s ease-out 0.15s both;
 
     @media (max-width: 992px) {
         font-size: 2.75rem;
@@ -335,7 +334,6 @@ body {
     line-height: 1.8;
     max-width: 700px;
     margin: 0 auto 2.5rem;
-    animation: fadeInUp 0.8s ease-out 0.3s both;
 
     @media (max-width: 576px) {
         font-size: 1.05rem;
@@ -347,7 +345,14 @@ body {
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
-    animation: fadeInUp 0.8s ease-out 0.45s both;
+}
+
+// Hero fade-in is desktop-only. On mobile it starts from opacity:0 which
+// blocks Lighthouse LCP measurement and pushes the metric past 9 s.
+@media (min-width: 992px) {
+    .tr-hero h1           { animation: fadeInUp 0.8s ease-out 0.15s both; }
+    .tr-hero-description  { animation: fadeInUp 0.8s ease-out 0.30s both; }
+    .tr-hero-btns         { animation: fadeInUp 0.8s ease-out 0.45s both; }
 }
 
 // ============================================================
