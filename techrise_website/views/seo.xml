@@ -150,15 +150,44 @@
             </script>
 
             <!-- Google Analytics 4 (gtag.js) — G-CJTPLY088E.
-                 Loaded async so it never blocks rendering. Respects the
-                 Consent Mode default above (no tracking until accept). -->
-            <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-CJTPLY088E"/>
+                 LAZY-LOADED. Eager-loading gtag.js added ~340 ms of main-thread
+                 work which dropped Desktop Performance from 72 → 55. Instead
+                 we inject the script after the first user interaction (or 3 s
+                 idle, whichever first). gtag() calls before the script lands
+                 just queue into dataLayer and fire when it arrives. -->
             <script>
                 gtag('js', new Date());
                 gtag('config', 'G-CJTPLY088E', {
                     'anonymize_ip': true,
                     'transport_type': 'beacon'
                 });
+                (function () {
+                    var loaded = false;
+                    function load() {
+                        if (loaded) return;
+                        loaded = true;
+                        var s = document.createElement('script');
+                        s.async = true;
+                        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-CJTPLY088E';
+                        document.head.appendChild(s);
+                    }
+                    var events = ['scroll', 'keydown', 'mousemove', 'touchstart', 'click'];
+                    var opts = { passive: true, capture: true, once: true };
+                    function trigger() {
+                        load();
+                        events.forEach(function (e) {
+                            window.removeEventListener(e, trigger, opts);
+                        });
+                    }
+                    events.forEach(function (e) {
+                        window.addEventListener(e, trigger, opts);
+                    });
+                    if ('requestIdleCallback' in window) {
+                        requestIdleCallback(load, { timeout: 3500 });
+                    } else {
+                        setTimeout(load, 3500);
+                    }
+                })();
             </script>
 
             <!-- Google Search Console Verification (update with your code) -->
