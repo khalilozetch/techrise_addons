@@ -58,14 +58,40 @@
     </template>
 
     <!-- ================================================================ -->
+    <!-- PRIVACY POLICY PAGE - SEO Meta Tags                               -->
+    <!-- ================================================================ -->
+    <template id="privacy_policy_page_seo" inherit_id="techrise_website.privacy_policy_page" name="Privacy Policy SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Privacy Policy – Techrise UAE</t>
+            <t t-set="website_meta_description">Techrise privacy policy: how we collect, use, store, and protect your personal information when you use our Odoo ERP, web, and digital transformation services in the UAE.</t>
+            <t t-set="website_meta_keywords">techrise privacy policy, data protection uae, gdpr odoo, customer data privacy, techrise data handling</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- TERMS &amp; CONDITIONS PAGE - SEO Meta Tags                       -->
+    <!-- ================================================================ -->
+    <template id="terms_and_conditions_page_seo" inherit_id="techrise_website.terms_and_conditions_page" name="Terms &amp; Conditions SEO">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <t t-set="additional_title">Terms and Conditions – Techrise UAE</t>
+            <t t-set="website_meta_description">Terms and conditions governing your use of the Techrise website and services, including Odoo ERP implementation, hosting, and digital transformation projects in the UAE.</t>
+            <t t-set="website_meta_keywords">techrise terms and conditions, service agreement uae, odoo implementation terms, techrise legal, website terms uae</t>
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
     <!-- FORCE INDEXABLE — replace the conditional noindex with index,follow -->
     <!-- Odoo's default website.layout emits <meta robots=noindex> whenever  -->
     <!-- main_object.website_indexed is False OR the request host mismatches -->
-    <!-- website.domain. We override it to always allow search engines in.   -->
+    <!-- website.domain. We override it to always allow search engines in,   -->
+    <!-- EXCEPT the /jobs listing — it's a thin "no positions" page that     -->
+    <!-- shouldn't be indexed and was triggering "Crawled - currently not    -->
+    <!-- indexed" / soft-404 signals in GSC.                                 -->
     <!-- ================================================================ -->
     <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
         <xpath expr="//meta[@name='robots']" position="replace">
-            <meta name="robots" content="index, follow"/>
+            <meta name="robots"
+                  t-att-content="'noindex, follow' if request.httprequest.path in ('/jobs', '/jobs/', '/ar/jobs', '/ar/jobs/') else 'index, follow'"/>
         </xpath>
     </template>
 
@@ -102,7 +128,7 @@
                  mobile pulls the 48 KB variant and desktop pulls the 110 KB one.
                  fetchpriority="high" tells the browser to schedule this ahead of
                  other async requests — critical for mobile LCP. -->
-            <t t-if="(main_object and main_object._name == 'website.page' and main_object.is_homepage) or request.httprequest.path in ('/', '/ar_001/', '/ar_001')">
+            <t t-if="(main_object and main_object._name == 'website.page' and main_object.is_homepage) or request.httprequest.path in ('/', '/ar/', '/ar')">
                 <link rel="preload" as="image" type="image/webp"
                       href="/techrise_website/static/src/img/bg/tech-office-mobile.webp"
                       media="(max-width: 991.98px)" fetchpriority="high"/>
@@ -196,10 +222,22 @@
             <!-- Bing Webmaster Tools Verification (update with your code) -->
             <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE"/> -->
 
-            <!-- hreflang tags for English/Arabic -->
-            <link rel="alternate" hreflang="en" t-att-href="'https://techriseae.com' + request.httprequest.path"/>
-            <link rel="alternate" hreflang="ar" t-att-href="'https://techriseae.com/ar_001' + request.httprequest.path"/>
-            <link rel="alternate" hreflang="x-default" t-att-href="'https://techriseae.com' + request.httprequest.path"/>
+            <!-- hreflang tags for English/Arabic. Two pitfalls Odoo's URL
+                 routing creates that we have to dodge:
+                   1. /ar_001 is the technical lang code but every /ar_001/*
+                      URL 301s to /ar/* — never emit /ar_001 in hreflang.
+                   2. The Arabic homepage canonical is /ar (no trailing slash);
+                      /ar/ 301s to /ar — never emit /ar/ as a destination.
+                 We also strip any /ar prefix from the current path so Arabic
+                 pages don't self-link to /ar/ar/<page> (404). -->
+            <t t-set="_lang_path" t-value="request.httprequest.path"/>
+            <t t-set="_canon_path"
+               t-value="(_lang_path[3:] if _lang_path.startswith('/ar/') else ('/' if _lang_path == '/ar' else _lang_path))"/>
+            <t t-set="_ar_url"
+               t-value="('https://techriseae.com/ar' if _canon_path == '/' else 'https://techriseae.com/ar' + _canon_path)"/>
+            <link rel="alternate" hreflang="en" t-att-href="'https://techriseae.com' + _canon_path"/>
+            <link rel="alternate" hreflang="ar" t-att-href="_ar_url"/>
+            <link rel="alternate" hreflang="x-default" t-att-href="'https://techriseae.com' + _canon_path"/>
 
             <!-- JSON-LD: Organization Schema -->
             <script type="application/ld+json">
