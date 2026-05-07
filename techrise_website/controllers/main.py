@@ -39,6 +39,30 @@ class TechriseWebsite(http.Controller):
         # Canonical URL is /contactus; 301 kills the duplicate-content signal in GSC.
         return redirect('/contactus', code=301)
 
+    @http.route('/ar/contact', type='http', auth='public', website=True, sitemap=False)
+    def contact_alias_ar(self, **kwargs):
+        # Preserve language: /ar/contact → /ar/contactus (not /contactus which drops to English).
+        return redirect('/ar/contactus', code=301)
+
+    # ================================================================
+    # Legacy /ar_001 → /ar single-hop redirects.
+    # Odoo's native middleware 301s /ar_001/* to /ar/*, but for the
+    # bare root it produces /ar/ which then 301s to /ar — a 2-hop
+    # chain that GSC flags as "Page with redirect". These routes
+    # collapse the chain to one hop so legacy URLs in Google's index
+    # resolve in a single redirect.
+    # ================================================================
+    @http.route(['/ar_001', '/ar_001/'], type='http', auth='public', website=False, sitemap=False)
+    def ar_001_root_redirect(self, **kwargs):
+        return redirect('/ar', code=301)
+
+    @http.route('/ar_001/<path:subpath>', type='http', auth='public', website=False, sitemap=False)
+    def ar_001_subpath_redirect(self, subpath, **kwargs):
+        # Map legacy /ar_001/contact directly to /ar/contactus (single hop instead of three).
+        if subpath.rstrip('/') == 'contact':
+            return redirect('/ar/contactus', code=301)
+        return redirect('/ar/' + subpath.lstrip('/'), code=301)
+
     @http.route('/contact/submit', type='http', auth='public', website=True, methods=['POST'], csrf=True)
     def contact_submit(self, **kwargs):
         name = kwargs.get('name', '').strip()
