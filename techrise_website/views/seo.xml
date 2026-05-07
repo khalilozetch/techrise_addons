@@ -84,14 +84,23 @@
     <!-- Odoo's default website.layout emits <meta robots=noindex> whenever  -->
     <!-- main_object.website_indexed is False OR the request host mismatches -->
     <!-- website.domain. We override it to always allow search engines in,   -->
-    <!-- EXCEPT the /jobs listing — it's a thin "no positions" page that     -->
-    <!-- shouldn't be indexed and was triggering "Crawled - currently not    -->
-    <!-- indexed" / soft-404 signals in GSC.                                 -->
+    <!-- EXCEPT:                                                             -->
+    <!--   • /jobs listing — thin "no positions" page (soft-404 signal).     -->
+    <!--   • Arabic /privacy-policy and /terms-and-conditions — body content -->
+    <!--     is still English (translations not done in ar_001.po), which    -->
+    <!--     produced "Duplicate, Google chose different canonical than      -->
+    <!--     user" in GSC. noindex-ing these AR variants until the legal     -->
+    <!--     copy is actually translated stops the duplicate signal.         -->
     <!-- ================================================================ -->
     <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
         <xpath expr="//meta[@name='robots']" position="replace">
+            <t t-set="_noindex_paths" t-value="(
+                '/jobs', '/jobs/', '/ar/jobs', '/ar/jobs/',
+                '/ar/privacy-policy', '/ar/privacy-policy/',
+                '/ar/terms-and-conditions', '/ar/terms-and-conditions/',
+            )"/>
             <meta name="robots"
-                  t-att-content="'noindex, follow' if request.httprequest.path in ('/jobs', '/jobs/', '/ar/jobs', '/ar/jobs/') else 'index, follow'"/>
+                  t-att-content="'noindex, follow' if request.httprequest.path in _noindex_paths else 'index, follow'"/>
         </xpath>
     </template>
 
@@ -354,6 +363,12 @@
     <!-- ================================================================ -->
     <template id="techrise_sitemap_locs_multilang" inherit_id="website.sitemap_locs" name="Techrise: Multilingual sitemap">
         <xpath expr="//url" position="replace">
+            <!-- Skip the AR variant for legal pages until their translations
+                 are filled in (ar_001.po has empty msgstrs for most strings).
+                 Submitting an /ar/ URL whose body is still English would
+                 contradict the noindex tag and create "Submitted URL marked
+                 noindex" warnings in GSC. -->
+            <t t-set="_ar_skip" t-value="('/privacy-policy', '/terms-and-conditions')"/>
             <t t-foreach="locs" t-as="page">
                 <url>
                     <loc><t t-esc="url_root"/><t t-esc="page['loc']"/></loc><t t-if="page.get('lastmod', False)">
@@ -361,7 +376,7 @@
                     <priority t-esc="page['priority']"/></t><t t-if="page.get('changefreq', False)">
                     <changefreq t-esc="page['changefreq']"/></t>
                 </url>
-                <url>
+                <url t-if="page['loc'] not in _ar_skip">
                     <loc><t t-esc="url_root"/><t t-esc="'/ar' if page['loc'] == '/' else '/ar' + page['loc']"/></loc><t t-if="page.get('lastmod', False)">
                     <lastmod t-esc="page['lastmod']"/></t>
                 </url>
