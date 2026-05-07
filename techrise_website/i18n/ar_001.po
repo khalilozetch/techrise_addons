@@ -3672,14 +3672,17 @@ msgid ""
 "                            راجع"
 msgstr ""
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
 msgid "Privacy Policy – Techrise UAE"
 msgstr "سياسة الخصوصية – تك رايز الإمارات"
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
 msgid "Terms and Conditions – Techrise UAE"
 msgstr "الشروط والأحكام – تك رايز الإمارات"
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
 msgid ""
 "Techrise privacy policy: how we collect, use, store, and protect your "
@@ -3689,6 +3692,7 @@ msgstr ""
 "سياسة الخصوصية تك رايز: كيف نجمع معلوماتك الشخصية ونستخدمها ونخزنها ونحميها "
 "عند استخدام خدماتنا في Odoo ERP والويب والتحول الرقمي في الإمارات."
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
 msgid ""
 "Terms and conditions governing your use of the Techrise website and "
@@ -3698,6 +3702,7 @@ msgstr ""
 "الشروط والأحكام التي تحكم استخدامك لموقع تك رايز وخدماتنا، بما في ذلك تطبيق "
 "Odoo ERP والاستضافة ومشاريع التحول الرقمي في الإمارات."
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
 msgid ""
 "techrise privacy policy, data protection uae, gdpr odoo, customer data "
@@ -3706,6 +3711,7 @@ msgstr ""
 "سياسة الخصوصية تك رايز, حماية البيانات الإمارات, gdpr odoo, خصوصية بيانات "
 "العملاء, التعامل مع البيانات تك رايز"
 
+#. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
 msgid ""
 "techrise terms and conditions, service agreement uae, odoo implementation "
