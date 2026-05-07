@@ -94,13 +94,8 @@
     <!-- ================================================================ -->
     <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
         <xpath expr="//meta[@name='robots']" position="replace">
-            <t t-set="_noindex_paths" t-value="(
-                '/jobs', '/jobs/', '/ar/jobs', '/ar/jobs/',
-                '/ar/privacy-policy', '/ar/privacy-policy/',
-                '/ar/terms-and-conditions', '/ar/terms-and-conditions/',
-            )"/>
             <meta name="robots"
-                  t-att-content="'noindex, follow' if request.httprequest.path in _noindex_paths else 'index, follow'"/>
+                  t-att-content="'noindex, follow' if request.httprequest.path.rstrip('/') in ('/jobs', '/ar/jobs', '/ar/privacy-policy', '/ar/terms-and-conditions') else 'index, follow'"/>
         </xpath>
     </template>
 
