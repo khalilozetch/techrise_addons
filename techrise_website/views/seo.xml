@@ -94,9 +94,17 @@
     <!-- ================================================================ -->
     <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
         <xpath expr="//meta[@name='robots']" position="replace">
+            <!-- Odoo strips the /ar lang prefix before the template renders, so
+                 request.httprequest.path returns "/privacy-policy" for both
+                 /privacy-policy and /ar/privacy-policy. We need the request lang
+                 to distinguish: noindex applies only on the Arabic variant of
+                 the (currently untranslated) legal pages. -->
+            <t t-set="_path" t-value="request.httprequest.path.rstrip('/')"/>
+            <t t-set="_is_ar" t-value="request.env.lang == 'ar_001'"/>
+            <t t-set="_noindex_always" t-value="('/jobs',)"/>
+            <t t-set="_noindex_ar_only" t-value="('/privacy-policy', '/terms-and-conditions')"/>
             <meta name="robots"
-                  t-att-content="'noindex, follow' if request.httprequest.path.rstrip('/') in ('/jobs', '/ar/jobs', '/ar/privacy-policy', '/ar/terms-and-conditions') else 'index, follow'"
-                  t-att-data-debug-path="request.httprequest.path"/>
+                  t-att-content="'noindex, follow' if _path in _noindex_always or (_is_ar and _path in _noindex_ar_only) else 'index, follow'"/>
         </xpath>
     </template>
 
