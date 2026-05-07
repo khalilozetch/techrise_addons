@@ -222,22 +222,13 @@
             <!-- Bing Webmaster Tools Verification (update with your code) -->
             <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE"/> -->
 
-            <!-- hreflang tags for English/Arabic. Two pitfalls Odoo's URL
-                 routing creates that we have to dodge:
-                   1. /ar_001 is the technical lang code but every /ar_001/*
-                      URL 301s to /ar/* — never emit /ar_001 in hreflang.
-                   2. The Arabic homepage canonical is /ar (no trailing slash);
-                      /ar/ 301s to /ar — never emit /ar/ as a destination.
-                 We also strip any /ar prefix from the current path so Arabic
-                 pages don't self-link to /ar/ar/<page> (404). -->
-            <t t-set="_lang_path" t-value="request.httprequest.path"/>
-            <t t-set="_canon_path"
-               t-value="(_lang_path[3:] if _lang_path.startswith('/ar/') else ('/' if _lang_path == '/ar' else _lang_path))"/>
-            <t t-set="_ar_url"
-               t-value="('https://techriseae.com/ar' if _canon_path == '/' else 'https://techriseae.com/ar' + _canon_path)"/>
-            <link rel="alternate" hreflang="en" t-att-href="'https://techriseae.com' + _canon_path"/>
-            <link rel="alternate" hreflang="ar" t-att-href="_ar_url"/>
-            <link rel="alternate" hreflang="x-default" t-att-href="'https://techriseae.com' + _canon_path"/>
+            <!-- hreflang tags removed — Odoo's website module already emits
+                 correct hreflang annotations natively (see
+                 web.layout / website.layout). Emitting them here too produced
+                 duplicate <link rel="alternate"> tags on every page, which is
+                 a known soft signal of canonical confusion. The native
+                 implementation correctly resolves /ar (no trailing slash) and
+                 the per-page Arabic equivalent. -->
 
             <!-- JSON-LD: Organization Schema -->
             <script type="application/ld+json">
@@ -343,6 +334,38 @@
 }
             </script>
 
+        </xpath>
+    </template>
+
+    <!-- ================================================================ -->
+    <!-- SITEMAP - Emit each loc twice (EN + AR)                           -->
+    <!-- Odoo's stock sitemap only emits default-language URLs. Without    -->
+    <!-- /ar/* in the sitemap, Google relies on hreflang + crawl           -->
+    <!-- discovery for Arabic pages, which delays indexing and drives      -->
+    <!-- "Discovered – currently not indexed" reports in GSC.              -->
+    <!--                                                                   -->
+    <!-- We replace the inner foreach with one that yields BOTH the EN     -->
+    <!-- and AR URL per page. Two iterations over `locs` would not work    -->
+    <!-- because the controller passes islice(locs, ...) — an iterator     -->
+    <!-- that's exhausted after the first pass.                            -->
+    <!--                                                                   -->
+    <!-- Homepage edge case: page['loc'] == '/' → AR URL is /ar (no slash, -->
+    <!-- to avoid Odoo's /ar/ → /ar 301 chain).                            -->
+    <!-- ================================================================ -->
+    <template id="techrise_sitemap_locs_multilang" inherit_id="website.sitemap_locs" name="Techrise: Multilingual sitemap">
+        <xpath expr="//url" position="replace">
+            <t t-foreach="locs" t-as="page">
+                <url>
+                    <loc><t t-esc="url_root"/><t t-esc="page['loc']"/></loc><t t-if="page.get('lastmod', False)">
+                    <lastmod t-esc="page['lastmod']"/></t><t t-if="page.get('priority', False)">
+                    <priority t-esc="page['priority']"/></t><t t-if="page.get('changefreq', False)">
+                    <changefreq t-esc="page['changefreq']"/></t>
+                </url>
+                <url>
+                    <loc><t t-esc="url_root"/><t t-esc="'/ar' if page['loc'] == '/' else '/ar' + page['loc']"/></loc><t t-if="page.get('lastmod', False)">
+                    <lastmod t-esc="page['lastmod']"/></t>
+                </url>
+            </t>
         </xpath>
     </template>
 
