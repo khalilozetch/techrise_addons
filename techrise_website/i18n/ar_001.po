@@ -3672,6 +3672,48 @@ msgid ""
 "                            راجع"
 msgstr ""
 
+#: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
+msgid "Privacy Policy – Techrise UAE"
+msgstr "سياسة الخصوصية – تك رايز الإمارات"
+
+#: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
+msgid "Terms and Conditions – Techrise UAE"
+msgstr "الشروط والأحكام – تك رايز الإمارات"
+
+#: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
+msgid ""
+"Techrise privacy policy: how we collect, use, store, and protect your "
+"personal information when you use our Odoo ERP, web, and digital "
+"transformation services in the UAE."
+msgstr ""
+"سياسة الخصوصية تك رايز: كيف نجمع معلوماتك الشخصية ونستخدمها ونخزنها ونحميها "
+"عند استخدام خدماتنا في Odoo ERP والويب والتحول الرقمي في الإمارات."
+
+#: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
+msgid ""
+"Terms and conditions governing your use of the Techrise website and "
+"services, including Odoo ERP implementation, hosting, and digital "
+"transformation projects in the UAE."
+msgstr ""
+"الشروط والأحكام التي تحكم استخدامك لموقع تك رايز وخدماتنا، بما في ذلك تطبيق "
+"Odoo ERP والاستضافة ومشاريع التحول الرقمي في الإمارات."
+
+#: model_terms:ir.ui.view,arch_db:techrise_website.privacy_policy_page_seo
+msgid ""
+"techrise privacy policy, data protection uae, gdpr odoo, customer data "
+"privacy, techrise data handling"
+msgstr ""
+"سياسة الخصوصية تك رايز, حماية البيانات الإمارات, gdpr odoo, خصوصية بيانات "
+"العملاء, التعامل مع البيانات تك رايز"
+
+#: model_terms:ir.ui.view,arch_db:techrise_website.terms_and_conditions_page_seo
+msgid ""
+"techrise terms and conditions, service agreement uae, odoo implementation "
+"terms, techrise legal, website terms uae"
+msgstr ""
+"الشروط والأحكام تك رايز, اتفاقية خدمة الإمارات, شروط تطبيق odoo, تك رايز "
+"قانوني, شروط الموقع الإمارات"
+
 #~ msgid "Comprehensive digital solutions from implementation to ongoing support"
 #~ msgstr "حلول رقمية شاملة من التنفيذ إلى الدعم المستمر"
 

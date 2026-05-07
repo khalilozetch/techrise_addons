@@ -94,17 +94,8 @@
     <!-- ================================================================ -->
     <template id="techrise_force_index" inherit_id="website.layout" name="Techrise Force Index">
         <xpath expr="//meta[@name='robots']" position="replace">
-            <!-- Odoo strips the /ar lang prefix before the template renders, so
-                 request.httprequest.path returns "/privacy-policy" for both
-                 /privacy-policy and /ar/privacy-policy. We need the request lang
-                 to distinguish: noindex applies only on the Arabic variant of
-                 the (currently untranslated) legal pages. -->
-            <t t-set="_path" t-value="request.httprequest.path.rstrip('/')"/>
-            <t t-set="_is_ar" t-value="request.env.lang == 'ar_001'"/>
-            <t t-set="_noindex_always" t-value="('/jobs',)"/>
-            <t t-set="_noindex_ar_only" t-value="('/privacy-policy', '/terms-and-conditions')"/>
             <meta name="robots"
-                  t-att-content="'noindex, follow' if _path in _noindex_always or (_is_ar and _path in _noindex_ar_only) else 'index, follow'"/>
+                  t-att-content="'noindex, follow' if request.httprequest.path.rstrip('/') == '/jobs' else 'index, follow'"/>
         </xpath>
     </template>
 
@@ -367,12 +358,6 @@
     <!-- ================================================================ -->
     <template id="techrise_sitemap_locs_multilang" inherit_id="website.sitemap_locs" name="Techrise: Multilingual sitemap">
         <xpath expr="//url" position="replace">
-            <!-- Skip the AR variant for legal pages until their translations
-                 are filled in (ar_001.po has empty msgstrs for most strings).
-                 Submitting an /ar/ URL whose body is still English would
-                 contradict the noindex tag and create "Submitted URL marked
-                 noindex" warnings in GSC. -->
-            <t t-set="_ar_skip" t-value="('/privacy-policy', '/terms-and-conditions')"/>
             <t t-foreach="locs" t-as="page">
                 <url>
                     <loc><t t-esc="url_root"/><t t-esc="page['loc']"/></loc><t t-if="page.get('lastmod', False)">
@@ -380,7 +365,7 @@
                     <priority t-esc="page['priority']"/></t><t t-if="page.get('changefreq', False)">
                     <changefreq t-esc="page['changefreq']"/></t>
                 </url>
-                <url t-if="page['loc'] not in _ar_skip">
+                <url>
                     <loc><t t-esc="url_root"/><t t-esc="'/ar' if page['loc'] == '/' else '/ar' + page['loc']"/></loc><t t-if="page.get('lastmod', False)">
                     <lastmod t-esc="page['lastmod']"/></t>
                 </url>
