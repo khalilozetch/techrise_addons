@@ -8,7 +8,7 @@
         <xpath expr="//div[@id='wrap']" position="before">
             <t t-set="additional_title">Techrise | Odoo Partner &amp; Digital Transformation in UAE</t>
             <t t-set="website_meta_description">Techrise is an Odoo Gold Partner in Abu Dhabi, UAE. We deliver Odoo ERP implementation, web &amp; mobile development, accounting automation, branding, and cloud hosting to accelerate your digital transformation.</t>
-            <t t-set="website_meta_keywords">odoo partner abu dhabi, odoo implementation uae, odoo customization, best erp for small business uae, cloud erp uae, erp for construction uae, erp for healthcare uae, erp for retail uae, digital transformation uae, techrise</t>
+            <t t-set="website_meta_keywords">odoo partner abu dhabi, odoo implementation uae, odoo customization, best erp for small business uae, cloud erp uae, erp for construction uae, erp for healthcare uae, erp for retail uae, accounting software uae, digital transformation uae, techrise</t>
             <t t-set="website_meta_og_img">https://techriseae.com/techrise_website/static/src/img/logo.png</t>
         </xpath>
     </template>

@@ -2614,3 +2614,223 @@ html[lang="ar"] {
         }
     }
 }
+
+// ============================================================
+// SOLUTIONS GRID (homepage product cards — light variant)
+// Mirrors .tr-industries-grid layout but on a white background
+// with a different visual treatment so users don't confuse
+// "which product" with "which industry".
+// ============================================================
+.tr-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tr-solution-card {
+    background: $tr-white;
+    border: 1px solid $tr-gray-200;
+    border-radius: $tr-radius;
+    padding: 32px 28px;
+    text-align: left;
+    transition: $tr-transition;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: $tr-shadow-lg;
+        border-color: $tr-gold;
+        text-decoration: none;
+        color: inherit;
+
+        .tr-solution-icon {
+            background: $tr-gold;
+            color: $tr-navy;
+        }
+
+        .tr-solution-cta {
+            color: $tr-blue-dark;
+            transform: translateX(4px);
+        }
+    }
+
+    .tr-solution-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 14px;
+        background: $tr-lavender-light;
+        color: $tr-blue;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        margin-bottom: 1.25rem;
+        transition: $tr-transition;
+    }
+
+    h3 {
+        color: $tr-navy;
+        font-weight: 800;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: $tr-gray-600;
+        font-size: 0.92rem;
+        line-height: 1.6;
+        margin: 0 0 1.25rem;
+        flex-grow: 1;
+    }
+
+    .tr-solution-cta {
+        color: $tr-blue;
+        font-weight: 700;
+        font-size: 0.92rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: $tr-transition;
+    }
+
+    .tr-solution-cta-soon {
+        color: $tr-gray-500;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    // "Coming soon" cards are visually muted so they don't compete
+    // with the live (Accounting) card.
+    &.tr-solution-card-soon {
+        opacity: 0.85;
+        cursor: default;
+
+        &:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: $tr-gray-200;
+
+            .tr-solution-icon {
+                background: $tr-lavender-light;
+                color: $tr-blue;
+            }
+        }
+    }
+}
+
+// ============================================================
+// LEAD-PAGE BENEFITS LIST (used on /accounting-software-uae etc.)
+// ============================================================
+.tr-benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 2rem;
+}
+
+.tr-benefit-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+
+    .tr-benefit-icon {
+        flex: 0 0 36px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba($tr-blue, 0.1);
+        color: $tr-blue;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        margin-top: 2px;
+    }
+
+    h4 {
+        color: $tr-navy;
+        font-weight: 700;
+        font-size: 1.05rem;
+        margin: 0 0 4px;
+    }
+
+    p {
+        color: $tr-gray-600;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+.tr-trust-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1.5rem;
+
+    .tr-trust-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: $tr-lavender-light;
+        color: $tr-navy;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 6px 14px;
+        border-radius: 999px;
+
+        i {
+            color: $tr-gold;
+        }
+    }
+}
+
+// Lead form variant: tighter than full contact form so it fits
+// next to the benefits column without overflowing on laptop screens.
+.tr-lead-form {
+    padding: 28px 24px;
+
+    .tr-form-group {
+        margin-bottom: 14px;
+    }
+}
+
+// WhatsApp button used inside lead forms — green to read instantly
+// as a chat affordance, distinct from the primary CTA button.
+.tr-btn-whatsapp {
+    background: #25D366;
+    color: $tr-white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: $tr-radius;
+    font-weight: 700;
+    text-decoration: none;
+    transition: $tr-transition;
+
+    &:hover {
+        background: #1ebe5d;
+        color: $tr-white;
+        text-decoration: none;
+        transform: translateY(-1px);
+    }
+
+    i {
+        font-size: 1.15rem;
+    }
+}

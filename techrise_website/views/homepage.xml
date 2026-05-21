@@ -292,6 +292,62 @@
                     </div>
                 </section>
 
+                <!-- ======== SOLUTIONS (Product-focused, white) ======== -->
+                <!-- Distinct from "Industries" below: Industries = WHO (sector),
+                     Solutions = WHAT (software product). Each card maps to a
+                     dedicated landing page optimized for paid ads + SEO. -->
+                <section class="tr-section tr-section-white" id="solutions">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">
+                                Our <span class="tr-text-gold">Software Solutions</span>
+                            </h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">
+                                Pick the program you need today. Start small, scale to a full ERP when you're ready.
+                            </p>
+                        </div>
+                        <div class="tr-solutions-grid">
+                            <a href="/accounting-software-uae" class="tr-solution-card tr-animate" data-tr-event="solution_card_click" data-tr-source="accounting">
+                                <div class="tr-solution-icon"><i class="fa fa-calculator"/></div>
+                                <h3>Accounting Software</h3>
+                                <p>VAT, Corporate Tax, E-invoicing UAE 2026, bank reconciliation, and audit-ready reports.</p>
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
+                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-1">
+                                <div class="tr-solution-icon"><i class="fa fa-users"/></div>
+                                <h3>HR &amp; Payroll Software</h3>
+                                <p>Employees, attendance, leaves, UAE payroll, and end-of-service — fully digital.</p>
+                                <span class="tr-solution-cta-soon">Coming soon</span>
+                            </div>
+                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-2">
+                                <div class="tr-solution-icon"><i class="fa fa-headphones"/></div>
+                                <h3>Call Center Software</h3>
+                                <p>Inbound &amp; outbound queues, CRM-linked calls, recordings, and agent KPIs.</p>
+                                <span class="tr-solution-cta-soon">Coming soon</span>
+                            </div>
+                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-3">
+                                <div class="tr-solution-icon"><i class="fa fa-cubes"/></div>
+                                <h3>Inventory &amp; Procurement</h3>
+                                <p>Multi-warehouse stock, purchase approvals, vendor portal, and reorder rules.</p>
+                                <span class="tr-solution-cta-soon">Coming soon</span>
+                            </div>
+                            <div class="tr-solution-card tr-solution-card-soon tr-animate">
+                                <div class="tr-solution-icon"><i class="fa fa-cogs"/></div>
+                                <h3>Full ERP Suite</h3>
+                                <p>Sales, accounting, HR, inventory, manufacturing — one unified platform on Odoo.</p>
+                                <span class="tr-solution-cta-soon">Coming soon</span>
+                            </div>
+                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-1">
+                                <div class="tr-solution-icon"><i class="fa fa-code"/></div>
+                                <h3>Custom Software</h3>
+                                <p>Bespoke web &amp; mobile apps, Odoo customizations, and system integrations.</p>
+                                <span class="tr-solution-cta-soon">Coming soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- ======== INDUSTRIES (Dark Section) ======== -->
                 <section class="tr-section tr-section-dark" id="industries">
                     <div class="container">

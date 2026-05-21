@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- =============================================================== -->
+    <!-- ACCOUNTING SOFTWARE UAE — Product landing page                  -->
+    <!-- Paid-ads & SEO target: "accounting software uae", "odoo         -->
+    <!-- accounting", "vat-ready accounting software dubai".             -->
+    <!-- =============================================================== -->
+    <template id="accounting_software_page" name="Accounting Software UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Accounting Software UAE — VAT, Corporate Tax &amp; E-invoicing 2026 Ready</t>
+            <t t-set="website_meta_description">Accounting software in UAE built on Odoo — VAT filing, Corporate Tax, E-invoicing UAE 2026, multi-currency, bank reconciliation, and audit-ready reporting for SMEs and growing companies in Abu Dhabi and Dubai.</t>
+            <t t-set="website_meta_keywords">accounting software uae, odoo accounting uae, vat accounting software dubai, corporate tax software uae, e-invoicing uae 2026, accounting software abu dhabi, sme accounting software uae, online accounting software uae</t>
+            <div id="wrap">
+
+                <!-- ===== Page Header ===== -->
+                <section class="tr-page-header">
+                    <div class="container">
+                        <h1>Accounting Software in the UAE</h1>
+                        <p>VAT, Corporate Tax, and E-invoicing 2026 — all from one accounting platform built for UAE businesses.</p>
+                        <div class="tr-breadcrumb">
+                            <a href="/">Home</a>
+                            <span> / </span>
+                            <a href="/#solutions">Solutions</a>
+                            <span> / </span>
+                            <span class="active">Accounting Software UAE</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== Hero benefits + Lead form ===== -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <!-- Left: problem-led pitch + 4 benefits -->
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 style="color: #0D1B3E; font-weight: 800; margin-bottom: 1rem;">
+                                    Stop juggling Excel sheets, tax deadlines, and missing invoices.
+                                </h2>
+                                <p style="color: #475569; line-height: 1.9; font-size: 16px; margin-bottom: 2rem;">
+                                    Most accounting teams in the UAE still chase paper invoices, rebuild reports manually,
+                                    and panic at every FTA deadline. Techrise deploys Odoo Accounting so VAT, Corporate Tax,
+                                    and E-invoicing UAE 2026 are produced automatically from your day-to-day transactions —
+                                    not from a last-minute spreadsheet.
+                                </p>
+
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>FTA-compliant out of the box</h4>
+                                            <p>VAT return, Corporate Tax, and E-invoicing UAE 2026 generated from real invoices — not handwritten templates.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>Close the books in days, not weeks</h4>
+                                            <p>Automated bank reconciliation, recurring entries, and audit trail mean your monthly close stops being a fire drill.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>One source of truth, every channel</h4>
+                                            <p>Sales, purchases, payroll, and inventory all post to the same ledger — no more "which Excel is correct?"</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>Dashboards your CFO will actually use</h4>
+                                            <p>Cash flow, P&amp;L, AR aging, and KPIs in real time — in English and Arabic, on desktop and mobile.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Trust strip -->
+                                <div class="tr-trust-strip">
+                                    <span class="tr-trust-badge">
+                                        <i class="fa fa-handshake-o"/> Official Odoo Partner
+                                    </span>
+                                    <span class="tr-trust-badge">
+                                        <i class="fa fa-shield"/> FTA &amp; UAE 2026 Ready
+                                    </span>
+                                    <span class="tr-trust-badge">
+                                        <i class="fa fa-map-marker"/> Based in Abu Dhabi
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Right: Lead form -->
+                            <div class="col-lg-5">
+                                <div class="tr-contact-form tr-lead-form tr-animate" id="get-started">
+                                    <h3 style="font-weight: 800; color: #0D1B3E; margin-bottom: 0.5rem;">
+                                        Get a Free Accounting Demo
+                                    </h3>
+                                    <p style="color: #64748B; margin-bottom: 1.5rem;">
+                                        30-minute walkthrough on your numbers — no slideware.
+                                    </p>
+                                    <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <input type="hidden" name="service" value="accounting_software"/>
+                                        <div class="tr-form-group">
+                                            <label>Full Name *</label>
+                                            <input type="text" name="name" required="required" placeholder="Your full name"/>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>Company Name *</label>
+                                            <input type="text" name="company" required="required" placeholder="Your company"/>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>Mobile *</label>
+                                            <input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>Email *</label>
+                                            <input type="email" name="email_from" required="required" placeholder="your@email.com"/>
+                                        </div>
+                                        <div class="tr-form-group">
+                                            <label>What do you need? *</label>
+                                            <textarea name="body" required="required" rows="3"
+                                                      placeholder="e.g. We use Excel for VAT and want to switch before the next filing."/>
+                                        </div>
+                                        <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                data-tr-event="lead_form_submit" data-tr-source="accounting_software">
+                                            Request Free Demo <i class="fa fa-arrow-right"/>
+                                        </button>
+                                        <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Accounting%20Software%20and%20would%20like%20a%20demo."
+                                           target="_blank" rel="noopener"
+                                           class="tr-btn tr-btn-whatsapp w-100"
+                                           style="justify-content: center; margin-top: 12px;"
+                                           data-tr-event="whatsapp_chat_open" data-tr-source="accounting_software">
+                                            <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== What's inside ===== -->
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">Everything your finance team needs</h2>
+                            <div class="tr-gold-line"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate">
+                                    <div class="tr-service-icon"><i class="fa fa-file-text-o"/></div>
+                                    <h3>Invoicing &amp; AR</h3>
+                                    <p>Sales invoices, recurring billing, customer statements, and automated reminders that get you paid faster.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                    <div class="tr-service-icon"><i class="fa fa-shopping-basket"/></div>
+                                    <h3>Bills &amp; AP</h3>
+                                    <p>Vendor bills, payment runs, three-way matching, and supplier aging — fully integrated with procurement.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                    <div class="tr-service-icon"><i class="fa fa-university"/></div>
+                                    <h3>Bank Reconciliation</h3>
+                                    <p>Auto-import statements, smart matching, and one-click reconciliation across multiple UAE bank accounts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate">
+                                    <div class="tr-service-icon"><i class="fa fa-percent"/></div>
+                                    <h3>VAT &amp; Corporate Tax</h3>
+                                    <p>UAE VAT return, Corporate Tax computations, and audit files generated from posted entries — not retyped.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate tr-animate-delay-1">
+                                    <div class="tr-service-icon"><i class="fa fa-qrcode"/></div>
+                                    <h3>E-invoicing UAE 2026</h3>
+                                    <p>Structured e-invoices, QR codes, and Peppol-style transmission ready for the UAE 2026 mandate.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="tr-service-card tr-animate tr-animate-delay-2">
+                                    <div class="tr-service-icon"><i class="fa fa-line-chart"/></div>
+                                    <h3>Reports &amp; Dashboards</h3>
+                                    <p>P&amp;L, balance sheet, cash flow, AR/AP aging, budget vs. actual — drillable by period, branch, or project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== Who it's for ===== -->
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10" style="color: #475569; line-height: 1.9; font-size: 16px;">
+                                <h2 style="color: #0D1B3E; font-weight: 700;">Who this is for</h2>
+                                <ul>
+                                    <li><strong>SMEs and growing companies in the UAE</strong> outgrowing Excel, QuickBooks, or Zoho Books</li>
+                                    <li><strong>Multi-branch businesses</strong> needing consolidated accounting across stores or sites</li>
+                                    <li><strong>Service firms and contractors</strong> needing project-level profitability, not just a P&amp;L</li>
+                                    <li><strong>Finance teams preparing for E-invoicing UAE 2026</strong> who want to be ready, not rushed</li>
+                                </ul>
+
+                                <h2 style="color: #0D1B3E; font-weight: 700; margin-top: 2.5rem;">Why Techrise</h2>
+                                <ul>
+                                    <li>Official Odoo Partner based in Abu Dhabi — local support in Arabic and English</li>
+                                    <li>Implementations sized to your team — start with accounting, expand to full ERP later</li>
+                                    <li>UAE chart of accounts, VAT, Corporate Tax, and 2026 e-invoicing pre-configured</li>
+                                    <li>Migration from QuickBooks, Zoho, Tally, Xero, and legacy Excel workbooks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ===== CTA ===== -->
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Ready to close your next month in days?</h2>
+                        <p class="tr-animate tr-animate-delay-1">
+                            Book a 30-minute discovery call. We'll show Odoo Accounting on your numbers and your VAT period.
+                        </p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">
+                                Request Free Demo <i class="fa fa-arrow-right"/>
+                            </a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Accounting%20Software%20and%20would%20like%20a%20demo."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-dark"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="accounting_software_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </t>
+    </template>
+
+</odoo>

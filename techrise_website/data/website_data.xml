@@ -27,6 +27,26 @@
             <field name="website_id" ref="website.default_website"/>
         </record>
 
+        <!-- Solutions dropdown (product-focused landing pages).
+             Distinct from Services: Services = what Techrise does,
+             Solutions = which software product is being sold.
+             Parent menu has no url so it renders as a pure dropdown. -->
+        <record id="menu_solutions" model="website.menu">
+            <field name="name">Solutions</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">35</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_solutions_accounting" model="website.menu">
+            <field name="name">Accounting Software</field>
+            <field name="url">/accounting-software-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">10</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
         <record id="menu_server" model="website.menu">
             <field name="name">Server &amp; Hosting</field>
             <field name="url">/server</field>

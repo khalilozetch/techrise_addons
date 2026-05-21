@@ -13,6 +13,9 @@ SERVICE_LABELS = {
     'hosting': 'Server & Hosting',
     'support': 'Technical Support',
     'other': 'Other',
+    # Product landing pages — keep distinct from the generic 'accounting'
+    # service so we can attribute leads to the dedicated landing page.
+    'accounting_software': 'Accounting Software (Landing Page)',
 }
 
 
@@ -118,3 +121,12 @@ class TechriseWebsite(http.Controller):
     @http.route('/erp-for-retail-uae', type='http', auth='public', website=True, sitemap=True)
     def erp_retail_page(self, **kwargs):
         return request.render('techrise_website.erp_retail_page')
+
+    # ================================================================
+    # Product landing pages (Google Ads + Meta + SEO targeted)
+    # One page per software product — distinct intent from the
+    # industry pages above (which target sector keywords).
+    # ================================================================
+    @http.route('/accounting-software-uae', type='http', auth='public', website=True, sitemap=True)
+    def accounting_software_page(self, **kwargs):
+        return request.render('techrise_website.accounting_software_page')
