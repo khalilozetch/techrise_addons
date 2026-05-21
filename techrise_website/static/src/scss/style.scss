@@ -3010,37 +3010,6 @@ html[lang="ar"] {
 }
 
 // ============================================================
-// LOGO STRIP — placeholder client logos
-// ============================================================
-.tr-logo-strip {
-    background: $tr-white;
-    padding: 40px 0;
-    border-bottom: 1px solid $tr-gray-100;
-}
-
-.tr-logo-strip-label {
-    text-align: center;
-    color: $tr-gray-500;
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 1.5rem;
-}
-
-.tr-logo-strip-img {
-    display: block;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 0 auto;
-    opacity: 0.7;
-    transition: $tr-transition;
-
-    &:hover { opacity: 1; }
-}
-
-// ============================================================
 // STICKY LEAD FORM (desktop) + lead form card styling
 // ============================================================
 .tr-sticky-wrap {

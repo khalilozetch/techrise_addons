@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Call Center dashboard mockup">
+  <defs>
+    <linearGradient id="ccBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A5DAB"/><stop offset="100%" stop-color="#0D1B3E"/>
+    </linearGradient>
+    <filter id="ccShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="560" height="420" rx="20" fill="url(#ccBg)"/>
+  <circle cx="80" cy="80" r="120" fill="#FFFFFF" opacity="0.04"/>
+  <circle cx="480" cy="360" r="100" fill="#F5B731" opacity="0.06"/>
+
+  <g filter="url(#ccShadow)">
+    <rect x="40" y="40" width="480" height="340" rx="14" fill="#FFFFFF"/>
+    <rect x="40" y="40" width="480" height="42" rx="14" fill="#0D1B3E"/>
+    <rect x="40" y="68" width="480" height="14" fill="#0D1B3E"/>
+    <circle cx="62" cy="61" r="5" fill="#FF6B6B"/><circle cx="80" cy="61" r="5" fill="#FFD06A"/><circle cx="98" cy="61" r="5" fill="#51CF66"/>
+    <text x="130" y="65" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Call Center Live · 12 agents online</text>
+
+    <!-- Stats -->
+    <g transform="translate(60, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">CALLS TODAY</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">486</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#16A34A" font-weight="700">▲ 18% vs yesterday</text>
+    </g>
+    <g transform="translate(212, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">AVG WAIT</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">24s</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#16A34A" font-weight="700">SLA: under 60s</text>
+    </g>
+    <g transform="translate(364, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">QUEUE</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">3</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#F59E0B" font-weight="700">All assigned</text>
+    </g>
+
+    <!-- Live queue -->
+    <g transform="translate(60, 190)">
+      <rect width="287" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">Active Calls</text>
+
+      <g transform="translate(14, 36)">
+        <rect width="259" height="32" rx="5" fill="#F0FDF4"/>
+        <circle cx="14" cy="16" r="6" fill="#16A34A"><animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/></circle>
+        <text x="28" y="14" font-family="Inter, sans-serif" font-size="9" fill="#166534" font-weight="700">+971 50 123 4567 → Ahmed</text>
+        <text x="28" y="25" font-family="Inter, sans-serif" font-size="8" fill="#166534">Sales · 02:14</text>
+      </g>
+      <g transform="translate(14, 72)">
+        <rect width="259" height="32" rx="5" fill="#F0FDF4"/>
+        <circle cx="14" cy="16" r="6" fill="#16A34A"/>
+        <text x="28" y="14" font-family="Inter, sans-serif" font-size="9" fill="#166534" font-weight="700">+971 56 987 6543 → Sara</text>
+        <text x="28" y="25" font-family="Inter, sans-serif" font-size="8" fill="#166534">Support · 00:48</text>
+      </g>
+      <g transform="translate(14, 108)">
+        <rect width="259" height="32" rx="5" fill="#FEF3C7"/>
+        <circle cx="14" cy="16" r="6" fill="#F59E0B"/>
+        <text x="28" y="14" font-family="Inter, sans-serif" font-size="9" fill="#92400E" font-weight="700">+971 55 555 1212 → Queue</text>
+        <text x="28" y="25" font-family="Inter, sans-serif" font-size="8" fill="#92400E">Waiting · 00:12</text>
+      </g>
+    </g>
+
+    <!-- Agent KPIs -->
+    <g transform="translate(364, 190)">
+      <rect width="135" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">Top Agents</text>
+      <g transform="translate(12, 38)">
+        <text x="0" y="12" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">Sara K.</text>
+        <rect x="0" y="18" width="111" height="6" rx="3" fill="#E2E8F0"/>
+        <rect x="0" y="18" width="98" height="6" rx="3" fill="#16A34A"/>
+        <text x="0" y="32" font-family="Inter, sans-serif" font-size="8" fill="#64748B">88 calls</text>
+      </g>
+      <g transform="translate(12, 76)">
+        <text x="0" y="12" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">Ahmed H.</text>
+        <rect x="0" y="18" width="111" height="6" rx="3" fill="#E2E8F0"/>
+        <rect x="0" y="18" width="82" height="6" rx="3" fill="#1A5DAB"/>
+        <text x="0" y="32" font-family="Inter, sans-serif" font-size="8" fill="#64748B">74 calls</text>
+      </g>
+      <g transform="translate(12, 114)">
+        <text x="0" y="12" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">Mona R.</text>
+        <rect x="0" y="18" width="111" height="6" rx="3" fill="#E2E8F0"/>
+        <rect x="0" y="18" width="68" height="6" rx="3" fill="#F5B731"/>
+        <text x="0" y="32" font-family="Inter, sans-serif" font-size="8" fill="#64748B">61 calls</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(420, 30)">
+    <rect width="120" height="40" rx="20" fill="#F5B731" filter="url(#ccShadow)"/>
+    <text x="14" y="17" font-family="Inter, sans-serif" font-size="8" fill="#0D1B3E" font-weight="700">RECORDING</text>
+    <text x="14" y="30" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="800">ALL CALLS ✓</text>
+    <circle cx="105" cy="20" r="7" fill="#DC2626"><animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/></circle>
+  </g>
+</svg>

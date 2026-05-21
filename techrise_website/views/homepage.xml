@@ -314,36 +314,36 @@
                                 <p>VAT, Corporate Tax, E-invoicing UAE 2026, bank reconciliation, and audit-ready reports.</p>
                                 <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
                             </a>
-                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-1">
+                            <a href="/hr-payroll-software-uae" class="tr-solution-card tr-animate tr-animate-delay-1" data-tr-event="solution_card_click" data-tr-source="hr">
                                 <div class="tr-solution-icon"><i class="fa fa-users"/></div>
                                 <h3>HR &amp; Payroll Software</h3>
                                 <p>Employees, attendance, leaves, UAE payroll, and end-of-service — fully digital.</p>
-                                <span class="tr-solution-cta-soon">Coming soon</span>
-                            </div>
-                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-2">
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
+                            <a href="/call-center-software-uae" class="tr-solution-card tr-animate tr-animate-delay-2" data-tr-event="solution_card_click" data-tr-source="call_center">
                                 <div class="tr-solution-icon"><i class="fa fa-headphones"/></div>
                                 <h3>Call Center Software</h3>
                                 <p>Inbound &amp; outbound queues, CRM-linked calls, recordings, and agent KPIs.</p>
-                                <span class="tr-solution-cta-soon">Coming soon</span>
-                            </div>
-                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-3">
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
+                            <a href="/inventory-procurement-uae" class="tr-solution-card tr-animate tr-animate-delay-3" data-tr-event="solution_card_click" data-tr-source="inventory">
                                 <div class="tr-solution-icon"><i class="fa fa-cubes"/></div>
                                 <h3>Inventory &amp; Procurement</h3>
                                 <p>Multi-warehouse stock, purchase approvals, vendor portal, and reorder rules.</p>
-                                <span class="tr-solution-cta-soon">Coming soon</span>
-                            </div>
-                            <div class="tr-solution-card tr-solution-card-soon tr-animate">
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
+                            <a href="/erp-software-uae" class="tr-solution-card tr-animate" data-tr-event="solution_card_click" data-tr-source="full_erp">
                                 <div class="tr-solution-icon"><i class="fa fa-cogs"/></div>
                                 <h3>Full ERP Suite</h3>
                                 <p>Sales, accounting, HR, inventory, manufacturing — one unified platform on Odoo.</p>
-                                <span class="tr-solution-cta-soon">Coming soon</span>
-                            </div>
-                            <div class="tr-solution-card tr-solution-card-soon tr-animate tr-animate-delay-1">
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
+                            <a href="/custom-software-uae" class="tr-solution-card tr-animate tr-animate-delay-1" data-tr-event="solution_card_click" data-tr-source="custom_software">
                                 <div class="tr-solution-icon"><i class="fa fa-code"/></div>
                                 <h3>Custom Software</h3>
                                 <p>Bespoke web &amp; mobile apps, Odoo customizations, and system integrations.</p>
-                                <span class="tr-solution-cta-soon">Coming soon</span>
-                            </div>
+                                <span class="tr-solution-cta">Learn more <i class="fa fa-arrow-right"/></span>
+                            </a>
                         </div>
                     </div>
                 </section>

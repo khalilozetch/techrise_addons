@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Full ERP Suite — connected modules">
+  <defs>
+    <linearGradient id="erpBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A5DAB"/><stop offset="100%" stop-color="#0D1B3E"/>
+    </linearGradient>
+    <filter id="erpShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mod-text { font-family: Inter, sans-serif; font-size: 11px; font-weight: 700; fill: #0D1B3E; }
+      .mod-sub  { font-family: Inter, sans-serif; font-size: 8px;  font-weight: 600; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect width="560" height="420" rx="20" fill="url(#erpBg)"/>
+  <circle cx="80" cy="80" r="140" fill="#FFFFFF" opacity="0.04"/>
+  <circle cx="480" cy="360" r="120" fill="#F5B731" opacity="0.06"/>
+
+  <!-- Central Odoo hub -->
+  <g filter="url(#erpShadow)">
+    <circle cx="280" cy="210" r="68" fill="#FFFFFF"/>
+    <circle cx="280" cy="210" r="55" fill="#0D1B3E"/>
+    <text x="280" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="900" fill="#F5B731">ERP</text>
+    <text x="280" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Powered by Odoo</text>
+  </g>
+
+  <!-- Connector lines (animated dash) -->
+  <g stroke="#F5B731" stroke-width="2" fill="none" opacity="0.55">
+    <line x1="280" y1="142" x2="280" y2="80"  stroke-dasharray="4 4"/>
+    <line x1="280" y1="278" x2="280" y2="340" stroke-dasharray="4 4"/>
+    <line x1="212" y1="210" x2="90"  y2="210" stroke-dasharray="4 4"/>
+    <line x1="348" y1="210" x2="470" y2="210" stroke-dasharray="4 4"/>
+    <line x1="232" y1="162" x2="155" y2="105" stroke-dasharray="4 4"/>
+    <line x1="328" y1="162" x2="405" y2="105" stroke-dasharray="4 4"/>
+    <line x1="232" y1="258" x2="155" y2="315" stroke-dasharray="4 4"/>
+    <line x1="328" y1="258" x2="405" y2="315" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Module bubbles -->
+  <g filter="url(#erpShadow)">
+    <!-- Top -->
+    <g>
+      <rect x="232" y="40" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="252" cy="60" r="10" fill="#DBEAFE"/>
+      <text x="252" y="64" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#1A5DAB">$</text>
+      <text x="266" y="58" class="mod-text">Sales</text>
+      <text x="266" y="70" class="mod-sub">CRM</text>
+    </g>
+    <!-- Top-right -->
+    <g>
+      <rect x="368" y="76" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="388" cy="96" r="10" fill="#DCFCE7"/>
+      <text x="388" y="100" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#166534">A</text>
+      <text x="402" y="94" class="mod-text">Accounting</text>
+      <text x="402" y="106" class="mod-sub">VAT · CT</text>
+    </g>
+    <!-- Right -->
+    <g>
+      <rect x="424" y="190" width="116" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="444" cy="210" r="10" fill="#FEF3C7"/>
+      <text x="444" y="214" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#92400E">P</text>
+      <text x="458" y="208" class="mod-text">Manufacturing</text>
+      <text x="458" y="220" class="mod-sub">MRP · BOM</text>
+    </g>
+    <!-- Bottom-right -->
+    <g>
+      <rect x="368" y="304" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="388" cy="324" r="10" fill="#F3E8FF"/>
+      <text x="388" y="328" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#6B21A8">H</text>
+      <text x="402" y="322" class="mod-text">HR</text>
+      <text x="402" y="334" class="mod-sub">Payroll · WPS</text>
+    </g>
+    <!-- Bottom -->
+    <g>
+      <rect x="232" y="340" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="252" cy="360" r="10" fill="#FEE2E2"/>
+      <text x="252" y="364" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#991B1B">P</text>
+      <text x="266" y="358" class="mod-text">Project</text>
+      <text x="266" y="370" class="mod-sub">Timesheet</text>
+    </g>
+    <!-- Bottom-left -->
+    <g>
+      <rect x="96" y="304" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="116" cy="324" r="10" fill="#CCFBF1"/>
+      <text x="116" y="328" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#0F766E">I</text>
+      <text x="130" y="322" class="mod-text">Inventory</text>
+      <text x="130" y="334" class="mod-sub">Multi-WH</text>
+    </g>
+    <!-- Left -->
+    <g>
+      <rect x="20" y="190" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="40" cy="210" r="10" fill="#E0E7FF"/>
+      <text x="40" y="214" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#3730A3">PO</text>
+      <text x="54" y="208" class="mod-text">Purchase</text>
+      <text x="54" y="220" class="mod-sub">Vendors</text>
+    </g>
+    <!-- Top-left -->
+    <g>
+      <rect x="96" y="76" width="96" height="40" rx="20" fill="#FFFFFF"/>
+      <circle cx="116" cy="96" r="10" fill="#FFEDD5"/>
+      <text x="116" y="100" text-anchor="middle" font-family="FontAwesome, Arial" font-size="11" fill="#9A3412">M</text>
+      <text x="130" y="94" class="mod-text">Marketing</text>
+      <text x="130" y="106" class="mod-sub">Email · Social</text>
+    </g>
+  </g>
+
+  <g transform="translate(420, 360)">
+    <rect width="120" height="40" rx="20" fill="#F5B731" filter="url(#erpShadow)"/>
+    <text x="14" y="17" font-family="Inter, sans-serif" font-size="8" fill="#0D1B3E" font-weight="700">ALL-IN-ONE</text>
+    <text x="14" y="30" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="800">ONE PLATFORM ✓</text>
+    <circle cx="105" cy="20" r="11" fill="#FFFFFF"/>
+    <path d="M99 20 L103 24 L111 16" stroke="#16A34A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -98,20 +98,6 @@
                     </div>
                 </section>
 
-                <!-- =================== CLIENT LOGOS =================== -->
-                <!-- TODO: Replace placeholder SVG with real client logos.
-                     Track grayscale-style logos; hover bumps to color. -->
-                <section class="tr-logo-strip">
-                    <div class="container">
-                        <p class="tr-logo-strip-label">Trusted by businesses across the UAE</p>
-                        <img src="/techrise_website/static/src/img/client-logos-placeholder.svg"
-                             alt="Sample client logos — placeholders pending real customers"
-                             class="tr-logo-strip-img"
-                             loading="lazy"
-                             width="900" height="80"/>
-                    </div>
-                </section>
-
                 <!-- =================== BENEFITS + STICKY FORM =================== -->
                 <section class="tr-section tr-section-white" id="get-started">
                     <div class="container">
@@ -367,6 +353,920 @@
                     </div>
                 </section>
 
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- HR & PAYROLL SOFTWARE UAE                                        -->
+    <!-- =============================================================== -->
+    <template id="hr_payroll_software_page" name="HR &amp; Payroll Software UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">HR &amp; Payroll Software UAE — WPS, Attendance, Leaves &amp; End-of-Service</t>
+            <t t-set="website_meta_description">HR &amp; payroll software in UAE on Odoo — WPS-compliant payroll, attendance, leaves, end-of-service, employee self-service, and UAE labor law ready for SMEs and growing companies.</t>
+            <t t-set="website_meta_keywords">hr software uae, payroll software uae, hrms uae, wps payroll software dubai, attendance system uae, hr management abu dhabi, end of service uae, employee self service uae</t>
+            <div id="wrap">
+
+                <section class="tr-product-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tr-product-hero-eyebrow">
+                                    <i class="fa fa-handshake-o"/><span>Official Odoo Partner — Abu Dhabi</span>
+                                </div>
+                                <h1 class="tr-product-hero-title">
+                                    HR &amp; Payroll Software UAE — <span class="tr-text-gold">WPS &amp; Labor Law</span> Compliant
+                                </h1>
+                                <p class="tr-product-hero-sub">
+                                    Stop running HR on Excel sheets. Attendance, leaves, payroll, and end-of-service
+                                    — all in one Arabic + English platform, ready for UAE's WPS the day you go live.
+                                </p>
+                                <div class="tr-hero-bullets">
+                                    <div><i class="fa fa-check-circle"/> WPS-compliant payroll, ready for your MOHRE submission</div>
+                                    <div><i class="fa fa-check-circle"/> Attendance, leaves, and approvals on employee self-service</div>
+                                    <div><i class="fa fa-check-circle"/> Accurate end-of-service &amp; gratuity calculation</div>
+                                </div>
+                                <div class="tr-product-hero-cta">
+                                    <a href="#get-started" class="tr-btn tr-btn-primary"
+                                       data-tr-event="hero_cta_click" data-tr-source="hr_software">
+                                        Get Your Free Demo <i class="fa fa-arrow-right"/>
+                                    </a>
+                                    <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20HR%20%26%20Payroll%20Software%20and%20would%20like%20a%20demo."
+                                       target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                                       data-tr-event="whatsapp_chat_open" data-tr-source="hr_hero">
+                                        <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 tr-product-hero-visual-col">
+                                <img src="/techrise_website/static/src/img/hr-payroll-mockup.svg"
+                                     alt="HR &amp; Payroll dashboard — employees, attendance, payroll"
+                                     class="tr-product-hero-visual"
+                                     loading="eager" fetchpriority="high" width="560" height="420"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-trust-bar">
+                    <div class="container">
+                        <div class="tr-trust-bar-grid">
+                            <div class="tr-trust-bar-item">
+                                <div class="tr-trust-bar-icon"><i class="fa fa-shield"/></div>
+                                <div><strong>WPS Ready</strong><span>MOHRE-compliant payroll</span></div>
+                            </div>
+                            <div class="tr-trust-bar-item">
+                                <div class="tr-trust-bar-icon"><i class="fa fa-mobile"/></div>
+                                <div><strong>Employee Self-Service</strong><span>Web + mobile app</span></div>
+                            </div>
+                            <div class="tr-trust-bar-item">
+                                <div class="tr-trust-bar-icon"><i class="fa fa-handshake-o"/></div>
+                                <div><strong>Odoo Partner</strong><span>Official certified partner</span></div>
+                            </div>
+                            <div class="tr-trust-bar-item">
+                                <div class="tr-trust-bar-icon"><i class="fa fa-comments-o"/></div>
+                                <div><strong>Arabic &amp; English</strong><span>Local UAE support team</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white" id="get-started">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title-left tr-animate">
+                                    Why HR teams in the UAE choose Techrise
+                                </h2>
+                                <div class="tr-gold-line tr-gold-line-left"/>
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item tr-animate">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>Payroll without the monthly panic</h4>
+                                            <p>Salaries, allowances, overtime, deductions, and the WPS SIF file generated in one click — accurate to the fil.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-1">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>End-of-service calculated correctly</h4>
+                                            <p>UAE Labor Law gratuity formulas applied automatically — limited vs unlimited contracts, partial years, resignations, terminations.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-2">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>Employees serve themselves</h4>
+                                            <p>Leave requests, payslips, expense claims, document uploads — all on mobile. HR stops being a help desk.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-3">
+                                        <div class="tr-benefit-icon"><i class="fa fa-check"/></div>
+                                        <div>
+                                            <h4>Audit-ready, always</h4>
+                                            <p>Every contract, document, salary change, and approval logged with a full audit trail. MOHRE inspections become a non-event.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tr-sticky-wrap">
+                                    <div class="tr-lead-form-card tr-animate">
+                                        <div class="tr-lead-form-header">
+                                            <h3>Get a Free HR Demo</h3>
+                                            <p>30-minute walkthrough on your team size — no slideware.</p>
+                                        </div>
+                                        <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="service" value="hr_software"/>
+                                            <div class="tr-form-group"><label>Your Name *</label><input type="text" name="name" required="required" placeholder="Your full name"/></div>
+                                            <div class="tr-form-group"><label>Company Name *</label><input type="text" name="company" required="required" placeholder="Your company"/></div>
+                                            <div class="tr-form-group"><label>Mobile *</label><input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/></div>
+                                            <div class="tr-form-group"><label>Work Email *</label><input type="email" name="email_from" required="required" placeholder="you@company.com"/></div>
+                                            <div class="tr-form-group"><label>How many employees?</label><textarea name="body" rows="2" placeholder="e.g. 80 employees across 3 branches"/></div>
+                                            <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                    data-tr-event="lead_form_submit" data-tr-source="hr_software">
+                                                Request Free Demo <i class="fa fa-arrow-right"/>
+                                            </button>
+                                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20HR%20%26%20Payroll%20Software%20and%20would%20like%20a%20demo."
+                                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp w-100"
+                                               style="justify-content: center; margin-top: 10px;"
+                                               data-tr-event="whatsapp_chat_open" data-tr-source="hr_form">
+                                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                            </a>
+                                            <p class="tr-lead-form-note"><i class="fa fa-lock"/> Your details stay private. Used only to contact you about your demo.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">From spreadsheet HR to a real HRMS</h2>
+                            <div class="tr-gold-line"/>
+                        </div>
+                        <div class="tr-vs-grid">
+                            <div class="tr-vs-card tr-vs-before tr-animate">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-bad">Before</span><h3>Excel + WhatsApp groups</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-times"/> Attendance from a paper register or biometric exports</li>
+                                    <li><i class="fa fa-times"/> Leave requests lost in WhatsApp chats</li>
+                                    <li><i class="fa fa-times"/> Payroll recalculated three times every month</li>
+                                    <li><i class="fa fa-times"/> End-of-service estimated, hoped to be right</li>
+                                    <li><i class="fa fa-times"/> No idea who's on leave next week</li>
+                                </ul>
+                            </div>
+                            <div class="tr-vs-card tr-vs-after tr-animate tr-animate-delay-1">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-good">After</span><h3>Odoo HR by Techrise</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-check"/> Biometric / mobile check-in feeds attendance live</li>
+                                    <li><i class="fa fa-check"/> Approval workflow with audit trail and notifications</li>
+                                    <li><i class="fa fa-check"/> One-click payroll + WPS SIF export</li>
+                                    <li><i class="fa fa-check"/> End-of-service calculated to UAE Labor Law, every time</li>
+                                    <li><i class="fa fa-check"/> Live calendar — who's in, who's off, who's hired next</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2 class="tr-section-title tr-animate">Everything HR runs on</h2>
+                            <div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">One platform from hire to gratuity.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-id-card-o"/></div><h3>Employee Records</h3><p>Contracts, documents, visa expiry alerts, dependents, and emergency contacts in one secure profile.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-clock-o"/></div><h3>Attendance &amp; Shifts</h3><p>Biometric, web, or mobile check-in. Shift planning, overtime, and late tracking.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-calendar-check-o"/></div><h3>Leaves &amp; Approvals</h3><p>Annual, sick, unpaid — full leave policy engine with multi-level approvals.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-money"/></div><h3>UAE Payroll &amp; WPS</h3><p>Salary, allowances, deductions, gratuity, and one-click WPS SIF export for your bank.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-sign-out"/></div><h3>End-of-Service</h3><p>UAE Labor Law gratuity calculated automatically, with full breakdown for the employee and the auditor.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-pie-chart"/></div><h3>HR Analytics</h3><p>Headcount, attrition, cost per hire, leave usage — dashboards for the CHRO and the CFO.</p></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Common questions</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-faq-wrap">
+                            <details class="tr-faq tr-animate"><summary>Does it generate WPS SIF files?</summary><p>Yes. After every payroll run, you can export the SIF file in the format required by your bank for MOHRE submission. No manual reformatting.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>How does end-of-service calculation work?</summary><p>The system applies the UAE Labor Law formulas automatically based on contract type (limited / unlimited), basic salary, years of service, and reason for leaving. Each calculation is fully auditable.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-2"><summary>Can employees use it on their phone?</summary><p>Yes — check-in, leave requests, payslip download, expense claims, and document uploads all work on mobile. Reduces HR's daily inbox by 70%+.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-3"><summary>Can you migrate from our current HRMS / Excel?</summary><p>Yes. Employees, contracts, leave balances, and historical payslips are all standard migration items.</p></details>
+                            <details class="tr-faq tr-animate"><summary>Is it ready for multiple branches / multi-company?</summary><p>Yes — multi-company, multi-branch, and multi-currency are native. Useful for groups with operations across the UAE and GCC.</p></details>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Ready to run HR like a real business?</h2>
+                        <p class="tr-animate tr-animate-delay-1">Book a 30-minute discovery call. We'll show Odoo HR on a team your size.</p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">Request Free Demo <i class="fa fa-arrow-right"/></a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20HR%20%26%20Payroll%20Software%20and%20would%20like%20a%20demo."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="hr_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- CALL CENTER SOFTWARE UAE                                         -->
+    <!-- =============================================================== -->
+    <template id="call_center_software_page" name="Call Center Software UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Call Center Software UAE — VoIP, IVR, Recording &amp; CRM Integration</t>
+            <t t-set="website_meta_description">Call center software in UAE on Odoo — inbound and outbound queues, IVR, call recording, agent KPIs, and CRM-linked calls for sales and support teams in Abu Dhabi and Dubai.</t>
+            <t t-set="website_meta_keywords">call center software uae, voip call center dubai, ivr software uae, contact center abu dhabi, call recording software uae, predictive dialer uae, odoo voip uae</t>
+            <div id="wrap">
+
+                <section class="tr-product-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tr-product-hero-eyebrow">
+                                    <i class="fa fa-handshake-o"/><span>Official Odoo Partner — Abu Dhabi</span>
+                                </div>
+                                <h1 class="tr-product-hero-title">
+                                    Call Center Software UAE — <span class="tr-text-gold">CRM-Linked</span> Calls, IVR &amp; QA
+                                </h1>
+                                <p class="tr-product-hero-sub">
+                                    Stop running sales and support on agents' personal phones. Inbound and outbound
+                                    queues, IVR routing, call recording, and live KPIs — wired to your CRM from day one.
+                                </p>
+                                <div class="tr-hero-bullets">
+                                    <div><i class="fa fa-check-circle"/> Inbound + outbound queues with IVR &amp; skill-based routing</div>
+                                    <div><i class="fa fa-check-circle"/> Every call linked to the CRM contact, with recording &amp; notes</div>
+                                    <div><i class="fa fa-check-circle"/> Live wallboard for the floor, KPIs for the team lead</div>
+                                </div>
+                                <div class="tr-product-hero-cta">
+                                    <a href="#get-started" class="tr-btn tr-btn-primary"
+                                       data-tr-event="hero_cta_click" data-tr-source="call_center">
+                                        Get Your Free Demo <i class="fa fa-arrow-right"/>
+                                    </a>
+                                    <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Call%20Center%20Software%20and%20would%20like%20a%20demo."
+                                       target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                                       data-tr-event="whatsapp_chat_open" data-tr-source="cc_hero">
+                                        <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 tr-product-hero-visual-col">
+                                <img src="/techrise_website/static/src/img/call-center-mockup.svg"
+                                     alt="Call center dashboard — live queue, agents, KPIs"
+                                     class="tr-product-hero-visual"
+                                     loading="eager" fetchpriority="high" width="560" height="420"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-trust-bar">
+                    <div class="container">
+                        <div class="tr-trust-bar-grid">
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-volume-control-phone"/></div><div><strong>Cloud VoIP</strong><span>No PBX hardware needed</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-microphone"/></div><div><strong>Call Recording</strong><span>Every call, searchable</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-handshake-o"/></div><div><strong>Odoo Partner</strong><span>Official certified partner</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-comments-o"/></div><div><strong>Arabic &amp; English</strong><span>Local UAE support team</span></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white" id="get-started">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title-left tr-animate">Why sales &amp; support teams switch</h2>
+                                <div class="tr-gold-line tr-gold-line-left"/>
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item tr-animate"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Every call counts toward a CRM record</h4><p>Inbound calls auto-match the caller against your CRM contacts. Outbound clicks dial from the lead screen.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-1"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>QA without sampling guesswork</h4><p>100% of calls recorded, searchable by agent, customer, or campaign. Scorecards built right into the recording.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-2"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Right call to the right agent</h4><p>IVR menus, skill-based routing, language detection, and overflow rules — built in, no add-ons.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-3"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Wallboard the floor will actually look at</h4><p>Calls in queue, longest wait, agent status, SLA breaches — on a TV in the call room, live.</p></div></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tr-sticky-wrap">
+                                    <div class="tr-lead-form-card tr-animate">
+                                        <div class="tr-lead-form-header"><h3>Get a Free Call Center Demo</h3><p>30-minute walkthrough on your call flow — no slideware.</p></div>
+                                        <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="service" value="call_center_software"/>
+                                            <div class="tr-form-group"><label>Your Name *</label><input type="text" name="name" required="required" placeholder="Your full name"/></div>
+                                            <div class="tr-form-group"><label>Company Name *</label><input type="text" name="company" required="required" placeholder="Your company"/></div>
+                                            <div class="tr-form-group"><label>Mobile *</label><input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/></div>
+                                            <div class="tr-form-group"><label>Work Email *</label><input type="email" name="email_from" required="required" placeholder="you@company.com"/></div>
+                                            <div class="tr-form-group"><label>How many agents?</label><textarea name="body" rows="2" placeholder="e.g. 12 agents, mostly inbound support"/></div>
+                                            <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                    data-tr-event="lead_form_submit" data-tr-source="call_center_software">
+                                                Request Free Demo <i class="fa fa-arrow-right"/>
+                                            </button>
+                                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Call%20Center%20Software%20and%20would%20like%20a%20demo."
+                                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp w-100"
+                                               style="justify-content: center; margin-top: 10px;"
+                                               data-tr-event="whatsapp_chat_open" data-tr-source="cc_form">
+                                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                            </a>
+                                            <p class="tr-lead-form-note"><i class="fa fa-lock"/> Your details stay private. Used only to contact you about your demo.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">From personal phones to a real call center</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-vs-grid">
+                            <div class="tr-vs-card tr-vs-before tr-animate">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-bad">Before</span><h3>Agents on mobile phones</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-times"/> No idea who called, when, or what was said</li>
+                                    <li><i class="fa fa-times"/> Call quality complaints — no recording to check</li>
+                                    <li><i class="fa fa-times"/> KPIs in a manager's notebook</li>
+                                    <li><i class="fa fa-times"/> Customers shuffled through 4 agents to find help</li>
+                                    <li><i class="fa fa-times"/> Agent leaves with the customer's number on their phone</li>
+                                </ul>
+                            </div>
+                            <div class="tr-vs-card tr-vs-after tr-animate tr-animate-delay-1">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-good">After</span><h3>Odoo Call Center by Techrise</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-check"/> Every call logged, transcribed-ready, tied to a contact</li>
+                                    <li><i class="fa fa-check"/> Searchable recording archive with QA scorecards</li>
+                                    <li><i class="fa fa-check"/> Live KPIs and historical reports out of the box</li>
+                                    <li><i class="fa fa-check"/> IVR + skill routing gets calls to the right person first</li>
+                                    <li><i class="fa fa-check"/> All customer data stays in your CRM, not on devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">What's inside</h2><div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">Full contact center stack. No third-party assemblies.</p></div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-list-ol"/></div><h3>Queues &amp; Routing</h3><p>Inbound, outbound, blended; skill-based, time-based, language-based.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-sitemap"/></div><h3>IVR Builder</h3><p>Visual menu builder, multi-language, with conditional logic and direct-to-agent overrides.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-microphone"/></div><h3>Call Recording</h3><p>Every call recorded, indexed, and pinned to the CRM record. Retention policies built in.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-tachometer"/></div><h3>Live Wallboard</h3><p>Calls in queue, longest wait, agents online, SLA breaches — on a screen on the floor.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-plug"/></div><h3>CRM Integration</h3><p>Click-to-call from any lead. Inbound auto-pop with full customer history.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-check-square-o"/></div><h3>QA Scorecards</h3><p>Score calls against your script. Coaching notes, agent self-review, supervisor sign-off.</p></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Common questions</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-faq-wrap">
+                            <details class="tr-faq tr-animate"><summary>Do we need to buy a PBX or special hardware?</summary><p>No. The system runs on cloud VoIP via SIP trunking. Agents need a USB headset and a browser, nothing else.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>Can you provision UAE numbers?</summary><p>Yes — we work with licensed UAE telecom providers to provision local DIDs and toll-free numbers for inbound, plus outbound caller-ID routing.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-2"><summary>How many agents does it scale to?</summary><p>From 3 to 300+ agents on the same platform. Most deployments grow over time without re-platforming.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-3"><summary>Can it integrate with our existing CRM?</summary><p>Yes — native with Odoo CRM, REST API for other CRMs. We deliver the integration as part of the project.</p></details>
+                            <details class="tr-faq tr-animate"><summary>Are call recordings compliant with UAE regulations?</summary><p>Yes — recordings stored encrypted, with retention policies, customer-disclosure prompts, and role-based access for QA staff.</p></details>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Ready to run a real call center?</h2>
+                        <p class="tr-animate tr-animate-delay-1">Book a 30-minute discovery call. We'll demo on your queue setup.</p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">Request Free Demo <i class="fa fa-arrow-right"/></a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Call%20Center%20Software%20and%20would%20like%20a%20demo."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="cc_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- INVENTORY & PROCUREMENT UAE                                      -->
+    <!-- =============================================================== -->
+    <template id="inventory_procurement_page" name="Inventory &amp; Procurement Software UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Inventory &amp; Procurement Software UAE — Multi-Warehouse, Vendor Portal, Barcode</t>
+            <t t-set="website_meta_description">Inventory and procurement software in UAE on Odoo — multi-warehouse stock, vendor portal, purchase approvals, barcode scanning, reorder rules, and live inventory dashboards.</t>
+            <t t-set="website_meta_keywords">inventory software uae, procurement software uae, warehouse management uae, vendor portal uae, purchase order software dubai, barcode inventory uae, stock management abu dhabi</t>
+            <div id="wrap">
+
+                <section class="tr-product-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tr-product-hero-eyebrow"><i class="fa fa-handshake-o"/><span>Official Odoo Partner — Abu Dhabi</span></div>
+                                <h1 class="tr-product-hero-title">
+                                    Inventory &amp; Procurement UAE — <span class="tr-text-gold">Multi-Warehouse</span> &amp; Barcode-Ready
+                                </h1>
+                                <p class="tr-product-hero-sub">
+                                    Stop discovering stock-outs at the customer counter. Multi-warehouse stock, reorder rules,
+                                    vendor portals, and barcode scanning — wired to accounting so every movement is costed.
+                                </p>
+                                <div class="tr-hero-bullets">
+                                    <div><i class="fa fa-check-circle"/> Real-time stock across warehouses, branches, and trucks</div>
+                                    <div><i class="fa fa-check-circle"/> Automatic reorder rules and supplier lead-time tracking</div>
+                                    <div><i class="fa fa-check-circle"/> Three-way matching: PO ↔ receipt ↔ invoice</div>
+                                </div>
+                                <div class="tr-product-hero-cta">
+                                    <a href="#get-started" class="tr-btn tr-btn-primary"
+                                       data-tr-event="hero_cta_click" data-tr-source="inventory_procurement">
+                                        Get Your Free Demo <i class="fa fa-arrow-right"/>
+                                    </a>
+                                    <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Inventory%20%26%20Procurement%20Software%20and%20would%20like%20a%20demo."
+                                       target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                                       data-tr-event="whatsapp_chat_open" data-tr-source="inv_hero">
+                                        <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 tr-product-hero-visual-col">
+                                <img src="/techrise_website/static/src/img/inventory-mockup.svg"
+                                     alt="Inventory &amp; Procurement dashboard — multi-warehouse, POs, low stock"
+                                     class="tr-product-hero-visual"
+                                     loading="eager" fetchpriority="high" width="560" height="420"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-trust-bar">
+                    <div class="container">
+                        <div class="tr-trust-bar-grid">
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-database"/></div><div><strong>Multi-Warehouse</strong><span>Live stock everywhere</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-qrcode"/></div><div><strong>Barcode Ready</strong><span>USB &amp; Bluetooth scanners</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-handshake-o"/></div><div><strong>Odoo Partner</strong><span>Official certified partner</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-comments-o"/></div><div><strong>Arabic &amp; English</strong><span>Local UAE support team</span></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white" id="get-started">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title-left tr-animate">Why ops &amp; procurement teams choose Techrise</h2>
+                                <div class="tr-gold-line tr-gold-line-left"/>
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item tr-animate"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Know your real stock, anywhere</h4><p>Live inventory across all warehouses, branches, and in-transit. Sold from anywhere; reserved instantly.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-1"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Reorder before you stock out</h4><p>Min/max rules, lead times, and seasonality drive purchase requests automatically — no Excel reorder lists.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-2"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Suppliers self-serve their POs</h4><p>Vendor portal for RFQ responses, PO acceptance, ASN, and invoice upload — your AP team stops chasing emails.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-3"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Three-way matching, automatic</h4><p>PO + receipt + invoice matched by the system. Bills only post when everything ties out.</p></div></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tr-sticky-wrap">
+                                    <div class="tr-lead-form-card tr-animate">
+                                        <div class="tr-lead-form-header"><h3>Get a Free Inventory Demo</h3><p>30-minute walkthrough on your warehouse setup — no slideware.</p></div>
+                                        <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="service" value="inventory_procurement"/>
+                                            <div class="tr-form-group"><label>Your Name *</label><input type="text" name="name" required="required" placeholder="Your full name"/></div>
+                                            <div class="tr-form-group"><label>Company Name *</label><input type="text" name="company" required="required" placeholder="Your company"/></div>
+                                            <div class="tr-form-group"><label>Mobile *</label><input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/></div>
+                                            <div class="tr-form-group"><label>Work Email *</label><input type="email" name="email_from" required="required" placeholder="you@company.com"/></div>
+                                            <div class="tr-form-group"><label>How many SKUs / warehouses?</label><textarea name="body" rows="2" placeholder="e.g. 2,400 SKUs across 3 warehouses"/></div>
+                                            <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                    data-tr-event="lead_form_submit" data-tr-source="inventory_procurement">
+                                                Request Free Demo <i class="fa fa-arrow-right"/>
+                                            </button>
+                                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Inventory%20%26%20Procurement%20Software%20and%20would%20like%20a%20demo."
+                                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp w-100"
+                                               style="justify-content: center; margin-top: 10px;"
+                                               data-tr-event="whatsapp_chat_open" data-tr-source="inv_form">
+                                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                            </a>
+                                            <p class="tr-lead-form-note"><i class="fa fa-lock"/> Your details stay private. Used only to contact you about your demo.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">From stock-out surprises to a real warehouse system</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-vs-grid">
+                            <div class="tr-vs-card tr-vs-before tr-animate">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-bad">Before</span><h3>Excel stock sheets</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-times"/> Stock-outs discovered at the counter</li>
+                                    <li><i class="fa fa-times"/> Dead stock nobody noticed for months</li>
+                                    <li><i class="fa fa-times"/> Purchases approved by WhatsApp screenshot</li>
+                                    <li><i class="fa fa-times"/> Vendor invoices arriving without a matching PO</li>
+                                    <li><i class="fa fa-times"/> Stocktake means closing the warehouse</li>
+                                </ul>
+                            </div>
+                            <div class="tr-vs-card tr-vs-after tr-animate tr-animate-delay-1">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-good">After</span><h3>Odoo Inventory by Techrise</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-check"/> Live stock, alerts before you run out</li>
+                                    <li><i class="fa fa-check"/> Slow-moving reports surface dead stock weekly</li>
+                                    <li><i class="fa fa-check"/> Multi-level digital approvals with audit trail</li>
+                                    <li><i class="fa fa-check"/> Three-way matching blocks orphan invoices</li>
+                                    <li><i class="fa fa-check"/> Cycle counting with barcode — no shutdown needed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">What's covered</h2><div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">Stock, purchase, and supply chain on one platform.</p></div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-database"/></div><h3>Multi-Warehouse Stock</h3><p>Locations, sublocations, internal transfers, batches, and serial numbers across the UAE.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-refresh"/></div><h3>Reorder Rules</h3><p>Min/max, lead time, seasonality — auto-generate purchase requests.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-truck"/></div><h3>Vendor Portal</h3><p>Suppliers respond to RFQs, accept POs, upload invoices — outside your firewall.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-check-square-o"/></div><h3>Purchase Approvals</h3><p>Multi-level approvals by amount, department, or vendor — audit trail on every step.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-qrcode"/></div><h3>Barcode &amp; RFID</h3><p>Receiving, picking, packing, transfers — all by barcode. Works with USB, Bluetooth, and ring scanners.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-pie-chart"/></div><h3>Inventory Analytics</h3><p>Stock value, turnover, dead stock, vendor performance — drillable dashboards.</p></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Common questions</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-faq-wrap">
+                            <details class="tr-faq tr-animate"><summary>Does it support multiple warehouses?</summary><p>Yes — unlimited warehouses, with internal transfers, replenishment, and consolidated reports across all locations.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>What barcode hardware do we need?</summary><p>Most USB and Bluetooth scanners work out of the box. We help you pick the right hardware for your warehouse layout if needed.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-2"><summary>How does it integrate with accounting?</summary><p>Tightly. Every stock movement posts to the correct GL account in real time — no end-of-month reconciliation needed.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-3"><summary>Can we do cycle counting without shutting down?</summary><p>Yes — barcode-driven cycle counts run section by section, with variance reports and approval workflow.</p></details>
+                            <details class="tr-faq tr-animate"><summary>Is there a mobile app for warehouse staff?</summary><p>Yes — Odoo's inventory mobile app handles picking, packing, transfers, and receipts on Android and iOS.</p></details>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Ready to know your real stock, in real time?</h2>
+                        <p class="tr-animate tr-animate-delay-1">Book a 30-minute discovery call. We'll demo on a warehouse like yours.</p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">Request Free Demo <i class="fa fa-arrow-right"/></a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Inventory%20%26%20Procurement%20Software%20and%20would%20like%20a%20demo."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="inv_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- FULL ERP SUITE UAE                                               -->
+    <!-- =============================================================== -->
+    <template id="full_erp_suite_page" name="Full ERP Suite UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Full ERP Suite UAE — Odoo for Sales, Accounting, HR, Inventory &amp; More</t>
+            <t t-set="website_meta_description">Complete ERP suite in UAE on Odoo — sales, accounting, HR, inventory, manufacturing, project, and marketing on one platform. Implementation, customization, and support by Techrise.</t>
+            <t t-set="website_meta_keywords">erp software uae, odoo erp uae, full erp suite uae, all in one erp dubai, integrated erp abu dhabi, odoo implementation uae, cloud erp uae</t>
+            <div id="wrap">
+
+                <section class="tr-product-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tr-product-hero-eyebrow"><i class="fa fa-handshake-o"/><span>Official Odoo Partner — Abu Dhabi</span></div>
+                                <h1 class="tr-product-hero-title">
+                                    Full ERP Suite UAE — <span class="tr-text-gold">One Platform</span>, Every Department
+                                </h1>
+                                <p class="tr-product-hero-sub">
+                                    Stop stitching together accounting, HR, inventory, and CRM tools. One Odoo platform
+                                    that scales from 10 to 1,000 users — implemented by an Official Odoo Partner in Abu Dhabi.
+                                </p>
+                                <div class="tr-hero-bullets">
+                                    <div><i class="fa fa-check-circle"/> Sales, Accounting, HR, Inventory, Manufacturing, Project — together</div>
+                                    <div><i class="fa fa-check-circle"/> Single source of truth — one customer, one ledger, one report</div>
+                                    <div><i class="fa fa-check-circle"/> Modular: start with what you need, add modules as you grow</div>
+                                </div>
+                                <div class="tr-product-hero-cta">
+                                    <a href="#get-started" class="tr-btn tr-btn-primary"
+                                       data-tr-event="hero_cta_click" data-tr-source="full_erp">
+                                        Get Your Free Demo <i class="fa fa-arrow-right"/>
+                                    </a>
+                                    <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Full%20ERP%20Suite%20and%20would%20like%20a%20demo."
+                                       target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                                       data-tr-event="whatsapp_chat_open" data-tr-source="erp_hero">
+                                        <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 tr-product-hero-visual-col">
+                                <img src="/techrise_website/static/src/img/erp-suite-mockup.svg"
+                                     alt="Odoo ERP suite — modules connected to one platform"
+                                     class="tr-product-hero-visual"
+                                     loading="eager" fetchpriority="high" width="560" height="420"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-trust-bar">
+                    <div class="container">
+                        <div class="tr-trust-bar-grid">
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-cogs"/></div><div><strong>All-In-One</strong><span>One platform, every dept</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-shield"/></div><div><strong>UAE 2026 Ready</strong><span>VAT · CT · E-invoicing</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-handshake-o"/></div><div><strong>Odoo Partner</strong><span>Official certified partner</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-comments-o"/></div><div><strong>Arabic &amp; English</strong><span>Local UAE support team</span></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white" id="get-started">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title-left tr-animate">Why growing UAE companies pick a full ERP</h2>
+                                <div class="tr-gold-line tr-gold-line-left"/>
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item tr-animate"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>One system instead of seven</h4><p>Replace accounting + CRM + HR + inventory + project tools with one platform — no integration hell, no double entry.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-1"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Decisions backed by real numbers</h4><p>Cross-module dashboards: sales pipeline, cash flow, headcount, stock turn, project margin — all on one screen.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-2"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Modular: start small, grow safely</h4><p>Begin with the 2-3 modules you need most. Add the rest when the team's ready. No big-bang rewrites.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-3"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>UAE 2026 compliant out of the box</h4><p>VAT, Corporate Tax, E-invoicing UAE 2026, WPS payroll — pre-configured for the UAE regulatory landscape.</p></div></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tr-sticky-wrap">
+                                    <div class="tr-lead-form-card tr-animate">
+                                        <div class="tr-lead-form-header"><h3>Get a Free ERP Demo</h3><p>30-minute walkthrough on your business — no slideware.</p></div>
+                                        <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="service" value="full_erp_suite"/>
+                                            <div class="tr-form-group"><label>Your Name *</label><input type="text" name="name" required="required" placeholder="Your full name"/></div>
+                                            <div class="tr-form-group"><label>Company Name *</label><input type="text" name="company" required="required" placeholder="Your company"/></div>
+                                            <div class="tr-form-group"><label>Mobile *</label><input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/></div>
+                                            <div class="tr-form-group"><label>Work Email *</label><input type="email" name="email_from" required="required" placeholder="you@company.com"/></div>
+                                            <div class="tr-form-group"><label>What does your business do?</label><textarea name="body" rows="2" placeholder="e.g. Construction company, 40 staff, 5 active projects"/></div>
+                                            <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                    data-tr-event="lead_form_submit" data-tr-source="full_erp_suite">
+                                                Request Free Demo <i class="fa fa-arrow-right"/>
+                                            </button>
+                                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Full%20ERP%20Suite%20and%20would%20like%20a%20demo."
+                                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp w-100"
+                                               style="justify-content: center; margin-top: 10px;"
+                                               data-tr-event="whatsapp_chat_open" data-tr-source="erp_form">
+                                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                            </a>
+                                            <p class="tr-lead-form-note"><i class="fa fa-lock"/> Your details stay private. Used only to contact you about your demo.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">From seven tools to one platform</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-vs-grid">
+                            <div class="tr-vs-card tr-vs-before tr-animate">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-bad">Before</span><h3>Excel + 5 SaaS tools</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-times"/> Customer data in CRM, accounting, and inventory — all different</li>
+                                    <li><i class="fa fa-times"/> Monthly close means 4 systems and 3 days of reconciliation</li>
+                                    <li><i class="fa fa-times"/> Each tool is a separate subscription, separate vendor, separate login</li>
+                                    <li><i class="fa fa-times"/> Reports cobbled together in Excel from CSV exports</li>
+                                    <li><i class="fa fa-times"/> Every new system means a new integration to maintain</li>
+                                </ul>
+                            </div>
+                            <div class="tr-vs-card tr-vs-after tr-animate tr-animate-delay-1">
+                                <div class="tr-vs-header"><span class="tr-vs-badge tr-vs-badge-good">After</span><h3>Odoo ERP by Techrise</h3></div>
+                                <ul class="tr-vs-list">
+                                    <li><i class="fa fa-check"/> One customer record, used by sales, accounting, and support</li>
+                                    <li><i class="fa fa-check"/> Real-time consolidated P&amp;L, balance sheet, and cash flow</li>
+                                    <li><i class="fa fa-check"/> One subscription, one vendor, one login per user</li>
+                                    <li><i class="fa fa-check"/> Native reporting + Studio for custom dashboards</li>
+                                    <li><i class="fa fa-check"/> New module = a checkbox, not a project</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Modules included</h2><div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">Pick what you need today. The rest activate when you're ready.</p></div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-handshake-o"/></div><h3>Sales &amp; CRM</h3><p>Pipeline, quotations, orders, contracts, and customer portal.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-calculator"/></div><h3>Accounting</h3><p>VAT, Corporate Tax, E-invoicing UAE 2026, multi-currency, audit-ready.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-users"/></div><h3>HR &amp; Payroll</h3><p>Employees, attendance, leaves, UAE payroll, WPS, and end-of-service.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-cubes"/></div><h3>Inventory</h3><p>Multi-warehouse stock, barcode, reorder rules, and supplier portal.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-industry"/></div><h3>Manufacturing</h3><p>BOMs, MRP, work centers, quality, and shop-floor terminals.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-tasks"/></div><h3>Project</h3><p>Timesheets, project costing, milestones, and profitability dashboards.</p></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Common questions</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-faq-wrap">
+                            <details class="tr-faq tr-animate"><summary>How long does a full ERP rollout take?</summary><p>Phased rollouts: 4-8 weeks for the first 2 modules, then incremental modules over 3-6 months. Big-bang rollouts only for special cases.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>Cloud-hosted or on-premise?</summary><p>Both supported. Most clients pick our managed cloud hosting on UAE-region servers. We also deploy on your own infrastructure if required.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-2"><summary>Can it handle multi-company / multi-currency?</summary><p>Yes — multi-company, multi-currency, multi-branch, multi-warehouse, multi-language are all native.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-3"><summary>What about customization for our industry?</summary><p>Odoo is highly customizable. Our team builds custom modules, workflows, and reports on top of the standard suite when needed.</p></details>
+                            <details class="tr-faq tr-animate"><summary>How is pricing structured?</summary><p>Annual subscription per user + a one-time implementation fee. We give a fixed quote after the discovery call — no surprise charges.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>Do you train our team?</summary><p>Yes — role-based training in Arabic and English, documentation, plus a post-go-live support window.</p></details>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Ready to run everything on one platform?</h2>
+                        <p class="tr-animate tr-animate-delay-1">Book a 30-minute discovery call. We'll show Odoo on a business shaped like yours.</p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">Request Free Demo <i class="fa fa-arrow-right"/></a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%27m%20interested%20in%20your%20Full%20ERP%20Suite%20and%20would%20like%20a%20demo."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="erp_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- =============================================================== -->
+    <!-- CUSTOM SOFTWARE DEVELOPMENT UAE                                  -->
+    <!-- =============================================================== -->
+    <template id="custom_software_page" name="Custom Software Development UAE - Techrise">
+        <t t-call="website.layout">
+            <t t-set="additional_title">Custom Software Development UAE — Odoo, Web, Mobile &amp; API Integration</t>
+            <t t-set="website_meta_description">Custom software development in UAE — Odoo customizations, web apps, iOS &amp; Android mobile apps, REST API integrations, and system integrations built by Techrise in Abu Dhabi.</t>
+            <t t-set="website_meta_keywords">custom software development uae, software development company abu dhabi, odoo customization uae, mobile app development uae, web development dubai, api integration uae, bespoke software uae</t>
+            <div id="wrap">
+
+                <section class="tr-product-hero">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tr-product-hero-eyebrow"><i class="fa fa-handshake-o"/><span>Official Odoo Partner — Abu Dhabi</span></div>
+                                <h1 class="tr-product-hero-title">
+                                    Custom Software UAE — <span class="tr-text-gold">Built For You</span>, Owned By You
+                                </h1>
+                                <p class="tr-product-hero-sub">
+                                    When off-the-shelf doesn't fit. Odoo customizations, web apps, iOS / Android, and
+                                    API integrations — delivered by a UAE-based team you can sit with.
+                                </p>
+                                <div class="tr-hero-bullets">
+                                    <div><i class="fa fa-check-circle"/> Odoo customizations and full custom modules</div>
+                                    <div><i class="fa fa-check-circle"/> Web (React) + mobile (Flutter / native) — same backend</div>
+                                    <div><i class="fa fa-check-circle"/> You own the source code, the data, and the hosting</div>
+                                </div>
+                                <div class="tr-product-hero-cta">
+                                    <a href="#get-started" class="tr-btn tr-btn-primary"
+                                       data-tr-event="hero_cta_click" data-tr-source="custom_software">
+                                        Discuss Your Project <i class="fa fa-arrow-right"/>
+                                    </a>
+                                    <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%20want%20to%20discuss%20a%20custom%20software%20project."
+                                       target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                                       data-tr-event="whatsapp_chat_open" data-tr-source="custom_hero">
+                                        <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 tr-product-hero-visual-col">
+                                <img src="/techrise_website/static/src/img/custom-software-mockup.svg"
+                                     alt="Custom software development — code editor with tech stack"
+                                     class="tr-product-hero-visual"
+                                     loading="eager" fetchpriority="high" width="560" height="420"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-trust-bar">
+                    <div class="container">
+                        <div class="tr-trust-bar-grid">
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-code"/></div><div><strong>You Own The Code</strong><span>No vendor lock-in</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-rocket"/></div><div><strong>Agile Delivery</strong><span>2-week sprints, demos</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-handshake-o"/></div><div><strong>Odoo Partner</strong><span>Official certified partner</span></div></div>
+                            <div class="tr-trust-bar-item"><div class="tr-trust-bar-icon"><i class="fa fa-comments-o"/></div><div><strong>Arabic &amp; English</strong><span>Local UAE team</span></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white" id="get-started">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mb-4 mb-lg-0">
+                                <h2 class="tr-section-title-left tr-animate">Why teams pick Techrise for custom software</h2>
+                                <div class="tr-gold-line tr-gold-line-left"/>
+                                <div class="tr-benefits-list">
+                                    <div class="tr-benefit-item tr-animate"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Software shaped to your workflow</h4><p>We model your actual process — not a generic SaaS — so the system fits the team, not the other way around.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-1"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>Sprints with working demos</h4><p>Every 2 weeks you see real software, give feedback, and adjust direction. No 6-month silent builds.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-2"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>You own everything</h4><p>Source code, database, infrastructure, hosting — all yours. We can stay as your partner or you can run it solo.</p></div></div>
+                                    <div class="tr-benefit-item tr-animate tr-animate-delay-3"><div class="tr-benefit-icon"><i class="fa fa-check"/></div><div><h4>A team you can sit with</h4><p>Based in Abu Dhabi. Workshops face-to-face, post-launch in your office. Time-zone-aligned, culture-aligned.</p></div></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tr-sticky-wrap">
+                                    <div class="tr-lead-form-card tr-animate">
+                                        <div class="tr-lead-form-header"><h3>Tell Us About Your Project</h3><p>We'll get back within one business day with next steps.</p></div>
+                                        <form action="/contact/submit" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="service" value="custom_software"/>
+                                            <div class="tr-form-group"><label>Your Name *</label><input type="text" name="name" required="required" placeholder="Your full name"/></div>
+                                            <div class="tr-form-group"><label>Company Name *</label><input type="text" name="company" required="required" placeholder="Your company"/></div>
+                                            <div class="tr-form-group"><label>Mobile *</label><input type="tel" name="phone" required="required" placeholder="+971 XX XXX XXXX"/></div>
+                                            <div class="tr-form-group"><label>Work Email *</label><input type="email" name="email_from" required="required" placeholder="you@company.com"/></div>
+                                            <div class="tr-form-group"><label>What are you trying to build? *</label><textarea name="body" required="required" rows="3" placeholder="e.g. A mobile app for our field technicians, integrated with our Odoo backend."/></div>
+                                            <button type="submit" class="tr-btn tr-btn-primary w-100" style="justify-content: center;"
+                                                    data-tr-event="lead_form_submit" data-tr-source="custom_software">
+                                                Discuss Your Project <i class="fa fa-arrow-right"/>
+                                            </button>
+                                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%20want%20to%20discuss%20a%20custom%20software%20project."
+                                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp w-100"
+                                               style="justify-content: center; margin-top: 10px;"
+                                               data-tr-event="whatsapp_chat_open" data-tr-source="custom_form">
+                                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                                            </a>
+                                            <p class="tr-lead-form-note"><i class="fa fa-lock"/> Your details stay private. NDAs available on request.</p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-light">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">What we build</h2><div class="tr-gold-line"/>
+                            <p class="tr-section-subtitle tr-animate tr-animate-delay-1">Bespoke software across the stack.</p></div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-cubes"/></div><h3>Odoo Customizations</h3><p>Custom modules, workflows, fields, automations, and Studio dashboards on top of Odoo.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-desktop"/></div><h3>Web Apps</h3><p>Customer portals, admin dashboards, marketplaces, internal tools — React + Python backends.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-mobile"/></div><h3>Mobile Apps</h3><p>iOS and Android apps — field service, sales rep, delivery driver, customer-facing apps.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate"><div class="tr-service-icon"><i class="fa fa-plug"/></div><h3>API Integrations</h3><p>Connect Odoo (or anything) to banks, payment gateways, government portals, logistics, CRMs.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-1"><div class="tr-service-icon"><i class="fa fa-exchange"/></div><h3>Data Migration</h3><p>From legacy systems, Excel, QuickBooks, Zoho — clean migration with audit trail.</p></div></div>
+                            <div class="col-md-6 col-lg-4 mb-4"><div class="tr-service-card tr-animate tr-animate-delay-2"><div class="tr-service-icon"><i class="fa fa-cloud"/></div><h3>Cloud Deployment</h3><p>Managed cloud hosting in UAE-region data centers — backups, monitoring, scaling, security.</p></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-section tr-section-white">
+                    <div class="container">
+                        <div class="text-center mb-5"><h2 class="tr-section-title tr-animate">Common questions</h2><div class="tr-gold-line"/></div>
+                        <div class="tr-faq-wrap">
+                            <details class="tr-faq tr-animate"><summary>What technologies do you use?</summary><p>Backend: Python (Odoo, FastAPI, Django). Frontend: React, OWL. Mobile: Flutter and native. Database: PostgreSQL. Infrastructure: Docker, Linux, UAE-region cloud.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-1"><summary>How does pricing work?</summary><p>Fixed-price for well-scoped projects, monthly retainer for ongoing development. We always start with a free scoping session and a written proposal — no surprises.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-2"><summary>Do we own the source code?</summary><p>Yes — fully. The IP transfers to you on delivery. You can hire other developers, switch hosts, or fork the codebase at any time.</p></details>
+                            <details class="tr-faq tr-animate tr-animate-delay-3"><summary>What about maintenance and support?</summary><p>We offer SLA-backed support plans. Or we hand over to your team with full documentation. Your call.</p></details>
+                            <details class="tr-faq tr-animate"><summary>How long do projects typically take?</summary><p>Small features: 2-4 weeks. Mid-sized apps: 2-4 months. Large platforms: 6+ months, delivered in phases with working software every sprint.</p></details>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tr-cta-section">
+                    <div class="container text-center">
+                        <h2 class="tr-animate">Have a project in mind?</h2>
+                        <p class="tr-animate tr-animate-delay-1">Tell us what you're trying to build. We'll come back with a scoped plan, fast.</p>
+                        <div class="tr-animate tr-animate-delay-2">
+                            <a href="#get-started" class="tr-btn tr-btn-primary" style="margin-right: 12px;">Discuss Your Project <i class="fa fa-arrow-right"/></a>
+                            <a href="https://wa.me/971585955064?text=Hello%20Techrise%2C%20I%20want%20to%20discuss%20a%20custom%20software%20project."
+                               target="_blank" rel="noopener" class="tr-btn tr-btn-whatsapp"
+                               data-tr-event="whatsapp_chat_open" data-tr-source="custom_cta">
+                                <i class="fa fa-whatsapp"/> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </t>
     </template>

@@ -16,6 +16,11 @@ SERVICE_LABELS = {
     # Product landing pages — keep distinct from the generic 'accounting'
     # service so we can attribute leads to the dedicated landing page.
     'accounting_software': 'Accounting Software (Landing Page)',
+    'hr_software': 'HR & Payroll Software (Landing Page)',
+    'call_center_software': 'Call Center Software (Landing Page)',
+    'inventory_procurement': 'Inventory & Procurement (Landing Page)',
+    'full_erp_suite': 'Full ERP Suite (Landing Page)',
+    'custom_software': 'Custom Software Development (Landing Page)',
 }
 
 
@@ -130,3 +135,23 @@ class TechriseWebsite(http.Controller):
     @http.route('/accounting-software-uae', type='http', auth='public', website=True, sitemap=True)
     def accounting_software_page(self, **kwargs):
         return request.render('techrise_website.accounting_software_page')
+
+    @http.route('/hr-payroll-software-uae', type='http', auth='public', website=True, sitemap=True)
+    def hr_payroll_software_page(self, **kwargs):
+        return request.render('techrise_website.hr_payroll_software_page')
+
+    @http.route('/call-center-software-uae', type='http', auth='public', website=True, sitemap=True)
+    def call_center_software_page(self, **kwargs):
+        return request.render('techrise_website.call_center_software_page')
+
+    @http.route('/inventory-procurement-uae', type='http', auth='public', website=True, sitemap=True)
+    def inventory_procurement_page(self, **kwargs):
+        return request.render('techrise_website.inventory_procurement_page')
+
+    @http.route('/erp-software-uae', type='http', auth='public', website=True, sitemap=True)
+    def full_erp_suite_page(self, **kwargs):
+        return request.render('techrise_website.full_erp_suite_page')
+
+    @http.route('/custom-software-uae', type='http', auth='public', website=True, sitemap=True)
+    def custom_software_page(self, **kwargs):
+        return request.render('techrise_website.custom_software_page')

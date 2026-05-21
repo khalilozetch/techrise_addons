@@ -47,6 +47,124 @@
             <field name="website_id" ref="website.default_website"/>
         </record>
 
+        <record id="menu_solutions_hr" model="website.menu">
+            <field name="name">HR &amp; Payroll Software</field>
+            <field name="url">/hr-payroll-software-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">20</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_solutions_callcenter" model="website.menu">
+            <field name="name">Call Center Software</field>
+            <field name="url">/call-center-software-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">30</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_solutions_inventory" model="website.menu">
+            <field name="name">Inventory &amp; Procurement</field>
+            <field name="url">/inventory-procurement-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">40</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_solutions_erp" model="website.menu">
+            <field name="name">Full ERP Suite</field>
+            <field name="url">/erp-software-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">50</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_solutions_custom" model="website.menu">
+            <field name="name">Custom Software</field>
+            <field name="url">/custom-software-uae</field>
+            <field name="parent_id" ref="menu_solutions"/>
+            <field name="sequence">60</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <!-- Industries dropdown (sector-focused).
+             Distinct from Solutions: Solutions = WHAT (product),
+             Industries = WHO (which type of business). -->
+        <record id="menu_industries" model="website.menu">
+            <field name="name">Industries</field>
+            <field name="url">#</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence">37</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <!-- 3 industries with dedicated pages -->
+        <record id="menu_industries_construction" model="website.menu">
+            <field name="name">ERP for Construction</field>
+            <field name="url">/erp-for-construction-uae</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">10</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_healthcare" model="website.menu">
+            <field name="name">ERP for Healthcare</field>
+            <field name="url">/erp-for-healthcare-uae</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">20</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_retail" model="website.menu">
+            <field name="name">ERP for Retail</field>
+            <field name="url">/erp-for-retail-uae</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">30</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <!-- 5 industries currently shown only on the homepage Industries grid.
+             They point to /#industries until dedicated landing pages exist. -->
+        <record id="menu_industries_realestate" model="website.menu">
+            <field name="name">Real Estate</field>
+            <field name="url">/#industries</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">40</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_pharmacies" model="website.menu">
+            <field name="name">Pharmacies</field>
+            <field name="url">/#industries</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">50</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_sportsclubs" model="website.menu">
+            <field name="name">Sports Clubs</field>
+            <field name="url">/#industries</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">60</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_coops" model="website.menu">
+            <field name="name">Cooperative Associations</field>
+            <field name="url">/#industries</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">70</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
+        <record id="menu_industries_travel" model="website.menu">
+            <field name="name">Travel &amp; Tourism</field>
+            <field name="url">/#industries</field>
+            <field name="parent_id" ref="menu_industries"/>
+            <field name="sequence">80</field>
+            <field name="website_id" ref="website.default_website"/>
+        </record>
+
         <record id="menu_server" model="website.menu">
             <field name="name">Server &amp; Hosting</field>
             <field name="url">/server</field>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HR & Payroll Software hero illustration. Same dimensions and shadow as
+     accounting-dashboard-mockup.svg so the .tr-product-hero-visual class
+     applies cleanly across all product landing pages. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="HR &amp; Payroll dashboard mockup">
+  <defs>
+    <linearGradient id="hrBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A5DAB"/><stop offset="100%" stop-color="#0D1B3E"/>
+    </linearGradient>
+    <linearGradient id="hrGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5B731"/><stop offset="100%" stop-color="#FFD06A"/>
+    </linearGradient>
+    <filter id="hrShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="560" height="420" rx="20" fill="url(#hrBg)"/>
+  <circle cx="80" cy="80" r="120" fill="#FFFFFF" opacity="0.04"/>
+  <circle cx="480" cy="360" r="100" fill="#F5B731" opacity="0.06"/>
+
+  <g filter="url(#hrShadow)">
+    <rect x="40" y="40" width="480" height="340" rx="14" fill="#FFFFFF"/>
+    <rect x="40" y="40" width="480" height="42" rx="14" fill="#0D1B3E"/>
+    <rect x="40" y="68" width="480" height="14" fill="#0D1B3E"/>
+    <circle cx="62" cy="61" r="5" fill="#FF6B6B"/><circle cx="80" cy="61" r="5" fill="#FFD06A"/><circle cx="98" cy="61" r="5" fill="#51CF66"/>
+    <text x="130" y="65" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">HR Dashboard — May 2026</text>
+
+    <!-- KPI cards -->
+    <g transform="translate(60, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">EMPLOYEES</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">142</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#16A34A" font-weight="700">▲ 8 this month</text>
+    </g>
+    <g transform="translate(212, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">PAYROLL (MAY)</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="18" font-weight="800" fill="#0D1B3E">AED 1.84M</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#1A5DAB" font-weight="700">WPS submitted ✓</text>
+    </g>
+    <g transform="translate(364, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">ATTENDANCE</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">96.4%</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#F59E0B" font-weight="700">3 leaves today</text>
+    </g>
+
+    <!-- Employee list -->
+    <g transform="translate(60, 190)">
+      <rect width="287" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">Recent Employees</text>
+
+      <!-- 4 employee rows -->
+      <g transform="translate(14, 36)">
+        <circle cx="16" cy="16" r="14" fill="url(#hrGold)"/>
+        <text x="11" y="20" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#0D1B3E">AH</text>
+        <text x="40" y="14" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D1B3E">Ahmed Hassan</text>
+        <text x="40" y="26" font-family="Inter, sans-serif" font-size="8" fill="#64748B">Senior Developer · Active</text>
+        <circle cx="245" cy="16" r="5" fill="#16A34A"/>
+      </g>
+      <g transform="translate(14, 72)">
+        <circle cx="16" cy="16" r="14" fill="#2E7BD6"/>
+        <text x="11" y="20" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">SK</text>
+        <text x="40" y="14" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D1B3E">Sara Khalid</text>
+        <text x="40" y="26" font-family="Inter, sans-serif" font-size="8" fill="#64748B">HR Manager · Active</text>
+        <circle cx="245" cy="16" r="5" fill="#16A34A"/>
+      </g>
+      <g transform="translate(14, 108)">
+        <circle cx="16" cy="16" r="14" fill="#94A3B8"/>
+        <text x="11" y="20" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">MO</text>
+        <text x="40" y="14" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D1B3E">Mohamed Ali</text>
+        <text x="40" y="26" font-family="Inter, sans-serif" font-size="8" fill="#64748B">Accountant · On leave</text>
+        <circle cx="245" cy="16" r="5" fill="#F59E0B"/>
+      </g>
+      <g transform="translate(14, 144)">
+        <rect width="259" height="16" rx="3" fill="#F8FAFC"/>
+        <text x="8" y="11" font-family="Inter, sans-serif" font-size="9" fill="#64748B">+ Hire new employee</text>
+      </g>
+    </g>
+
+    <!-- Right panel: pending approvals -->
+    <g transform="translate(364, 190)">
+      <rect width="135" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">Approvals (5)</text>
+      <g transform="translate(12, 38)">
+        <rect width="111" height="32" rx="5" fill="#FEF3C7"/>
+        <text x="8" y="14" font-family="Inter, sans-serif" font-size="9" fill="#92400E" font-weight="700">Leave Request</text>
+        <text x="8" y="25" font-family="Inter, sans-serif" font-size="8" fill="#92400E">Ali · 3 days</text>
+      </g>
+      <g transform="translate(12, 76)">
+        <rect width="111" height="32" rx="5" fill="#DBEAFE"/>
+        <text x="8" y="14" font-family="Inter, sans-serif" font-size="9" fill="#1E40AF" font-weight="700">Expense Claim</text>
+        <text x="8" y="25" font-family="Inter, sans-serif" font-size="8" fill="#1E40AF">Sara · AED 480</text>
+      </g>
+      <g transform="translate(12, 114)">
+        <rect width="111" height="32" rx="5" fill="#DCFCE7"/>
+        <text x="8" y="14" font-family="Inter, sans-serif" font-size="9" fill="#166534" font-weight="700">Contract Renewal</text>
+        <text x="8" y="25" font-family="Inter, sans-serif" font-size="8" fill="#166534">Ahmed · 2 years</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(420, 30)">
+    <rect width="120" height="40" rx="20" fill="#F5B731" filter="url(#hrShadow)"/>
+    <text x="14" y="17" font-family="Inter, sans-serif" font-size="8" fill="#0D1B3E" font-weight="700">UAE WPS</text>
+    <text x="14" y="30" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="800">COMPLIANT ✓</text>
+    <circle cx="105" cy="20" r="11" fill="#FFFFFF"/>
+    <path d="M99 20 L103 24 L111 16" stroke="#16A34A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
