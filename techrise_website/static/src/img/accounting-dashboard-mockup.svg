@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stylized Odoo Accounting dashboard mockup used as the hero illustration
+     on /accounting-software-uae. Pure SVG (no external fonts) so it scales,
+     ships in a single request, and stays sharp at any DPR. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Odoo Accounting dashboard mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A5DAB"/>
+      <stop offset="100%" stop-color="#0D1B3E"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5B731"/>
+      <stop offset="100%" stop-color="#FFD06A"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A5DAB"/>
+      <stop offset="100%" stop-color="#2E7BD6"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Backdrop -->
+  <rect width="560" height="420" rx="20" fill="url(#bg)"/>
+  <circle cx="80" cy="80" r="120" fill="#FFFFFF" opacity="0.04"/>
+  <circle cx="480" cy="360" r="100" fill="#F5B731" opacity="0.06"/>
+
+  <!-- Main dashboard card -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="40" width="480" height="340" rx="14" fill="url(#card)"/>
+
+    <!-- Top bar -->
+    <rect x="40" y="40" width="480" height="42" rx="14" fill="#0D1B3E"/>
+    <rect x="40" y="68" width="480" height="14" fill="#0D1B3E"/>
+    <circle cx="62" cy="61" r="5" fill="#FF6B6B"/>
+    <circle cx="80" cy="61" r="5" fill="#FFD06A"/>
+    <circle cx="98" cy="61" r="5" fill="#51CF66"/>
+    <rect x="130" y="55" width="120" height="12" rx="3" fill="#FFFFFF" opacity="0.2"/>
+
+    <!-- KPI cards row -->
+    <g transform="translate(60, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">REVENUE (MTD)</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">AED 482K</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#16A34A" font-weight="700">▲ 12.4%</text>
+    </g>
+    <g transform="translate(212, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">VAT PAYABLE</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">AED 24.1K</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#1A5DAB" font-weight="700">Q2 — Due Jul 28</text>
+    </g>
+    <g transform="translate(364, 100)">
+      <rect width="135" height="70" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="12" y="22" font-family="Inter, sans-serif" font-size="10" fill="#64748B">AR OUTSTANDING</text>
+      <text x="12" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0D1B3E">AED 196K</text>
+      <text x="12" y="62" font-family="Inter, sans-serif" font-size="9" fill="#F59E0B" font-weight="700">8 invoices overdue</text>
+    </g>
+
+    <!-- Chart -->
+    <g transform="translate(60, 190)">
+      <rect width="287" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">Cash Flow — Last 6 months</text>
+
+      <!-- Bars -->
+      <g transform="translate(20, 60)">
+        <rect x="0" y="40" width="22" height="60" rx="3" fill="url(#bar)" opacity="0.85"/>
+        <rect x="42" y="25" width="22" height="75" rx="3" fill="url(#bar)" opacity="0.85"/>
+        <rect x="84" y="55" width="22" height="45" rx="3" fill="url(#bar)" opacity="0.85"/>
+        <rect x="126" y="15" width="22" height="85" rx="3" fill="url(#bar)" opacity="0.85"/>
+        <rect x="168" y="35" width="22" height="65" rx="3" fill="url(#bar)" opacity="0.85"/>
+        <rect x="210" y="5"  width="22" height="95" rx="3" fill="url(#bar)"/>
+
+        <!-- Trend line -->
+        <polyline points="11,50 53,35 95,65 137,25 179,45 221,15"
+                  stroke="url(#line)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="221" cy="15" r="4" fill="#1A5DAB"/>
+      </g>
+
+      <text x="20" y="160" font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">Jan</text>
+      <text x="62" y="160" font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">Feb</text>
+      <text x="104" y="160" font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">Mar</text>
+      <text x="146" y="160" font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">Apr</text>
+      <text x="188" y="160" font-family="Inter, sans-serif" font-size="9" fill="#94A3B8">May</text>
+      <text x="230" y="160" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">Jun</text>
+    </g>
+
+    <!-- Right panel: tasks / invoices -->
+    <g transform="translate(364, 190)">
+      <rect width="135" height="170" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <text x="14" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0D1B3E">To Validate</text>
+
+      <g transform="translate(12, 38)">
+        <rect width="111" height="32" rx="5" fill="#F8FAFC"/>
+        <circle cx="14" cy="16" r="6" fill="#1A5DAB"/>
+        <text x="26" y="14" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">INV/2026/0418</text>
+        <text x="26" y="25" font-family="Inter, sans-serif" font-size="8" fill="#64748B">AED 18,500</text>
+      </g>
+      <g transform="translate(12, 76)">
+        <rect width="111" height="32" rx="5" fill="#F8FAFC"/>
+        <circle cx="14" cy="16" r="6" fill="#F5B731"/>
+        <text x="26" y="14" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">BILL/2026/0312</text>
+        <text x="26" y="25" font-family="Inter, sans-serif" font-size="8" fill="#64748B">AED 6,240</text>
+      </g>
+      <g transform="translate(12, 114)">
+        <rect width="111" height="32" rx="5" fill="#F8FAFC"/>
+        <circle cx="14" cy="16" r="6" fill="#16A34A"/>
+        <text x="26" y="14" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="700">INV/2026/0419</text>
+        <text x="26" y="25" font-family="Inter, sans-serif" font-size="8" fill="#64748B">AED 3,800</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Floating compliance badge -->
+  <g transform="translate(420, 30)">
+    <rect width="120" height="40" rx="20" fill="#F5B731" filter="url(#shadow)"/>
+    <text x="14" y="17" font-family="Inter, sans-serif" font-size="8" fill="#0D1B3E" font-weight="700">UAE 2026</text>
+    <text x="14" y="30" font-family="Inter, sans-serif" font-size="9" fill="#0D1B3E" font-weight="800">E-INVOICE ✓</text>
+    <circle cx="105" cy="20" r="11" fill="#FFFFFF"/>
+    <path d="M99 20 L103 24 L111 16" stroke="#16A34A" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

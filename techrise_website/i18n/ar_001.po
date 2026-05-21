@@ -43,6 +43,7 @@ msgstr "+971 58 595 5064"
 
 #. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
 msgid "+971 XX XXX XXXX"
 msgstr "+971 XX XXX XXXX"
 
@@ -3545,13 +3546,15 @@ msgstr ""
 
 #. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
 msgid "Your company"
-msgstr ""
+msgstr "اسم شركتك"
 
 #. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.contact_page
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
 msgid "Your full name"
-msgstr ""
+msgstr "اسمك الكامل"
 
 #. module: techrise_website
 #: model_terms:ir.ui.view,arch_db:techrise_website.about_page
@@ -4212,3 +4215,287 @@ msgstr "جاهز تقفل الشهر اللي جاي في أيام؟"
 #: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
 msgid "Book a 30-minute discovery call. We'll show Odoo Accounting on your numbers and your VAT period."
 msgstr "احجز مكالمة استكشافية 30 دقيقة. هنوريك Odoo Accounting شغّال على أرقامك وفترة الضريبة بتاعتك."
+
+# ============================================================
+# v18.0.2.5.0 — Accounting page redesign (hero+sticky form, trust bar,
+# logos, before/after, FAQ accordion). New form labels + AR placeholders.
+# ============================================================
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Your Name *"
+msgstr "اسمك *"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Work Email *"
+msgstr "البريد الإلكتروني للعمل *"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "What do you use today?"
+msgstr "إيه اللي بتستخدمه دلوقتي؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "you@company.com"
+msgstr "you@company.com"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "e.g. Excel, QuickBooks, Zoho, Tally..."
+msgstr "مثلاً: إكسل، QuickBooks، Zoho، Tally..."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Official Odoo Partner — Abu Dhabi"
+msgstr "شريك Odoo معتمد — أبوظبي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid ""
+"Stop juggling Excel sheets, tax deadlines, and missing invoices.\n"
+"                                    Odoo Accounting deployed by Techrise — your books closed in days, not weeks."
+msgstr ""
+"خلاص بطّل تشتغل بين ملفات إكسل ومواعيد ضرائب وفواتير ضايعة.\n"
+"                                    Odoo Accounting مع تك رايز — دفاترك مقفولة في أيام، مش أسابيع."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Generates FTA VAT &amp; Corporate Tax returns from real entries"
+msgstr "بيولّد إقرارات ضريبة القيمة المضافة وضريبة الشركات من قيود حقيقية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "One-click bank reconciliation across UAE banks"
+msgstr "تسوية بنكية بنقرة واحدة عبر بنوك الإمارات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "E-invoicing UAE 2026 mandate compliant out of the box"
+msgstr "متوافق مع متطلبات الفاتورة الإلكترونية الإمارات 2026 من اليوم الأول"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Get Your Free Demo"
+msgstr "احصل على عرضك التوضيحي المجاني"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Odoo Accounting dashboard — VAT, cash flow, and invoices"
+msgstr "لوحة Odoo Accounting — ضريبة القيمة المضافة، التدفق النقدي، والفواتير"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Sample client logos — placeholders pending real customers"
+msgstr "شعارات عملاء تجريبية — مكان مؤقت بانتظار شعارات حقيقية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Trusted by businesses across the UAE"
+msgstr "تثق بنا شركات في كل أنحاء الإمارات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "FTA Ready"
+msgstr "جاهز للهيئة الاتحادية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "VAT &amp; Corporate Tax compliant"
+msgstr "متوافق مع ضريبة القيمة المضافة وضريبة الشركات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "UAE 2026"
+msgstr "الإمارات 2026"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "E-invoicing mandate ready"
+msgstr "جاهز لمتطلبات الفاتورة الإلكترونية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Odoo Partner"
+msgstr "شريك Odoo"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Official certified partner"
+msgstr "شريك معتمد رسمياً"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Arabic &amp; English"
+msgstr "عربي وإنجليزي"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Local UAE support team"
+msgstr "فريق دعم محلي في الإمارات"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Why finance teams in the UAE switch to Odoo Accounting"
+msgstr "ليه فرق المالية في الإمارات بيحوّلوا لـ Odoo Accounting"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Your details stay private. Used only to contact you about your demo."
+msgstr "بياناتك تبقى خاصة. بنستخدمها فقط للتواصل معاك بخصوص العرض التوضيحي."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "From spreadsheet chaos to a clean monthly close"
+msgstr "من فوضى الإكسل إلى إقفال شهري نظيف"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Before"
+msgstr "قبل"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "After"
+msgstr "بعد"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Excel + paper invoices"
+msgstr "إكسل + فواتير ورقية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Odoo Accounting by Techrise"
+msgstr "Odoo Accounting مع تك رايز"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Last-minute panic before every FTA deadline"
+msgstr "هلع في آخر لحظة قبل كل موعد للهيئة الاتحادية"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Multiple \"final_v3.xlsx\" floating around"
+msgstr "كذا نسخة \"final_v3.xlsx\" متناثرين"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Bank reconciliation by hand, every month"
+msgstr "تسوية البنوك يدوياً، كل شهر"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "No idea who owes you what, until aging report"
+msgstr "مفيش فكرة مين عليه فلوس وكام، لحد ما يطلع تقرير الأعمار"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Auditors ask for files you can't find"
+msgstr "المراجعين بيطلبوا ملفات إنت مش لاقيها"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "VAT return generated automatically — review &amp; submit"
+msgstr "إقرار ضريبة القيمة المضافة بيتولّد تلقائياً — راجع وقدّم"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Single source of truth, audit trail on every entry"
+msgstr "مصدر موحّد للحقيقة، وسجل مراجعة على كل قيد"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Auto-import bank statements, one-click matching"
+msgstr "استيراد كشوف البنوك تلقائياً، ومطابقة بنقرة واحدة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Real-time AR aging, dunning emails go out for you"
+msgstr "أعمار الذمم في الوقت الفعلي، وإيميلات التذكير بتطلع نيابة عنك"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Auditor portal — export any report by period"
+msgstr "بوابة المراجع — صدّر أي تقرير حسب الفترة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "One platform. No add-ons. No surprises."
+msgstr "منصة واحدة. مفيش إضافات. مفيش مفاجآت."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Common questions"
+msgstr "الأسئلة الشائعة"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "How long does implementation take?"
+msgstr "كم تستغرق عملية التطبيق؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "For most SMEs: 2–6 weeks end-to-end. Faster if you're migrating from QuickBooks or Zoho. A scoping call up front pins down the exact timeline."
+msgstr "لمعظم الشركات الصغيرة والمتوسطة: من 2 إلى 6 أسابيع من البداية للنهاية. أسرع لو إنت بتهاجر من QuickBooks أو Zoho. مكالمة استكشافية في الأول بتحدد الجدول الزمني بالظبط."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "How much does it cost?"
+msgstr "كم التكلفة؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Pricing depends on the number of users and modules. We give you a fixed quote after the free discovery call — no surprise charges, and the first call is always free."
+msgstr "التسعير بيعتمد على عدد المستخدمين والمديولات. بنديك عرض سعر ثابت بعد المكالمة الاستكشافية المجانية — مفيش رسوم مفاجئة، والمكالمة الأولى دايماً مجانية."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Can you migrate our existing data from QuickBooks / Zoho / Tally / Excel?"
+msgstr "هل تقدروا تهاجروا بياناتنا من QuickBooks / Zoho / Tally / Excel؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Yes. Migration of customers, vendors, chart of accounts, opening balances, and historical transactions is a standard part of every project."
+msgstr "أيوة. ترحيل العملاء، الموردين، شجرة الحسابات، الأرصدة الافتتاحية، والمعاملات السابقة جزء أساسي من كل مشروع."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Is it ready for E-invoicing UAE 2026?"
+msgstr "هل هو جاهز للفاتورة الإلكترونية الإمارات 2026؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Yes. The platform is configured with the structured e-invoice format, QR codes, and Peppol-style transmission expected by the UAE 2026 mandate."
+msgstr "أيوة. النظام معدّ بصيغة الفاتورة الإلكترونية المنظمة، أكواد QR، وإرسال بنمط Peppol اللي بتتطلبها لوائح الإمارات 2026."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Do you train our finance team?"
+msgstr "هل بتدربوا فريقنا المالي؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Every project includes hands-on training in Arabic and English, plus documentation, plus a support window after go-live."
+msgstr "كل مشروع بيتضمن تدريب عملي بالعربي والإنجليزي، بالإضافة لتوثيق كامل، ودعم بعد التشغيل."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Do I still need an accountant?"
+msgstr "هل لسه محتاج محاسب؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "The software handles posting, calculations, and reporting — your accountant still owns judgment calls, year-end, and audit liaison. Most teams free up 40–60% of their bookkeeping time."
+msgstr "البرنامج بيتولى الترحيل والحسابات والتقارير — المحاسب لسه مسؤول عن القرارات التقديرية، الإقفال السنوي، والتواصل مع المراجعين. معظم الفرق بتوفر 40-60% من وقت مسك الدفاتر."
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Is the interface in Arabic?"
+msgstr "هل الواجهة بالعربي؟"
+
+#. module: techrise_website
+#: model_terms:ir.ui.view,arch_db:techrise_website.accounting_software_page
+msgid "Yes — full Arabic UI, Arabic invoices and reports, and bilingual support team. RTL layouts everywhere."
+msgstr "أيوة — واجهة عربية كاملة، فواتير وتقارير بالعربي، وفريق دعم بلغتين. تخطيطات RTL في كل مكان."
