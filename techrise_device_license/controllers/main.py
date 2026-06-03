@@ -64,9 +64,20 @@ class TechriseDeviceController(http.Controller):
         }
         if device.expiry_date:
             res['expiry'] = fields.Date.to_string(device.expiry_date)
+        # Effective expiry the client should enforce (subscription wins).
+        effective_expiry = ''
         if device.subscription_id:
             res['subscription'] = device.subscription_id.state
             if device.subscription_id.end_date:
-                res['subscription_expiry'] = fields.Date.to_string(
+                effective_expiry = fields.Date.to_string(
                     device.subscription_id.end_date)
+                res['subscription_expiry'] = effective_expiry
+        if not effective_expiry and device.expiry_date:
+            effective_expiry = fields.Date.to_string(device.expiry_date)
+
+        # Tamper-proof envelope: clients trust ONLY these signed fields.
+        sig = request.env['techrise.license.signer'].sudo().gate_signature(
+            device_uid, allowed, effective_expiry)
+        if sig:
+            res['sig'] = sig
         return res
